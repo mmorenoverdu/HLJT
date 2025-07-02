@@ -1,6 +1,9 @@
-# HLJT | Available in EN, FR, ES
+# HLJT | Available in English, Spanish, French
 
-Repository with the materials for an open-source version of the Hand Laterality Judgement Task (HLJT) for local and online use. These versions have been tested as in Moreno-Verdú et. al 2025 (https://www.ibroneuroscience.org/article/S0306-4522(25)00180-0/fulltext | Preprint: https://www.biorxiv.org/content/10.1101/2024.10.17.618819v1.full). Subsequent updates in native software (PsychoPy: https://www.psychopy.org/) may need adjustments. As developers, we are not responsible for implementing these in every use case.
+Repository with the materials for an open-source version of the Hand Laterality Judgement Task (HLJT) for local and online use. These versions have been tested as in Moreno-Verdú et. al 2025:
+Publication: https://www.ibroneuroscience.org/article/S0306-4522(25)00180-0/fulltext | Preprint: https://www.biorxiv.org/content/10.1101/2024.10.17.618819v1.full).
+
+Subsequent updates in native software (PsychoPy: https://www.psychopy.org/) may need adjustments. As developers, we are not responsible for implementing these in every use case.
 
 https://github.com/user-attachments/assets/f2527a9d-e43b-4835-82eb-fd44a9c3a687
 
