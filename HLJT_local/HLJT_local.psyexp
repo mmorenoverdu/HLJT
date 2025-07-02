@@ -21,18 +21,18 @@
     <Param val="True" valType="bool" updates="None" name="Save log file"/>
     <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
     <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
-    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="2" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="True" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="2024.2.1" valType="str" updates="None" name="Use version"/>
-    <Param val="[1280, 720]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="none" valType="str" updates="None" name="backgroundFit"/>
     <Param val="" valType="str" updates="None" name="backgroundImg"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="float" valType="str" updates="None" name="clockFormat"/>
     <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
-    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
     <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
     <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
@@ -71,7 +71,7 @@
     <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
     <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
     <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
-    <Param val="1" valType="code" updates="None" name="runMode"/>
+    <Param val="0" valType="code" updates="None" name="runMode"/>
     <Param val="False" valType="bool" updates="None" name="rush"/>
     <Param val="time" valType="str" updates="None" name="sortColumns"/>
     <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
@@ -103,8 +103,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    welcome_text1.text = &quot;Welcome to the Hand Laterality Judgement Task!\n\nThe purpose is to quantify your ability to make laterality judgements (right/left) on hand images.&quot;;&amp;#10;    welcome_text2.text = advance;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        welcome_text1.text = &quot;\u00a1Bienvenid@ a la Tarea de Discriminaci\u00f3n de Lateralidad!\n\nEl objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de im\u00e1genes de manos.&quot;;&amp;#10;        welcome_text2.text = advance;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            welcome_text1.text = &quot;Bienvenue \u00e0 la T\u00e2che de Jugement de Lat\u00e9ralit\u00e9 de la Main !\n\nLe but est de quantifier votre capacit\u00e9 \u00e0 d\u00e9cider de la lat\u00e9ralit\u00e9 (droite/gauche) d'images de mains.&quot;;&amp;#10;            welcome_text2.text = advance;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;start_time = core.getTime();&amp;#10;psychoJS.experiment.addData(&quot;start_time&quot;, start_time);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    welcome_text1.text = &quot;Welcome to the Hand Laterality Judgement Task!\n\nThe purpose is to quantify your ability to make laterality judgements (right/left) on hand images.&quot;&amp;#10;    welcome_text2.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    welcome_text1.text = &quot;¡Bienvenid@ a la Tarea de Discriminación de Lateralidad!\n\nEl objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de imágenes de manos.&quot;&amp;#10;    welcome_text2.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    welcome_text1.text = &quot;Bienvenue à la Tâche de Jugement de Latéralité de la Main !\n\nLe but est de quantifier votre capacité à décider de la latéralité (droite/gauche) d'images de mains.&quot;&amp;#10;    welcome_text2.text = advance&amp;#10;&amp;#10;# get Start time and add to data output&amp;#10;start_time = core.getTime()&amp;#10;thisExp.addData('start_time', start_time)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="start_time = core.getTime();&amp;#10;psychoJS.experiment.addData(&quot;start_time&quot;, start_time);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# get Start time and add to data output&amp;#10;start_time = core.getTime()&amp;#10;thisExp.addData('start_time', start_time)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -116,7 +116,7 @@
         <Param val="welcome_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <TextComponent name="welcome_text1" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -137,13 +137,13 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$welcome_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <TextComponent name="welcome_text2" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -164,7 +164,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$adv_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -212,8 +212,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    bye_text.text = &quot;This is the end of the experiment\n\nThanks for participating!\n\nWait 3 seconds to exit&quot;;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        bye_text.text = &quot;Este es el final del experimento\n\n\u00a1Gracias por participar!\n\nEspera 3 segundos para salir&quot;;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            bye_text.text = &quot;Ceci est la fin de l'exp\u00e9rience\n\nMerci d'avoir particip\u00e9 !\n\nAttendez 3 secondes pour quitter&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;end_time = core.getTime();&amp;#10;psychoJS.experiment.addData(&quot;end_time&quot;, end_time);&amp;#10;completion_time = (end_time - start_time);&amp;#10;psychoJS.experiment.addData(&quot;completion_time&quot;, completion_time);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    bye_text.text = &quot;This is the end of the experiment\n\nThanks for participating!\n\nWait 3 seconds to exit&quot;&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    bye_text.text = &quot;Este es el final del experimento\n\n¡Gracias por participar!\n\nEspera 3 segundos para salir&quot;&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    bye_text.text = &quot;Ceci est la fin de l'expérience\n\nMerci d'avoir participé !\n\nAttendez 3 secondes pour quitter&quot;&amp;#10;&amp;#10;# get Finish time and add to data output&amp;#10;end_time = core.getTime()&amp;#10;thisExp.addData('end_time', end_time)&amp;#10;&amp;#10;# calculate experiment time and add to data output&amp;#10;completion_time = end_time - start_time&amp;#10;thisExp.addData('completion_time', completion_time)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="end_time = core.getTime();&amp;#10;psychoJS.experiment.addData(&quot;end_time&quot;, end_time);&amp;#10;completion_time = (end_time - start_time);&amp;#10;psychoJS.experiment.addData(&quot;completion_time&quot;, completion_time);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# get Finish time and add to data output&amp;#10;end_time = core.getTime()&amp;#10;thisExp.addData('end_time', end_time)&amp;#10;&amp;#10;# calculate experiment time and add to data output&amp;#10;completion_time = end_time - start_time&amp;#10;thisExp.addData('completion_time', completion_time)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -225,7 +225,7 @@
         <Param val="code_exit" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <TextComponent name="bye_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -246,7 +246,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$bye_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -313,9 +313,9 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
         <Param val="1" valType="num" updates="constant" name="lineWidth"/>
         <Param val="4" valType="int" updates="constant" name="nVertices"/>
         <Param val="pract_fix_cross_2" valType="code" updates="None" name="name"/>
@@ -394,41 +394,6 @@
         <Param val="" valType="list" updates="constant" name="vertices"/>
       </PolygonComponent>
     </Routine>
-    <Routine name="language_settings">
-      <RoutineSettingsComponent name="language_settings" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
-        <Param val="language_settings" valType="code" updates="None" name="name"/>
-        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <CodeComponent name="language_settings_code" plugin="None">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# rest of the experiment&amp;#10;if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    advance = &quot;Press SPACE to continue&quot;&amp;#10;    pract_welc_msg = &quot;You are going to start the practice block\n\n&quot; + advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    advance = &quot;Presiona ESPACIO para continuar&quot;&amp;#10;    pract_welc_msg = &quot;Vas a empezar el bloque de práctica\n\n&quot; + advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    advance = &quot;Appuyez sur ESPACE pour continuer&quot;&amp;#10;    pract_welc_msg = &quot;Vous allez commencer le bloc de pratique\n\n&quot; + advance" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    advance = &quot;Press SPACE to continue&quot;;&amp;#10;    pract_welc_msg = (&quot;You are going to start the practice block\n\n&quot; + advance);&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        advance = &quot;Presiona ESPACIO para continuar&quot;;&amp;#10;        pract_welc_msg = (&quot;Vas a empezar el bloque de pr\u00e1ctica\n\n&quot; + advance);&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            advance = &quot;Appuyez sur ESPACE pour continuer&quot;;&amp;#10;            pract_welc_msg = (&quot;Vous allez commencer le bloc de pratique\n\n&quot; + advance);&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="language_settings_code" valType="code" updates="None" name="name"/>
-      </CodeComponent>
-    </Routine>
     <Routine name="instructions">
       <RoutineSettingsComponent name="instructions" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
@@ -451,8 +416,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="text_position = [-0.35, 0]" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="text_position = [(- 0.35), 0];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    hljt_instr_text.text = instr_msg_en;&amp;#10;    hljt_instr_image.image = instr_pics;&amp;#10;    hljt_instr_adv_text.text = advance;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        hljt_instr_text.text = instr_msg_es;&amp;#10;        hljt_instr_image.image = instr_pics;&amp;#10;        hljt_instr_adv_text.text = advance;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            hljt_instr_text.text = instr_msg_fr;&amp;#10;            hljt_instr_image.image = instr_pics;&amp;#10;            hljt_instr_adv_text.text = advance;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((expInfo[&quot;feedback&quot;] === &quot;No feedback&quot;) &amp;&amp; (instructions_loop.thisN === 2))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    hljt_instr_text.text = instr_msg_en&amp;#10;    hljt_instr_image.image = instr_pics&amp;#10;    hljt_instr_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    hljt_instr_text.text = instr_msg_es&amp;#10;    hljt_instr_image.image = instr_pics&amp;#10;    hljt_instr_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    hljt_instr_text.text = instr_msg_fr&amp;#10;    hljt_instr_image.image = instr_pics&amp;#10;    hljt_instr_adv_text.text = advance&amp;#10;&amp;#10;# set position of text for last screen&amp;#10;if expInfo[&quot;feedback&quot;] == &quot;No feedback&quot; and instructions_loop.thisN == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="try {&amp;#10;    instr_msg = eval(`instr_msg_${lang_code}`);&amp;#10;} catch(e) {&amp;#10;    if ((e instanceof NameError)) {&amp;#10;        instr_msg = instr_msg_EN;&amp;#10;    } else {&amp;#10;        throw e;&amp;#10;    }&amp;#10;}&amp;#10;if (((expInfo[&quot;feedback&quot;] === &quot;No feedback&quot;) &amp;&amp; (instructions_loop.thisN === 2))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# get column from excel sheet based on language code&amp;#10;try:&amp;#10;    instr_msg = eval(f&quot;instr_msg_{lang_code}&quot;)&amp;#10;# default to english if this fails&amp;#10;except NameError:&amp;#10;    instr_msg = instr_msg_EN&amp;#10;&amp;#10;# set position of text for last screen&amp;#10;if expInfo[&quot;feedback&quot;] == &quot;No feedback&quot; and instructions_loop.thisN == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -464,7 +429,7 @@
         <Param val="hljt_instr_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <TextComponent name="hljt_instr_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -485,7 +450,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$instr_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -500,7 +465,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="" valType="file" updates="constant" name="image"/>
+        <Param val="$instr_pics" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="hljt_instr_image" valType="code" updates="None" name="name"/>
@@ -520,7 +485,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
       <TextComponent name="hljt_instr_adv_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -541,7 +506,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$adv_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -585,7 +550,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <TextComponent name="countdown_3" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -612,7 +577,7 @@
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <TextComponent name="countdown_2" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -639,7 +604,7 @@
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <TextComponent name="countdown_1" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1030,8 +995,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    hljt_test_text.text = test_msg_en;&amp;#10;    hljt_test_adv_text.text = advance;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        hljt_test_text.text = test_msg_es;&amp;#10;        hljt_test_adv_text.text = advance;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            hljt_test_text.text = test_msg_fr;&amp;#10;            hljt_test_adv_text.text = advance;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    hljt_test_text.text = test_msg_en&amp;#10;    hljt_test_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    hljt_test_text.text = test_msg_es&amp;#10;    hljt_test_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    hljt_test_text.text = test_msg_fr&amp;#10;    hljt_test_adv_text.text = advance&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="try {&amp;#10;    block_msg = eval(`block_msg_${lang_code}`);&amp;#10;} catch(e) {&amp;#10;    if ((e instanceof NameError)) {&amp;#10;        block_msg = block_msg_EN;&amp;#10;    } else {&amp;#10;        throw e;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# get column from excel sheet based on language code&amp;#10;try:&amp;#10;    block_msg = eval(f&quot;block_msg_{lang_code}&quot;)&amp;#10;# default to english if this fails&amp;#10;except NameError:&amp;#10;    block_msg = block_msg_EN&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1042,8 +1007,8 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="test_code_2" valType="code" updates="None" name="name"/>
       </CodeComponent>
-      <TextComponent name="hljt_test_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+      <TextComponent name="hljt_block_text" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1053,7 +1018,7 @@
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="hljt_test_text" valType="code" updates="None" name="name"/>
+        <Param val="hljt_block_text" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -1064,13 +1029,13 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$block_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <TextComponent name="hljt_test_adv_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+      <TextComponent name="hljt_block_adv" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1080,7 +1045,7 @@
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="hljt_test_adv_text" valType="code" updates="None" name="name"/>
+        <Param val="hljt_block_adv" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, -0.45)" valType="list" updates="constant" name="pos"/>
@@ -1091,7 +1056,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$adv_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1139,8 +1104,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((expInfo[&quot;language&quot;] === &quot;English&quot;)) {&amp;#10;    hljt_block_pause_text.text = block_pause_msg_en;&amp;#10;    hljt_block_adv_text.text = advance;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;language&quot;] === &quot;Spanish&quot;)) {&amp;#10;        hljt_block_pause_text.text = block_pause_msg_es;&amp;#10;        hljt_block_adv_text.text = advance;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;language&quot;] === &quot;French&quot;)) {&amp;#10;            hljt_block_pause_text.text = block_pause_msg_fr;&amp;#10;            hljt_block_adv_text.text = advance;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if expInfo[&quot;language&quot;] == &quot;English&quot;:&amp;#10;    hljt_block_pause_text.text = block_pause_msg_en&amp;#10;    hljt_block_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;Spanish&quot;:&amp;#10;    hljt_block_pause_text.text = block_pause_msg_es&amp;#10;    hljt_block_adv_text.text = advance&amp;#10;elif expInfo[&quot;language&quot;] == &quot;French&quot;:&amp;#10;    hljt_block_pause_text.text = block_pause_msg_fr&amp;#10;    hljt_block_adv_text.text = advance" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="try {&amp;#10;    block_pause_msg = eval(`block_pause_msg_${lang_code}`);&amp;#10;} catch(e) {&amp;#10;    if ((e instanceof NameError)) {&amp;#10;        block_pause_msg = block_pause_msg_EN;&amp;#10;    } else {&amp;#10;        throw e;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# get column from excel sheet based on language code&amp;#10;try:&amp;#10;   block_pause_msg = eval(f&quot;block_pause_msg_{lang_code}&quot;)&amp;#10;# default to english if this fails&amp;#10;except NameError:&amp;#10;    block_pause_msg = block_pause_msg_EN" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1152,7 +1117,7 @@
         <Param val="hljt_block_pause_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <TextComponent name="hljt_block_pause_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1173,13 +1138,13 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$block_pause_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <TextComponent name="hljt_block_adv_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1200,7 +1165,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="$adv_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1703,7 +1668,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <TextComponent name="pract_welc_text" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1724,7 +1689,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$pract_welc_msg" valType="str" updates="constant" name="text"/>
+        <Param val="$pract_welc_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1750,9 +1715,56 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="language_settings">
+      <RoutineSettingsComponent name="language_settings" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="language_settings" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_python" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="## THIS CODE ONLY WORKS IN PYTHON, NOT JAVASCRIPT ##&amp;#10;&amp;#10;# import python package to read Excel file *at the beginning of the experiment*&amp;#10;import pandas as pd&amp;#10;# make sure lang_code is defined and set to EN as default&amp;#10;lang_code = &quot;EN&quot;&amp;#10;# read excel file with messages according to language codes&amp;#10;messages_df = pd.read_excel('Messages.xlsx')&amp;#10;# create an empty global dictionary with the messages&amp;#10;MESSAGES = {}&amp;#10;# assign each value of language to the corresponding key of language (language code)&amp;#10;for idx, row in messages_df.iterrows():&amp;#10;    key = row['message']&amp;#10;    MESSAGES[key] = {}&amp;#10;    for col in row.index:&amp;#10;        if col != 'message':&amp;#10;            MESSAGES[key][col] = row[col]&amp;#10;# create global variables with the list of messages to be usable throuhgout the experiment&amp;#10;for key in MESSAGES:&amp;#10;    globals()[key] = MESSAGES[key].get(lang_code, MESSAGES[key]['EN'])  # fallback to English if language is not localised" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((language === expInfo[&quot;language&quot;])) {&amp;#10;    lang_code = code;&amp;#10;    psychoJS.experiment.addData(&quot;language_code&quot;, lang_code);&amp;#10;    for (var key, _pj_c = 0, _pj_a = MESSAGES, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;        key = _pj_a[_pj_c];&amp;#10;        globals()[key] = MESSAGES[key].get(lang_code, MESSAGES[key][&quot;EN&quot;]);&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# update language code based on the selected language in dialogue box&amp;#10;if language == expInfo['language']:&amp;#10;    # we 'code' as a variable directly because it's already loaded in the localiser excel sheet&amp;#10;    lang_code = ISO_code  &amp;#10;    thisExp.addData(&quot;language_code&quot;, lang_code)  # add it to output&amp;#10;    # update global variables with new language&amp;#10;    # allow the messages to be used throughout the experiment by making them global variables&amp;#10;    for key in MESSAGES:&amp;#10;        globals()[key] = MESSAGES[key].get(lang_code, MESSAGES[key]['EN']) # defaults to english if something is wrong&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_python" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <LoopInitiator loopType="TrialHandler" name="language_loop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'language': 'English', 'ISO_code': 'EN'}, {'language': 'Spanish', 'ISO_code': 'ES'}, {'language': 'French', 'ISO_code': 'FR'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Language_localiser.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="language_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="language_settings"/>
+    <LoopTerminator name="language_loop"/>
     <Routine name="experiment_settings"/>
     <Routine name="Welcome"/>
     <LoopInitiator loopType="TrialHandler" name="instructions_loop">
@@ -1799,7 +1811,7 @@
     <LoopTerminator name="pract_block"/>
     <LoopInitiator loopType="TrialHandler" name="test_block">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'test_msg_en': 'You have finished the practice block\n\nNow you are going to do the test blocks\n\nThere are 4 blocks, with a break between them', 'block_pause_msg_en': 'You have finished the first block', 'test_msg_es': 'Has finalizado el bloque de práctica\n\nAhora vas a realizar los bloques de prueba\n\nHay 4 bloques, con un descanso entre ellos', 'block_pause_msg_es': 'Has finalizado el primer bloque', 'test_msg_fr': &quot;Vous avez terminé le bloc d'entraînement\n\nVous allez maintenant faire les blocs de test\n\nIl y a 4 blocs, avec une pause entre les deux&quot;, 'block_pause_msg_fr': 'Vous avez terminé le premier bloc'}, {'test_msg_en': 'Now you are going to start the second block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_en': 'You have finished the second block', 'test_msg_es': 'Ahora vas a empezar el segundo bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_es': 'Has finalizado el segundo bloque', 'test_msg_fr': &quot;Vous allez maintenant commencer le deuxième bloc\n\nN'oubliez pas que votre objectif est de répondre le PLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_fr': 'Vous avez terminé le deuxième bloc'}, {'test_msg_en': 'Now you are going to start the third block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_en': 'You have finished the third block', 'test_msg_es': 'Ahora vas a empezar el tercer bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_es': 'Has finalizado el tercer bloque', 'test_msg_fr': &quot;Vous  allez maintenant commencer le troisième bloc\n\nN'oubliez pas que votre objectif est de répondre le PLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_fr': 'Vous avez terminé le troisième bloc'}, {'test_msg_en': 'Now you are going to start the last block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_en': 'You have finished the last block', 'test_msg_es': 'Ahora vas a empezar el último bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_es': 'Has finalizado el último bloque', 'test_msg_fr': &quot;Vous allez maintenant commencer le dernier bloc\n\nN'oubliez pas que votre objectif est de répondre lePLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_fr': 'Vous avez terminé le dernier bloc'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'block_msg_EN': 'Now you are going to do the test blocks\n\nThere are 4 blocks, with a break between them', 'block_pause_msg_EN': 'You have finished the first block', 'block_msg_ES': 'Ahora vas a realizar los bloques de prueba\n\nHay 4 bloques, con un descanso entre ellos', 'block_pause_msg_ES': 'Has finalizado el primer bloque', 'block_msg_FR': 'Vous allez maintenant faire les blocs de test\n\nIl y a 4 blocs, avec une pause entre les deux', 'block_pause_msg_FR': 'Vous avez terminé le premier bloc'}, {'block_msg_EN': 'Now you are going to start the second block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_EN': 'You have finished the second block', 'block_msg_ES': 'Ahora vas a empezar el segundo bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_ES': 'Has finalizado el segundo bloque', 'block_msg_FR': &quot;Vous allez maintenant commencer le deuxième bloc\n\nN'oubliez pas que votre objectif est de répondre le PLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_FR': 'Vous avez terminé le deuxième bloc'}, {'block_msg_EN': 'Now you are going to start the third block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_EN': 'You have finished the third block', 'block_msg_ES': 'Ahora vas a empezar el tercer bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_ES': 'Has finalizado el tercer bloque', 'block_msg_FR': &quot;Vous  allez maintenant commencer le troisième bloc\n\nN'oubliez pas que votre objectif est de répondre le PLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_FR': 'Vous avez terminé le troisième bloc'}, {'block_msg_EN': 'Now you are going to start the last block\n\nRemember that your goal is to answer as QUICKLY AND ACCURATELY as possible', 'block_pause_msg_EN': 'You have finished the last block', 'block_msg_ES': 'Ahora vas a empezar el último bloque\n\nRecuerda que tu objetivo es contestar tan PRECISA Y RÁPIDAMENTE como puedas', 'block_pause_msg_ES': 'Has finalizado el último bloque', 'block_msg_FR': &quot;Vous allez maintenant commencer le dernier bloc\n\nN'oubliez pas que votre objectif est de répondre lePLUS PRÉCISÉMENT ET LE PLUS RAPIDEMENT possible.&quot;, 'block_pause_msg_FR': 'Vous avez terminé le dernier bloc'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="hljt_files/Block_messages.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>

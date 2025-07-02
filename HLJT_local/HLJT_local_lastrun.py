@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.1),
-    on May 13, 2025, at 11:42
+    on July 02, 2025, at 10:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -71,7 +71,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = [1280, 720]
+_winSize = [1920, 1080]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -137,7 +137,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\morenoverdu\\OneDrive - UCL\\BAS-Lab\\Project 4 - HLJT\\PyschoPy Experiments\\HLJT_local\\HLJT_local_lastrun.py',
+        originPath='C:\\Users\\morenoverdu\\OneDrive - UCL\\BAS-Lab\\Github_repos\\HLJT_local\\HLJT_local_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -204,9 +204,9 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=_winSize, fullscr=_fullScr, screen=0,
+            size=_winSize, fullscr=_fullScr, screen=1,
             winType='pyglet', allowStencil=False,
-            monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+            monitor='testMonitor', color=[1.0000, 1.0000, 1.0000], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height', 
@@ -214,7 +214,7 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [0,0,0]
+        win.color = [1.0000, 1.0000, 1.0000]
         win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -426,17 +426,27 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "language_settings" ---
-    # Run 'Begin Experiment' code from language_settings_code
-    # rest of the experiment
-    if expInfo["language"] == "English":
-        advance = "Press SPACE to continue"
-        pract_welc_msg = "You are going to start the practice block\n\n" + advance
-    elif expInfo["language"] == "Spanish":
-        advance = "Presiona ESPACIO para continuar"
-        pract_welc_msg = "Vas a empezar el bloque de práctica\n\n" + advance
-    elif expInfo["language"] == "French":
-        advance = "Appuyez sur ESPACE pour continuer"
-        pract_welc_msg = "Vous allez commencer le bloc de pratique\n\n" + advance
+    # Run 'Begin Experiment' code from code_py
+    ## THIS CODE ONLY WORKS IN PYTHON, NOT JAVASCRIPT ##
+    
+    # import python package to read Excel file *at the beginning of the experiment*
+    import pandas as pd
+    # make sure lang_code is defined and set to EN as default
+    lang_code = "EN"
+    # read excel file with messages according to language codes
+    messages_df = pd.read_excel('messages.xlsx')
+    # create an empty global dictionary with the messages
+    MESSAGES = {}
+    # assign each value of language to the corresponding key of language (language code)
+    for idx, row in messages_df.iterrows():
+        key = row['message']
+        MESSAGES[key] = {}
+        for col in row.index:
+            if col != 'message':
+                MESSAGES[key][col] = row[col]
+    # create global variables with the list of messages to be usable throuhgout the experiment
+    for key in MESSAGES:
+        globals()[key] = MESSAGES[key].get(lang_code, MESSAGES[key]['EN'])  # fallback to English if language is not localised
     
     # --- Initialize components for Routine "experiment_settings" ---
     # Run 'Begin Experiment' code from response_mode
@@ -545,17 +555,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "Welcome" ---
     welcome_text1 = visual.TextStim(win=win, name='welcome_text1',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     welcome_text2 = visual.TextStim(win=win, name='welcome_text2',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, -0.45), draggable=False, height=0.045, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
     welcome_adv_key = keyboard.Keyboard(deviceName='welcome_adv_key')
@@ -564,35 +574,35 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Run 'Begin Experiment' code from hljt_instr_code
     text_position = [-0.35, 0]
     hljt_instr_text = visual.TextStim(win=win, name='hljt_instr_text',
-        text=None,
+        text='',
         font='Open Sans',
         pos=[0,0], draggable=False, height=0.04, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     hljt_instr_image = visual.ImageStim(
         win=win,
         name='hljt_instr_image', 
-        image=None, mask=None, anchor='center',
+        image='default.png', mask=None, anchor='center',
         ori=0.0, pos=(0.5, 0), draggable=False, size=1.0,
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
     hljt_instr_adv_text = visual.TextStim(win=win, name='hljt_instr_adv_text',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, -0.45), draggable=False, height=0.045, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-3.0);
     hljt_instr_adv_key = keyboard.Keyboard(deviceName='hljt_instr_adv_key')
     
     # --- Initialize components for Routine "pract_welcome" ---
     pract_welc_text = visual.TextStim(win=win, name='pract_welc_text',
-        text=pract_welc_msg,
+        text='',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.04, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     pract_welc_adv = keyboard.Keyboard(deviceName='pract_welc_adv')
@@ -602,21 +612,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         text='3',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     countdown_2 = visual.TextStim(win=win, name='countdown_2',
         text='2',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     countdown_1 = visual.TextStim(win=win, name='countdown_1',
         text='1',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
     hljt_go_to_experiment_key = keyboard.Keyboard(deviceName='hljt_go_to_experiment_key')
@@ -630,7 +640,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         size=(0.03, 0.03),
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
-        colorSpace='rgb', lineColor='white', fillColor='white',
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     box_left = visual.Rect(
         win=win, name='box_left',
@@ -723,18 +733,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         opacity=None, depth=-4.0, interpolate=True)
     
     # --- Initialize components for Routine "block_welcome" ---
-    hljt_test_text = visual.TextStim(win=win, name='hljt_test_text',
-        text=None,
+    hljt_block_text = visual.TextStim(win=win, name='hljt_block_text',
+        text='',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
-    hljt_test_adv_text = visual.TextStim(win=win, name='hljt_test_adv_text',
-        text=None,
+    hljt_block_adv = visual.TextStim(win=win, name='hljt_block_adv',
+        text='',
         font='Open Sans',
         pos=(0, -0.45), draggable=False, height=0.045, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
     hljt_test_adv_key = keyboard.Keyboard(deviceName='hljt_test_adv_key')
@@ -744,21 +754,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         text='3',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     countdown_2 = visual.TextStim(win=win, name='countdown_2',
         text='2',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     countdown_1 = visual.TextStim(win=win, name='countdown_1',
         text='1',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.07, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
     hljt_go_to_experiment_key = keyboard.Keyboard(deviceName='hljt_go_to_experiment_key')
@@ -772,7 +782,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         size=(0.03, 0.03),
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
-        colorSpace='rgb', lineColor='white', fillColor='white',
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     box_left = visual.Rect(
         win=win, name='box_left',
@@ -854,27 +864,27 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "block_pause" ---
     hljt_block_pause_text = visual.TextStim(win=win, name='hljt_block_pause_text',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     hljt_block_adv_text = visual.TextStim(win=win, name='hljt_block_adv_text',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, -0.45), draggable=False, height=0.045, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
     hljt_block_adv_key = keyboard.Keyboard(deviceName='hljt_block_adv_key')
     
     # --- Initialize components for Routine "Goodbye" ---
     bye_text = visual.TextStim(win=win, name='bye_text',
-        text=None,
+        text='',
         font='Open Sans',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     Exit = keyboard.Keyboard(deviceName='Exit')
@@ -907,85 +917,126 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
     
-    # --- Prepare to start Routine "language_settings" ---
-    # create an object to store info about Routine language_settings
-    language_settings = data.Routine(
-        name='language_settings',
-        components=[],
+    # set up handler to look after randomisation of conditions etc
+    language_loop = data.TrialHandler2(
+        name='language_loop',
+        nReps=1.0, 
+        method='sequential', 
+        extraInfo=expInfo, 
+        originPath=-1, 
+        trialList=data.importConditions('language_localiser.xlsx'), 
+        seed=None, 
     )
-    language_settings.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # store start times for language_settings
-    language_settings.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    language_settings.tStart = globalClock.getTime(format='float')
-    language_settings.status = STARTED
-    language_settings.maxDuration = None
-    # keep track of which components have finished
-    language_settingsComponents = language_settings.components
-    for thisComponent in language_settings.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
+    thisExp.addLoop(language_loop)  # add the loop to the experiment
+    thisLanguage_loop = language_loop.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisLanguage_loop.rgb)
+    if thisLanguage_loop != None:
+        for paramName in thisLanguage_loop:
+            globals()[paramName] = thisLanguage_loop[paramName]
     
-    # --- Run Routine "language_settings" ---
-    language_settings.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+    for thisLanguage_loop in language_loop:
+        currentLoop = language_loop
+        thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
+        # abbreviate parameter names if possible (e.g. rgb = thisLanguage_loop.rgb)
+        if thisLanguage_loop != None:
+            for paramName in thisLanguage_loop:
+                globals()[paramName] = thisLanguage_loop[paramName]
         
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer], 
-                playbackComponents=[]
-            )
-            # skip the frame we paused on
-            continue
+        # --- Prepare to start Routine "language_settings" ---
+        # create an object to store info about Routine language_settings
+        language_settings = data.Routine(
+            name='language_settings',
+            components=[],
+        )
+        language_settings.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        # Run 'Begin Routine' code from code_py
+        # update language code based on the selected language in dialogue box
+        if language == expInfo['language']:
+            # we 'code' as a variable directly because it's already loaded in the localiser excel sheet
+            lang_code = ISO_code  
+            thisExp.addData("language_code", lang_code)  # add it to output
+            # update global variables with new language
+            # allow the messages to be used throughout the experiment by making them global variables
+            for key in MESSAGES:
+                globals()[key] = MESSAGES[key].get(lang_code, MESSAGES[key]['EN']) # defaults to english if something is wrong
         
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            language_settings.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        
+        # store start times for language_settings
+        language_settings.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        language_settings.tStart = globalClock.getTime(format='float')
+        language_settings.status = STARTED
+        language_settings.maxDuration = None
+        # keep track of which components have finished
+        language_settingsComponents = language_settings.components
         for thisComponent in language_settings.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # --- Run Routine "language_settings" ---
+        # if trial has changed, end Routine now
+        if isinstance(language_loop, data.TrialHandler2) and thisLanguage_loop.thisN != language_loop.thisTrial.thisN:
+            continueRoutine = False
+        language_settings.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                language_settings.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in language_settings.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "language_settings" ---
+        for thisComponent in language_settings.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for language_settings
+        language_settings.tStop = globalClock.getTime(format='float')
+        language_settings.tStopRefresh = tThisFlipGlobal
+        # the Routine "language_settings" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+    # completed 1.0 repeats of 'language_loop'
     
-    # --- Ending Routine "language_settings" ---
-    for thisComponent in language_settings.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for language_settings
-    language_settings.tStop = globalClock.getTime(format='float')
-    language_settings.tStopRefresh = tThisFlipGlobal
-    thisExp.nextEntry()
-    # the Routine "language_settings" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # --- Prepare to start Routine "experiment_settings" ---
     # create an object to store info about Routine experiment_settings
@@ -1077,19 +1128,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     # Run 'Begin Routine' code from welcome_code
-    if expInfo["language"] == "English":
-        welcome_text1.text = "Welcome to the Hand Laterality Judgement Task!\n\nThe purpose is to quantify your ability to make laterality judgements (right/left) on hand images."
-        welcome_text2.text = advance
-    elif expInfo["language"] == "Spanish":
-        welcome_text1.text = "¡Bienvenid@ a la Tarea de Discriminación de Lateralidad!\n\nEl objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de imágenes de manos."
-        welcome_text2.text = advance
-    elif expInfo["language"] == "French":
-        welcome_text1.text = "Bienvenue à la Tâche de Jugement de Latéralité de la Main !\n\nLe but est de quantifier votre capacité à décider de la latéralité (droite/gauche) d'images de mains."
-        welcome_text2.text = advance
-    
     # get Start time and add to data output
     start_time = core.getTime()
     thisExp.addData('start_time', start_time)
+    welcome_text1.setText(welcome_msg)
+    welcome_text2.setText(adv_msg)
     # create starting attributes for welcome_adv_key
     welcome_adv_key.keys = []
     welcome_adv_key.rt = []
@@ -1264,24 +1307,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from hljt_instr_code
-        if expInfo["language"] == "English":
-            hljt_instr_text.text = instr_msg_en
-            hljt_instr_image.image = instr_pics
-            hljt_instr_adv_text.text = advance
-        elif expInfo["language"] == "Spanish":
-            hljt_instr_text.text = instr_msg_es
-            hljt_instr_image.image = instr_pics
-            hljt_instr_adv_text.text = advance
-        elif expInfo["language"] == "French":
-            hljt_instr_text.text = instr_msg_fr
-            hljt_instr_image.image = instr_pics
-            hljt_instr_adv_text.text = advance
+        # get column from excel sheet based on language code
+        try:
+            instr_msg = eval(f"instr_msg_{lang_code}")
+        # default to english if this fails
+        except NameError:
+            instr_msg = instr_msg_EN
         
         # set position of text for last screen
         if expInfo["feedback"] == "No feedback" and instructions_loop.thisN == 2:
             continueRoutine = False
         hljt_instr_text.setPos(text_position)
+        hljt_instr_text.setText(instr_msg)
         hljt_instr_image.setSize([images_sizeW, images_sizeH])
+        hljt_instr_image.setImage(instr_pics)
+        hljt_instr_adv_text.setText(adv_msg)
         # create starting attributes for hljt_instr_adv_key
         hljt_instr_adv_key.keys = []
         hljt_instr_adv_key.rt = []
@@ -1475,6 +1515,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         pract_welcome.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        pract_welc_text.setText(pract_welc_msg)
         # create starting attributes for pract_welc_adv
         pract_welc_adv.keys = []
         pract_welc_adv.rt = []
@@ -2488,23 +2529,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine block_welcome
         block_welcome = data.Routine(
             name='block_welcome',
-            components=[hljt_test_text, hljt_test_adv_text, hljt_test_adv_key],
+            components=[hljt_block_text, hljt_block_adv, hljt_test_adv_key],
         )
         block_welcome.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from test_code_2
-        if expInfo["language"] == "English":
-            hljt_test_text.text = test_msg_en
-            hljt_test_adv_text.text = advance
-        elif expInfo["language"] == "Spanish":
-            hljt_test_text.text = test_msg_es
-            hljt_test_adv_text.text = advance
-        elif expInfo["language"] == "French":
-            hljt_test_text.text = test_msg_fr
-            hljt_test_adv_text.text = advance
+        # get column from excel sheet based on language code
+        try:
+            block_msg = eval(f"block_msg_{lang_code}")
+        # default to english if this fails
+        except NameError:
+            block_msg = block_msg_EN
         
-        
+        hljt_block_text.setText(block_msg)
+        hljt_block_adv.setText(adv_msg)
         # create starting attributes for hljt_test_adv_key
         hljt_test_adv_key.keys = []
         hljt_test_adv_key.rt = []
@@ -2542,39 +2581,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *hljt_test_text* updates
+            # *hljt_block_text* updates
             
-            # if hljt_test_text is starting this frame...
-            if hljt_test_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # if hljt_block_text is starting this frame...
+            if hljt_block_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                hljt_test_text.frameNStart = frameN  # exact frame index
-                hljt_test_text.tStart = t  # local t and not account for scr refresh
-                hljt_test_text.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(hljt_test_text, 'tStartRefresh')  # time at next scr refresh
+                hljt_block_text.frameNStart = frameN  # exact frame index
+                hljt_block_text.tStart = t  # local t and not account for scr refresh
+                hljt_block_text.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(hljt_block_text, 'tStartRefresh')  # time at next scr refresh
                 # update status
-                hljt_test_text.status = STARTED
-                hljt_test_text.setAutoDraw(True)
+                hljt_block_text.status = STARTED
+                hljt_block_text.setAutoDraw(True)
             
-            # if hljt_test_text is active this frame...
-            if hljt_test_text.status == STARTED:
+            # if hljt_block_text is active this frame...
+            if hljt_block_text.status == STARTED:
                 # update params
                 pass
             
-            # *hljt_test_adv_text* updates
+            # *hljt_block_adv* updates
             
-            # if hljt_test_adv_text is starting this frame...
-            if hljt_test_adv_text.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
+            # if hljt_block_adv is starting this frame...
+            if hljt_block_adv.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
                 # keep track of start time/frame for later
-                hljt_test_adv_text.frameNStart = frameN  # exact frame index
-                hljt_test_adv_text.tStart = t  # local t and not account for scr refresh
-                hljt_test_adv_text.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(hljt_test_adv_text, 'tStartRefresh')  # time at next scr refresh
+                hljt_block_adv.frameNStart = frameN  # exact frame index
+                hljt_block_adv.tStart = t  # local t and not account for scr refresh
+                hljt_block_adv.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(hljt_block_adv, 'tStartRefresh')  # time at next scr refresh
                 # update status
-                hljt_test_adv_text.status = STARTED
-                hljt_test_adv_text.setAutoDraw(True)
+                hljt_block_adv.status = STARTED
+                hljt_block_adv.setAutoDraw(True)
             
-            # if hljt_test_adv_text is active this frame...
-            if hljt_test_adv_text.status == STARTED:
+            # if hljt_block_adv is active this frame...
+            if hljt_block_adv.status == STARTED:
                 # update params
                 pass
             
@@ -3521,15 +3560,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from hljt_block_pause_code
-        if expInfo["language"] == "English":
-            hljt_block_pause_text.text = block_pause_msg_en
-            hljt_block_adv_text.text = advance
-        elif expInfo["language"] == "Spanish":
-            hljt_block_pause_text.text = block_pause_msg_es
-            hljt_block_adv_text.text = advance
-        elif expInfo["language"] == "French":
-            hljt_block_pause_text.text = block_pause_msg_fr
-            hljt_block_adv_text.text = advance
+        # get column from excel sheet based on language code
+        try:
+           block_pause_msg = eval(f"block_pause_msg_{lang_code}")
+        # default to english if this fails
+        except NameError:
+            block_pause_msg = block_pause_msg_EN
+        hljt_block_pause_text.setText(block_pause_msg)
+        hljt_block_adv_text.setText(adv_msg)
         # create starting attributes for hljt_block_adv_key
         hljt_block_adv_key.keys = []
         hljt_block_adv_key.rt = []
@@ -3683,13 +3721,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     # Run 'Begin Routine' code from code_exit
-    if expInfo["language"] == "English":
-        bye_text.text = "This is the end of the experiment\n\nThanks for participating!\n\nWait 3 seconds to exit"
-    elif expInfo["language"] == "Spanish":
-        bye_text.text = "Este es el final del experimento\n\n¡Gracias por participar!\n\nEspera 3 segundos para salir"
-    elif expInfo["language"] == "French":
-        bye_text.text = "Ceci est la fin de l'expérience\n\nMerci d'avoir participé !\n\nAttendez 3 secondes pour quitter"
-    
     # get Finish time and add to data output
     end_time = core.getTime()
     thisExp.addData('end_time', end_time)
@@ -3697,6 +3728,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # calculate experiment time and add to data output
     completion_time = end_time - start_time
     thisExp.addData('completion_time', completion_time)
+    bye_text.setText(bye_msg)
     # create starting attributes for Exit
     Exit.keys = []
     Exit.rt = []
