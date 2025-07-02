@@ -1,10 +1,11 @@
-# HLJT | Available in English, Spanish, French
+# Hand Laterality Judgement Task (HLJT)
+**Available in English, Spanish, French**
 
 Repository with the materials for an open-source version of the Hand Laterality Judgement Task (HLJT) for local and online use. These versions have been tested as in Moreno-Verdú et. al 2025 ([Publication](https://www.ibroneuroscience.org/article/S0306-4522(25)00180-0/fulltext) | [Preprint](https://www.biorxiv.org/content/10.1101/2024.10.17.618819v1.full) | [OSF](https://osf.io/8h7ec/)). The most updated versions can be found in this repository.
 
 Subsequent updates in native software ([PsychoPy](https://www.psychopy.org/)) may need adjustments. As developers, we are not responsible for implementing these in every use case.
 
-![HLJT Animation](HLJ_example.mp4)
+![HLJT Animation](HLJT_example.gif)
 
 The repository has two main folders, which contain PsychoPy experiments (.psyexp) and associated files to be able to run them locally or online. Please consult the Readme files for each version before using them (local and online versions are NOT equivalent). The Readme files contain extensive documentation on the most relevant experiment settings and detailed information to allow the user further customization.
 
@@ -12,4 +13,4 @@ The versions provided in this repository allow flexibility in terms of key exper
 
 Language expansions can be done relatively easily thanks to the implementation of language localisations (please read each Readme to understand how to implement these). 
 
-If you are interested in assessing Movement Imagery ability, you can see https://movementimageryability.github.io/ for an overview of open-source behavioural tasks.
+If you are interested in assessing Movement Imagery ability, visit this [Task Platform Project](https://movementimageryability.github.io/) for an overview of open-source behavioural tasks.
