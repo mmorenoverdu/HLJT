@@ -4,7 +4,7 @@ Repository with the materials for an open-source version of the Hand Laterality 
 
 Subsequent updates in native software ([PsychoPy](https://www.psychopy.org/)) may need adjustments. As developers, we are not responsible for implementing these in every use case.
 
-https://github.com/user-attachments/assets/f2527a9d-e43b-4835-82eb-fd44a9c3a687
+![HLJT Animation](HLJ_example.mp4)
 
 The repository has two main folders, which contain PsychoPy experiments (.psyexp) and associated files to be able to run them locally or online. Please consult the Readme files for each version before using them (local and online versions are NOT equivalent). The Readme files contain extensive documentation on the most relevant experiment settings and detailed information to allow the user further customization.
 
