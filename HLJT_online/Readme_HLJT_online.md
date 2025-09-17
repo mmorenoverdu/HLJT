@@ -48,7 +48,7 @@ It also requires that you add the corresponding columns to the Excel sheets that
 If you just want to add a new language without any further modifications (i.e., you do not want to provide other messages than the ones already used), you just need to modify 4 things:
 1. In the instructions files (one per response mode -see below), add add a new **COLUMN**, titled with the name 'instr_msg_' followed by the code of your language (e.g., for Chinese, "ch"). For each message, provide the corresponding translation into your desired language.
 2. Repeat the same process for the Block_messages.xlsx file. You'll need to do it for the 'block_msg_' and 'block_pause_msg' columns.
-3. In PsychoPY, go to Experiment Settings and add a new language to the list of languages in the **language field**, with the name being the language you used in Step 1. It is critical that you add your language using '' (e.g., 'Chinese'). If you want your language to be the default choice every time you run the experiment, you just have to **place it at the beginning of the list**.
+3. In PsychoPy, go to Experiment Settings and add a new language to the list of languages in the **language field**, with the name being the language you used in Step 1. It is critical that you add your language using '' (e.g., 'Chinese'). If you want your language to be the default choice every time you run the experiment, you just have to **place it at the beginning of the list**.
 4. Add three bits of code in the following routines:
 	- In the language settings routine, go to "update_messages". Add an if-else statement following the same procedure as it's outlined for the other languages. Remember this is JavaScript code, and therefore special characters must be taken into account. Provide the translation for the messages (welcome, adv, pract_welc and bye).
 	- In the block welcome routine,  go to the code component "update message block". Add an if-else statement following the same procedure s it's outlined for the other languages. This is Python that will be auto-translated to JavaScript, so it's easier to code. The name of your variable must be the name you added to the column in the "Block messages.xlsx" Excel sheet.
@@ -73,7 +73,7 @@ The experiment has the following subfolders:
 		
 		-Instructions files (.xlsx): Each file encodes the instructions and images for each response mode available (see below).
 		
-		-Stimuli_*angles.xlsx: The main conditions file. Must not be modified unless strictly necessary. There are 4 files with sets of stimuli depending on the increments at which the rotation must be applied (90  = 4 angles; 60  = 6 angles; 45  = 8 angles; 30  = 12 angles).
+		-Stimuli_*angles.xlsx: The main conditions file. Must not be modified unless strictly necessary. There are 4 files with sets of stimuli depending on the increments at which the rotation must be applied (90 degrees = 4 angles; 60  = 6 angles; 45  = 8 angles; 30  = 12 angles).
 			-hljt_images: column to tell PsychoPy which image to use.
 			-hljt_side: which side the images corresponds to.
 			-hljt_view: the view of the stimulus. Can be dorsal or palmar.
@@ -81,13 +81,13 @@ The experiment has the following subfolders:
 			-hljt_direction: the direction of rotation considering left/right and palmar/dorsal.
 				
 				-Options are:
-					-up (0 ).
+					-up (0 degrees).
 					-medial/lateral (will depend on side).
-					-down (180 ).
+					-down (180 degrees).
 				
 				-The direction allows the later quantify the 'biomechanical constraints' effect (medial vs lateral response times). A note on this:
-					-for right images, lateral is 1-179 ; medial is 181 -359 .
-					-for left images, lateral is 181 -359 ; medial is 1-179 .
+					-for right images, lateral is 1-179 degrees; medial is 181-359 degrees.
+					-for left images, lateral is 181-359 degrees; medial is 1-179 degrees.
 
 			-hljt_correct_both: the corresponding correct key to press if response mode is set to "Both hands" (S for left hands, L for right hands).
 			-hljt_correct_one: the corresponding correct key to press if response mode is set to Right or Left hand (G for left hands, H for right hands).
@@ -119,7 +119,7 @@ In the "experiment_settings" routine you have the following code components to p
 	
 	-The set of angles to rotate the stimuli in the task. The experiment will look for the specific Excel file.
 	
-	-Options: 8 with increments of 45 (default)/4 with increments of 90 /6 with increments of 60  /12 with increments of 90 .
+	-Options: 8 with increments of 45 degrees (default)/4 with increments of 90 /6 with increments of 60  /12 with increments of 90 .
 	
 
 -hands_views: mandatory.
