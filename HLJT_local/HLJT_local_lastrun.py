@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.1),
-    on July 02, 2025, at 10:24
+    on September 11, 2025, at 09:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,12 +49,12 @@ expName = 'HLJT_local'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
     'session': '',
-    'language': ["English", "Spanish", "French"],
+    'language': ["Spanish", "English", "French"],
     'response_mode': ["Both hands", "Right hand", "Left hand"],
     'practice_block': ["Yes", "No"],
     'n_angles': [ "8 (increments of 45º)", "4 (increments of 90º)", "6 (increments of 60º)", "12 (increments of 30º)"],
     'hand_views': ["Palmar and Dorsal", "Palmar", "Dorsal"],
-    'n_reps': ["12", "8", "4"],
+    'n_reps': ["8", "12", "4"],
     'feedback': ["0.3", "0.5", "0.8", "1", "No feedback"],
     'date|hid': data.getDateStr(),
     'expName|hid': expName,
@@ -426,7 +426,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "language_settings" ---
-    # Run 'Begin Experiment' code from code_py
+    # Run 'Begin Experiment' code from code_python
     ## THIS CODE ONLY WORKS IN PYTHON, NOT JAVASCRIPT ##
     
     # import python package to read Excel file *at the beginning of the experiment*
@@ -434,7 +434,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # make sure lang_code is defined and set to EN as default
     lang_code = "EN"
     # read excel file with messages according to language codes
-    messages_df = pd.read_excel('messages.xlsx')
+    messages_df = pd.read_excel('Messages.xlsx')
     # create an empty global dictionary with the messages
     MESSAGES = {}
     # assign each value of language to the corresponding key of language (language code)
@@ -924,7 +924,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         method='sequential', 
         extraInfo=expInfo, 
         originPath=-1, 
-        trialList=data.importConditions('language_localiser.xlsx'), 
+        trialList=data.importConditions('Language_localiser.xlsx'), 
         seed=None, 
     )
     thisExp.addLoop(language_loop)  # add the loop to the experiment
@@ -951,7 +951,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         language_settings.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        # Run 'Begin Routine' code from code_py
+        # Run 'Begin Routine' code from code_python
         # update language code based on the selected language in dialogue box
         if language == expInfo['language']:
             # we 'code' as a variable directly because it's already loaded in the localiser excel sheet

@@ -144,7 +144,7 @@ summary <- data.frame(participant = participant,
 write_csv(summary, paste0(participant, "_summary.csv"))
 write.xlsx(summary, paste0(participant, "_summary.xlsx"))
 
-# similarly we can export the main data frame in case you want to analyse it in other software
+# similarly we can export the main data frame in case you want to analyse it in another software
 write_csv(df, paste0(participant, "_data_processed.csv"))
 write.xlsx(df, paste0(participant, "_data_processed.xlsx"))
 

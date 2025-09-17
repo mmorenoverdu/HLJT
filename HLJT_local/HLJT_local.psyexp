@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': '', 'session': '', 'language': '[&quot;English&quot;, &quot;Spanish&quot;, &quot;French&quot;]', 'response_mode': '[&quot;Both hands&quot;, &quot;Right hand&quot;, &quot;Left hand&quot;]', 'practice_block': '[&quot;Yes&quot;, &quot;No&quot;]', 'n_angles': '[ &quot;8 (increments of 45º)&quot;, &quot;4 (increments of 90º)&quot;, &quot;6 (increments of 60º)&quot;, &quot;12 (increments of 30º)&quot;]', 'hand_views': '[&quot;Palmar and Dorsal&quot;, &quot;Palmar&quot;, &quot;Dorsal&quot;]', 'n_reps': '[&quot;12&quot;, &quot;8&quot;, &quot;4&quot;]', 'feedback': '[&quot;0.3&quot;, &quot;0.5&quot;, &quot;0.8&quot;, &quot;1&quot;, &quot;No feedback&quot;]'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': '', 'session': '', 'language': '[&quot;Spanish&quot;, &quot;English&quot;, &quot;French&quot;]', 'response_mode': '[&quot;Both hands&quot;, &quot;Right hand&quot;, &quot;Left hand&quot;]', 'practice_block': '[&quot;Yes&quot;, &quot;No&quot;]', 'n_angles': '[ &quot;8 (increments of 45º)&quot;, &quot;4 (increments of 90º)&quot;, &quot;6 (increments of 60º)&quot;, &quot;12 (increments of 30º)&quot;]', 'hand_views': '[&quot;Palmar and Dorsal&quot;, &quot;Palmar&quot;, &quot;Dorsal&quot;]', 'n_reps': '[&quot;8&quot;, &quot;12&quot;, &quot;4&quot;]', 'feedback': '[&quot;0.3&quot;, &quot;0.5&quot;, &quot;0.8&quot;, &quot;1&quot;, &quot;No feedback&quot;]'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -71,7 +71,7 @@
     <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
     <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
     <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
-    <Param val="0" valType="code" updates="None" name="runMode"/>
+    <Param val="1" valType="code" updates="None" name="runMode"/>
     <Param val="False" valType="bool" updates="None" name="rush"/>
     <Param val="time" valType="str" updates="None" name="sortColumns"/>
     <Param val="" valType="str" updates="None" name="tbLicenseFile"/>

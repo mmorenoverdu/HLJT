@@ -1,6 +1,6 @@
 # HAND LATERALITY JUDGEMENT TASK (HLJT)
 
-Marcos Moreno Verdú, 01/07/2025
+Marcos Moreno Verdu, 01/07/2025
 PsychoPy version 2024.2.1
 Local experiment
 Languages supported: English, Spanish, French. Further languages can be added with no code (see Language Localisation below)
@@ -66,7 +66,7 @@ The experiment has the following subfolders:
 		
 		-Instructions files (.xlsx): Each file encodes the instructions and images for each response mode available (see below).
 		
-		-Stimuli_*angles.xlsx: The main conditions file. Must not be modified unless strictly necessary. There are 4 files with sets of stimuli depending on the increments at which the rotation must be applied (90º = 4 angles; 60º = 6 angles; 45º = 8 angles; 30º = 12 angles).
+		-Stimuli_*angles.xlsx: The main conditions file. Must not be modified unless strictly necessary. There are 4 files with sets of stimuli depending on the increments at which the rotation must be applied (90 degrees = 4 angles; 60 = 6 angles; 45 = 8 angles; 30 = 12 angles).
 			-hljt_images: column to tell PsychoPy which image to use.
 			-hljt_side: which side the images corresponds to.
 			-hljt_view: the view of the stimulus. Can be dorsal or palmar.
@@ -74,13 +74,13 @@ The experiment has the following subfolders:
 			-hljt_direction: the direction of rotation considering left/right and palmar/dorsal.
 				
 				-Options are:
-					-up (0º).
+					-up (0 degrees).
 					-medial/lateral (will depend on side).
-					-down (180º).
+					-down (180 degrees).
 				
 				-The direction allows the later quantify the 'biomechanical constraints' effect (medial vs lateral response times). A note on this:
-					-for right images, lateral is 1-179º; medial is 181º-359º.
-					-for left images, lateral is 181º-359º; medial is 1-179º.
+					-for right images, lateral is 1-179 degrees; medial is 181 degrees-359 degrees.
+					-for left images, lateral is 181 degrees-359 degrees; medial is 1-179 degrees.
 
 			-hljt_correct_both: the corresponding correct key to press if response mode is set to "Both hands" (S for left hands, L for right hands).
 			-hljt_correct_one: the corresponding correct key to press if response mode is set to Right or Left hand (G for left hands, H for right hands).
@@ -119,7 +119,7 @@ The experiment is set so that before going into the task itself, the user will b
 	
 	-The set of angles to rotate the stimuli in the task. The experiment will look for the specific Excel file.
 	
-	-Options: 8 with increments of 45º(default)/4 with increments of 90º/6 with increments of 60º /12 with increments of 90º.
+	-Options: 8 with increments of 45 degrees (default)/4 with increments of 90 degrees/6 with increments of 60 degrees /12 with increments of 90 degrees.
 	
 
 -hands_views: mandatory.
@@ -175,10 +175,10 @@ The output variables we will be interested in, specifically for the HLJT, are:
 
 -test_hljt_response.corr: Encodes the accuracy for each trial of the test blocks. Correct (=1) or incorrect (=0).
 
-Aside from those, we will need to retain the variables from our conditions file for analysis:
-	-hljt_side
-	-hljt_view
-	-hljt_angle
+Aside from those, we will need to retain the variables from our conditions file for analysis:
+	-hljt_side
+	-hljt_view
+	-hljt_angle
 -hljt_direction
 
 All the variables shown in the dialog box will be saved.

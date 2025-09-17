@@ -1,0 +1,1233 @@
+12.2456 	ERROR 	Failed to load entry point `EntryPoint(name='MovieStim2', value='psychopy_legacy.visual.movie2:MovieStim2', group='psychopy.visual')` of plugin `psychopy-legacy` for unknown reasons. Skipping.
+33.1120 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389AC80>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389AC20>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389AA70>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000017784D6FB50>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=1, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+33.1122 	EXP 	window1: backgroundImage = ''
+33.1122 	EXP 	window1: backgroundFit = 'none'
+33.1126 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.1133 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.1380 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.1386 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.2525 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.2527 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.2534 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.2540 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x000001778389ADA0>
+33.3195 	EXP 	window1: Attempting to measure frame rate of screen (1) ...
+33.3196 	EXP 	window1: recordFrameIntervals = False
+33.6129 	EXP 	window1: recordFrameIntervals = True
+33.7956 	EXP 	Screen (1) actual frame rate measured at 60.02Hz
+33.7957 	EXP 	window1: recordFrameIntervals = False
+33.7958 	EXP 	window1: mouseVisible = True
+40.2154 	EXP 	HLJT_local: status = STARTED
+40.3546 	EXP 	window1: mouseVisible = True
+40.5038 	EXP 	Created welcome_text1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_text1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.5042 	EXP 	window1: mouseVisible = True
+40.5058 	EXP 	Created welcome_text2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='welcome_text2', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.5060 	EXP 	window1: mouseVisible = True
+40.5069 	EXP 	Created hljt_instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='hljt_instr_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.5070 	EXP 	window1: mouseVisible = True
+40.5222 	EXP 	Created hljt_instr_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='hljt_instr_image', opacity=1, ori=0.0, pos=array([0.5, 0. ]), size=array([1., 1.]), texRes=128.0, units='height', win=Window(...))
+40.5224 	EXP 	window1: mouseVisible = True
+40.5229 	EXP 	Created hljt_instr_adv_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='hljt_instr_adv_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.5230 	EXP 	window1: mouseVisible = True
+40.5235 	EXP 	Created pract_welc_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='pract_welc_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.5236 	EXP 	window1: mouseVisible = True
+40.8524 	EXP 	Created countdown_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='3', units='height', win=Window(...), wrapWidth=1)
+40.8526 	EXP 	window1: mouseVisible = True
+40.8563 	EXP 	Created countdown_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='2', units='height', win=Window(...), wrapWidth=1)
+40.8564 	EXP 	window1: mouseVisible = True
+40.8605 	EXP 	Created countdown_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='1', units='height', win=Window(...), wrapWidth=1)
+40.8606 	EXP 	window1: mouseVisible = True
+40.8869 	EXP 	Created pract_fix_cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='pract_fix_cross_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.03, 0.03]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+40.8871 	EXP 	window1: mouseVisible = True
+40.8881 	EXP 	Created box_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.8882 	EXP 	window1: mouseVisible = True
+40.8891 	EXP 	Created box_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.8892 	EXP 	window1: mouseVisible = True
+40.8906 	EXP 	Created pract_square = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='pract_square', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...))
+40.8907 	EXP 	window1: mouseVisible = True
+40.8952 	EXP 	Created pract_hljt_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='pract_hljt_image', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+40.8954 	EXP 	window1: mouseVisible = True
+40.8962 	EXP 	Created square_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='square_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.8963 	EXP 	window1: mouseVisible = True
+40.8973 	EXP 	Created square_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='square_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.8974 	EXP 	window1: mouseVisible = True
+40.8983 	EXP 	Created pract_square_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1.0, name='pract_square_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...))
+40.8984 	EXP 	window1: mouseVisible = True
+40.9037 	EXP 	Created pract_hljt_image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='pract_hljt_image_2', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+40.9038 	EXP 	window1: mouseVisible = True
+40.9048 	EXP 	Created square_left_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='square_left_2', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9049 	EXP 	window1: mouseVisible = True
+40.9058 	EXP 	Created square_right_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='square_right_2', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9060 	EXP 	window1: mouseVisible = True
+40.9066 	EXP 	Created hljt_block_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='hljt_block_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.9067 	EXP 	window1: mouseVisible = True
+40.9070 	EXP 	Created hljt_block_adv = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='hljt_block_adv', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.9071 	EXP 	window1: mouseVisible = True
+40.9087 	EXP 	Created countdown_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='3', units='height', win=Window(...), wrapWidth=1)
+40.9088 	EXP 	window1: mouseVisible = True
+40.9102 	EXP 	Created countdown_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='2', units='height', win=Window(...), wrapWidth=1)
+40.9103 	EXP 	window1: mouseVisible = True
+40.9114 	EXP 	Created countdown_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='countdown_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='1', units='height', win=Window(...), wrapWidth=1)
+40.9115 	EXP 	window1: mouseVisible = True
+40.9134 	EXP 	Created pract_fix_cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='pract_fix_cross_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.03, 0.03]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+40.9135 	EXP 	window1: mouseVisible = True
+40.9141 	EXP 	Created box_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9141 	EXP 	window1: mouseVisible = True
+40.9152 	EXP 	Created box_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9154 	EXP 	window1: mouseVisible = True
+40.9161 	EXP 	Created test_square = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='test_square', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...))
+40.9162 	EXP 	window1: mouseVisible = True
+40.9222 	EXP 	Created test_hljt_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='test_hljt_image', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+40.9227 	EXP 	window1: mouseVisible = True
+40.9240 	EXP 	Created square_left_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='square_left_3', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9241 	EXP 	window1: mouseVisible = True
+40.9248 	EXP 	Created square_right_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='square_right_3', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9248 	EXP 	window1: mouseVisible = True
+40.9255 	EXP 	Created test_square_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='test_square_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...))
+40.9256 	EXP 	window1: mouseVisible = True
+40.9296 	EXP 	Created test_hljt_image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='test_hljt_image_2', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+40.9298 	EXP 	window1: mouseVisible = True
+40.9306 	EXP 	Created square_left_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='square_left_4', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9307 	EXP 	window1: mouseVisible = True
+40.9313 	EXP 	Created square_right_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='square_right_4', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+40.9314 	EXP 	window1: mouseVisible = True
+40.9317 	EXP 	Created hljt_block_pause_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='hljt_block_pause_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.9318 	EXP 	window1: mouseVisible = True
+40.9320 	EXP 	Created hljt_block_adv_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='hljt_block_adv_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+40.9321 	EXP 	window1: mouseVisible = True
+40.9323 	EXP 	Created bye_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='bye_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0281 	EXP 	Imported Language_localiser.xlsx as conditions, 3 conditions, 2 params
+0.0291 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'language': 'English', 'ISO_code': 'EN', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0296 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'language': 'Spanish', 'ISO_code': 'ES', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+0.0299 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'language': 'French', 'ISO_code': 'FR', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+0.0990 	EXP 	welcome_text1: height = 0.05
+0.0990 	EXP 	welcome_text1: height = 0.05
+0.0990 	EXP 	welcome_text1: height = 0.05
+0.0990 	EXP 	welcome_text1: text = '¡Bienvenid@ a la Tarea de Discriminación de Lateralidad!\n\nEl objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de imágenes de manos.'
+0.0990 	EXP 	welcome_text2: height = 0.045
+0.0990 	EXP 	welcome_text2: height = 0.045
+0.0990 	EXP 	welcome_text2: height = 0.045
+0.0990 	EXP 	welcome_text2: text = 'Presiona ESPACIO para continuar'
+0.0990 	EXP 	welcome_text1: autoDraw = True
+0.0990 	EXP 	welcome_text2: autoDraw = True
+104.1874 	DATA 	Mouse: Left button down, pos=(1187,592)
+104.2654 	DATA 	Mouse:  Left button up, pos=(1187,592)
+106.1415 	DATA 	Keypress: space
+106.1718 	EXP 	Imported hljt_files/Instructions_right_hand.xlsx as conditions, 3 conditions, 6 params
+106.1720 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'instr_msg_EN': 'Instructions:\n\nIn this task, you will see images of left or right hands, their palms facing up or down. The images will be rotated at different angles.\n\nYour task is to determine if the image corresponds to a left or right hand.\n\nYour goal is to respond as quickly AND accurately as possible.\n\nEach image will appear until you have responded. The next image will appear automatically.', 'instr_pics': 'hljt_instr_images/instr_pic1.jpg', 'instr_msg_ES': 'Instrucciones:\n\nEn esta tarea, verás imágenes del dorso o la palma de manos izquierdas o derechas. Las imágenes estarán rotadas con diferentes ángulos.\n\nTu tarea es determinar si la imagen corresponde a una mano izquierda o derecha.\n\nTu objetivo es responder lo más precisa y rápidamente posible.\n\nCada imagen aparecerá hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerá automáticamente.', 'instr_msg_FR': "Instructions :\n\nDans cette tâche, vous verrez des images de mains gauches ou droites, les paumes tournées vers le haut ou vers le bas. Les images seront tournées sous différents angles.\n\nVotre tâche consiste à déterminer si l'image correspond à une main gauche ou droite.\n\nVotre objectif est de répondre le plus rapidement ET le plus précisément possible.\n\nChaque image apparaîtra jusqu'à ce que vous ayez répondu. L'image suivante apparaîtra automatiquement.", 'images_sizeW': 0.6, 'images_sizeH': 0.5, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+106.2425 	EXP 	welcome_text1: autoDraw = False
+106.2425 	EXP 	welcome_text2: autoDraw = False
+106.2425 	EXP 	hljt_instr_text: height = 0.04
+106.2425 	EXP 	hljt_instr_text: height = 0.04
+106.2425 	EXP 	hljt_instr_text: height = 0.04
+106.2425 	EXP 	hljt_instr_text: text = 'Instrucciones:\n\nEn esta tarea, verás imágenes del dorso o la palma de manos izquierdas o derechas. Las imágenes estarán rotadas con diferentes ángulos.\n\nTu tarea es determinar si la imagen corresponde a una mano izquierda o derecha.\n\nTu objetivo es responder lo más precisa y rápidamente posible.\n\nCada imagen aparecerá hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerá automáticamente.'
+106.2425 	EXP 	hljt_instr_image: image = 'hljt_instr_images/instr_pic1.jpg'
+106.2425 	EXP 	hljt_instr_adv_text: height = 0.045
+106.2425 	EXP 	hljt_instr_adv_text: height = 0.045
+106.2425 	EXP 	hljt_instr_adv_text: height = 0.045
+106.2425 	EXP 	hljt_instr_adv_text: text = 'Presiona ESPACIO para continuar'
+106.2425 	EXP 	hljt_instr_text: autoDraw = True
+106.2425 	EXP 	hljt_instr_image: autoDraw = True
+106.2425 	EXP 	hljt_instr_adv_text: autoDraw = True
+131.7989 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'instr_msg_EN': 'Please use only your INDEX and MIDDLE FINGERS of the RIGHT HAND to respond.\n\nPlace your index finger on the "G" key and the middle finger on the "H" key of your keyboard.\n\nTo respond:\nLeft Hand = G | H = Right Hand\n\nYou must maintain your hand on the keyboard throughout the task.\n\nKeep your other hand on the desk, in the same position and as motionless as possible.', 'instr_pics': 'hljt_instr_images/instr_pic2_right.jpg', 'instr_msg_ES': 'Por favor, usa solo los DEDOS ÍNDICE y CORAZÓN de tu MANO DERECHA para responder.\n\nColoca tu dedo índice sobre la "G" y el corazón sobre la "H" de tu teclado.\n\nPara responder:\nMano izquierda = G | H = Mano derecha\n\nTienes que mantener tu otra mano sobre la mesa durante la tarea.\n\nMantén tus manos en la misma posición y tan quietas como puedas.', 'instr_msg_FR': 'Veuillez utiliser uniquement L\'INDEX et LE MAJEUR de votre MAIN DROITE pour répondre.\n\nPlacez votre index sur le "G" et votre majeur sur le "H" de votre clavier.\n\nPour répondre :\nMain gauche = G | H = Main droite.\n\nVous devez garder votre autre main sur la table pendant la tâche.\n\nGardez vos mains dans la même position et aussi immobiles que possible.', 'images_sizeW': 0.6, 'images_sizeH': 0.5, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+131.9192 	DATA 	Keypress: space
+131.9221 	EXP 	hljt_instr_text: autoDraw = False
+131.9221 	EXP 	hljt_instr_image: autoDraw = False
+131.9221 	EXP 	hljt_instr_adv_text: autoDraw = False
+131.9221 	EXP 	hljt_instr_text: height = 0.04
+131.9221 	EXP 	hljt_instr_text: height = 0.04
+131.9221 	EXP 	hljt_instr_text: height = 0.04
+131.9221 	EXP 	hljt_instr_text: text = 'Por favor, usa solo los DEDOS ÍNDICE y CORAZÓN de tu MANO DERECHA para responder.\n\nColoca tu dedo índice sobre la "G" y el corazón sobre la "H" de tu teclado.\n\nPara responder:\nMano izquierda = G | H = Mano derecha\n\nTienes que mantener tu otra mano sobre la mesa durante la tarea.\n\nMantén tus manos en la misma posición y tan quietas como puedas.'
+131.9221 	EXP 	hljt_instr_image: image = 'hljt_instr_images/instr_pic2_right.jpg'
+131.9221 	EXP 	hljt_instr_adv_text: text = 'Presiona ESPACIO para continuar'
+131.9221 	EXP 	hljt_instr_text: autoDraw = True
+131.9221 	EXP 	hljt_instr_image: autoDraw = True
+131.9221 	EXP 	hljt_instr_adv_text: autoDraw = True
+166.7627 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'instr_msg_EN': 'After each image, you will receive a short feedback on your response:\n\nIf you respond correctly, the corresponding box will turn green\n\nIf you respond incorrectly, the corresponding box will turn red\n\nRemember that your goal is to respond as accurately and fast as possible', 'instr_pics': 'hljt_instr_images/instr_pic3.jpg', 'instr_msg_ES': 'Tras cada imagen, recibirás un feedback corto sobre tu respuesta:\n\nSi respondes correctamente, la caja correspondiente se volverá verde\n\nSi respondes incorrectamente, la caja correspondiente se volverá roja\n\nRecuerda que tu objetivo es responder tan precisa y rápidamente como puedas', 'instr_msg_FR': "Après chaque image, vous recevrez un bref commentaire sur votre réponse :\n\nSi vous répondez correctement, la case correspondante devient verte.\n\nSi votre réponse est incorrecte, la case correspondante devient rouge.\n\nN'oubliez pas que votre objectif est de répondre le plus précisément et le plus rapidement possible.", 'images_sizeW': 0.6, 'images_sizeH': 0.5, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+166.7954 	DATA 	Keypress: space
+166.7983 	EXP 	hljt_instr_text: autoDraw = False
+166.7983 	EXP 	hljt_instr_image: autoDraw = False
+166.7983 	EXP 	hljt_instr_adv_text: autoDraw = False
+166.7983 	EXP 	hljt_instr_text: height = 0.04
+166.7983 	EXP 	hljt_instr_text: height = 0.04
+166.7983 	EXP 	hljt_instr_text: height = 0.04
+166.7983 	EXP 	hljt_instr_text: text = 'Tras cada imagen, recibirás un feedback corto sobre tu respuesta:\n\nSi respondes correctamente, la caja correspondiente se volverá verde\n\nSi respondes incorrectamente, la caja correspondiente se volverá roja\n\nRecuerda que tu objetivo es responder tan precisa y rápidamente como puedas'
+166.7983 	EXP 	hljt_instr_image: image = 'hljt_instr_images/instr_pic3.jpg'
+166.7983 	EXP 	hljt_instr_adv_text: text = 'Presiona ESPACIO para continuar'
+166.7983 	EXP 	hljt_instr_text: autoDraw = True
+166.7983 	EXP 	hljt_instr_image: autoDraw = True
+166.7983 	EXP 	hljt_instr_adv_text: autoDraw = True
+181.4615 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+181.4890 	DATA 	Keypress: space
+181.4927 	EXP 	hljt_instr_text: autoDraw = False
+181.4927 	EXP 	hljt_instr_image: autoDraw = False
+181.4927 	EXP 	hljt_instr_adv_text: autoDraw = False
+181.4927 	EXP 	pract_welc_text: height = 0.04
+181.4927 	EXP 	pract_welc_text: height = 0.04
+181.4927 	EXP 	pract_welc_text: height = 0.04
+181.4927 	EXP 	pract_welc_text: text = 'Vas a empezar el bloque de práctica.\n\nPresiona ESPACIO para continuar'
+181.4927 	EXP 	pract_welc_text: autoDraw = True
+193.4797 	DATA 	Keypress: space
+193.5058 	EXP 	pract_welc_text: autoDraw = False
+193.5058 	EXP 	countdown_3: autoDraw = True
+194.4090 	EXP 	countdown_3: autoDraw = False
+194.5070 	EXP 	countdown_2: autoDraw = True
+195.4102 	EXP 	countdown_2: autoDraw = False
+195.4923 	EXP 	countdown_1: autoDraw = True
+196.4099 	EXP 	countdown_1: autoDraw = False
+196.5043 	EXP 	Imported Stimuli_last_run.csv as conditions, 32 conditions, 7 params
+196.5072 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 315, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+196.5106 	EXP 	countdown_3: autoDraw = False
+196.5106 	EXP 	countdown_2: autoDraw = False
+196.5106 	EXP 	countdown_1: autoDraw = False
+196.5106 	EXP 	pract_fix_cross_2: autoDraw = True
+196.5106 	EXP 	box_left: autoDraw = True
+196.5106 	EXP 	box_right: autoDraw = True
+197.3505 	EXP 	pract_fix_cross_2: autoDraw = False
+197.3505 	EXP 	box_left: autoDraw = False
+197.3505 	EXP 	box_right: autoDraw = False
+197.3505 	EXP 	pract_hljt_image: ori = 315.0
+197.3505 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+197.3505 	EXP 	pract_square: autoDraw = True
+197.3505 	EXP 	pract_hljt_image: autoDraw = True
+197.3505 	EXP 	square_left: autoDraw = True
+197.3505 	EXP 	square_right: autoDraw = True
+199.1483 	DATA 	Keypress: g
+199.2138 	EXP 	pract_square: autoDraw = False
+199.2138 	EXP 	pract_hljt_image: autoDraw = False
+199.2138 	EXP 	square_left: autoDraw = False
+199.2138 	EXP 	square_right: autoDraw = False
+199.2138 	EXP 	pract_hljt_image_2: ori = 315.0
+199.2138 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+199.2138 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+199.2138 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+199.2138 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+199.2138 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+199.2138 	EXP 	pract_square_2: autoDraw = True
+199.2138 	EXP 	pract_hljt_image_2: autoDraw = True
+199.2138 	EXP 	square_left_2: autoDraw = True
+199.2138 	EXP 	square_right_2: autoDraw = True
+199.4590 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 45, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+199.4745 	EXP 	pract_square_2: autoDraw = False
+199.4745 	EXP 	pract_hljt_image_2: autoDraw = False
+199.4745 	EXP 	square_left_2: autoDraw = False
+199.4745 	EXP 	square_right_2: autoDraw = False
+199.4745 	EXP 	pract_fix_cross_2: autoDraw = True
+199.4745 	EXP 	box_left: autoDraw = True
+199.4745 	EXP 	box_right: autoDraw = True
+200.4999 	EXP 	pract_fix_cross_2: autoDraw = False
+200.4999 	EXP 	box_left: autoDraw = False
+200.4999 	EXP 	box_right: autoDraw = False
+200.4999 	EXP 	pract_hljt_image: ori = 45.0
+200.4999 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+200.4999 	EXP 	pract_square: autoDraw = True
+200.4999 	EXP 	pract_hljt_image: autoDraw = True
+200.4999 	EXP 	square_left: autoDraw = True
+200.4999 	EXP 	square_right: autoDraw = True
+201.1833 	DATA 	Keypress: g
+201.1863 	EXP 	pract_square: autoDraw = False
+201.1863 	EXP 	pract_hljt_image: autoDraw = False
+201.1863 	EXP 	square_left: autoDraw = False
+201.1863 	EXP 	square_right: autoDraw = False
+201.1863 	EXP 	pract_hljt_image_2: ori = 45.0
+201.1863 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+201.1863 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+201.1863 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+201.1863 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+201.1863 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+201.1863 	EXP 	pract_square_2: autoDraw = True
+201.1863 	EXP 	pract_hljt_image_2: autoDraw = True
+201.1863 	EXP 	square_left_2: autoDraw = True
+201.1863 	EXP 	square_right_2: autoDraw = True
+201.4572 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 90, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+201.4793 	EXP 	pract_square_2: autoDraw = False
+201.4793 	EXP 	pract_hljt_image_2: autoDraw = False
+201.4793 	EXP 	square_left_2: autoDraw = False
+201.4793 	EXP 	square_right_2: autoDraw = False
+201.4793 	EXP 	pract_fix_cross_2: autoDraw = True
+201.4793 	EXP 	box_left: autoDraw = True
+201.4793 	EXP 	box_right: autoDraw = True
+202.3037 	EXP 	pract_fix_cross_2: autoDraw = False
+202.3037 	EXP 	box_left: autoDraw = False
+202.3037 	EXP 	box_right: autoDraw = False
+202.3037 	EXP 	pract_hljt_image: ori = 90.0
+202.3037 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+202.3037 	EXP 	pract_square: autoDraw = True
+202.3037 	EXP 	pract_hljt_image: autoDraw = True
+202.3037 	EXP 	square_left: autoDraw = True
+202.3037 	EXP 	square_right: autoDraw = True
+202.7570 	DATA 	Keypress: h
+202.7652 	EXP 	pract_square: autoDraw = False
+202.7652 	EXP 	pract_hljt_image: autoDraw = False
+202.7652 	EXP 	square_left: autoDraw = False
+202.7652 	EXP 	square_right: autoDraw = False
+202.7652 	EXP 	pract_hljt_image_2: ori = 90.0
+202.7652 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+202.7652 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+202.7652 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+202.7652 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+202.7652 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+202.7652 	EXP 	pract_square_2: autoDraw = True
+202.7652 	EXP 	pract_hljt_image_2: autoDraw = True
+202.7652 	EXP 	square_left_2: autoDraw = True
+202.7652 	EXP 	square_right_2: autoDraw = True
+203.0343 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 135, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+203.0445 	EXP 	pract_square_2: autoDraw = False
+203.0445 	EXP 	pract_hljt_image_2: autoDraw = False
+203.0445 	EXP 	square_left_2: autoDraw = False
+203.0445 	EXP 	square_right_2: autoDraw = False
+203.0445 	EXP 	pract_fix_cross_2: autoDraw = True
+203.0445 	EXP 	box_left: autoDraw = True
+203.0445 	EXP 	box_right: autoDraw = True
+203.8420 	EXP 	pract_fix_cross_2: autoDraw = False
+203.8420 	EXP 	box_left: autoDraw = False
+203.8420 	EXP 	box_right: autoDraw = False
+203.8420 	EXP 	pract_hljt_image: ori = 135.0
+203.8420 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+203.8420 	EXP 	pract_square: autoDraw = True
+203.8420 	EXP 	pract_hljt_image: autoDraw = True
+203.8420 	EXP 	square_left: autoDraw = True
+203.8420 	EXP 	square_right: autoDraw = True
+204.1444 	DATA 	Keypress: g
+204.1790 	EXP 	pract_square: autoDraw = False
+204.1790 	EXP 	pract_hljt_image: autoDraw = False
+204.1790 	EXP 	square_left: autoDraw = False
+204.1790 	EXP 	square_right: autoDraw = False
+204.1790 	EXP 	pract_hljt_image_2: ori = 135.0
+204.1790 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+204.1790 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+204.1790 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+204.1790 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+204.1790 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+204.1790 	EXP 	pract_square_2: autoDraw = True
+204.1790 	EXP 	pract_hljt_image_2: autoDraw = True
+204.1790 	EXP 	square_left_2: autoDraw = True
+204.1790 	EXP 	square_right_2: autoDraw = True
+204.4431 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+204.4589 	EXP 	pract_square_2: autoDraw = False
+204.4589 	EXP 	pract_hljt_image_2: autoDraw = False
+204.4589 	EXP 	square_left_2: autoDraw = False
+204.4589 	EXP 	square_right_2: autoDraw = False
+204.4589 	EXP 	pract_fix_cross_2: autoDraw = True
+204.4589 	EXP 	box_left: autoDraw = True
+204.4589 	EXP 	box_right: autoDraw = True
+205.3087 	EXP 	pract_fix_cross_2: autoDraw = False
+205.3087 	EXP 	box_left: autoDraw = False
+205.3087 	EXP 	box_right: autoDraw = False
+205.3087 	EXP 	pract_hljt_image: ori = 0.0
+205.3087 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+205.3087 	EXP 	pract_square: autoDraw = True
+205.3087 	EXP 	pract_hljt_image: autoDraw = True
+205.3087 	EXP 	square_left: autoDraw = True
+205.3087 	EXP 	square_right: autoDraw = True
+205.5764 	DATA 	Keypress: h
+205.6185 	EXP 	pract_square: autoDraw = False
+205.6185 	EXP 	pract_hljt_image: autoDraw = False
+205.6185 	EXP 	square_left: autoDraw = False
+205.6185 	EXP 	square_right: autoDraw = False
+205.6185 	EXP 	pract_hljt_image_2: ori = 0.0
+205.6185 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+205.6185 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+205.6185 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+205.6185 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+205.6185 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+205.6185 	EXP 	pract_square_2: autoDraw = True
+205.6185 	EXP 	pract_hljt_image_2: autoDraw = True
+205.6185 	EXP 	square_left_2: autoDraw = True
+205.6185 	EXP 	square_right_2: autoDraw = True
+205.8960 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 90, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+205.9104 	EXP 	pract_square_2: autoDraw = False
+205.9104 	EXP 	pract_hljt_image_2: autoDraw = False
+205.9104 	EXP 	square_left_2: autoDraw = False
+205.9104 	EXP 	square_right_2: autoDraw = False
+205.9104 	EXP 	pract_fix_cross_2: autoDraw = True
+205.9104 	EXP 	box_left: autoDraw = True
+205.9104 	EXP 	box_right: autoDraw = True
+206.9105 	EXP 	pract_fix_cross_2: autoDraw = False
+206.9105 	EXP 	box_left: autoDraw = False
+206.9105 	EXP 	box_right: autoDraw = False
+206.9105 	EXP 	pract_hljt_image: ori = 90.0
+206.9105 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+206.9105 	EXP 	pract_square: autoDraw = True
+206.9105 	EXP 	pract_hljt_image: autoDraw = True
+206.9105 	EXP 	square_left: autoDraw = True
+206.9105 	EXP 	square_right: autoDraw = True
+225.0618 	DATA 	Keypress: g
+225.0642 	EXP 	pract_square: autoDraw = False
+225.0642 	EXP 	pract_hljt_image: autoDraw = False
+225.0642 	EXP 	square_left: autoDraw = False
+225.0642 	EXP 	square_right: autoDraw = False
+225.0642 	EXP 	pract_hljt_image_2: ori = 90.0
+225.0642 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+225.0642 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+225.0642 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+225.0642 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+225.0642 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+225.0642 	EXP 	pract_square_2: autoDraw = True
+225.0642 	EXP 	pract_hljt_image_2: autoDraw = True
+225.0642 	EXP 	square_left_2: autoDraw = True
+225.0642 	EXP 	square_right_2: autoDraw = True
+225.3239 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+225.3449 	EXP 	pract_square_2: autoDraw = False
+225.3449 	EXP 	pract_hljt_image_2: autoDraw = False
+225.3449 	EXP 	square_left_2: autoDraw = False
+225.3449 	EXP 	square_right_2: autoDraw = False
+225.3449 	EXP 	pract_fix_cross_2: autoDraw = True
+225.3449 	EXP 	box_left: autoDraw = True
+225.3449 	EXP 	box_right: autoDraw = True
+226.2137 	EXP 	pract_fix_cross_2: autoDraw = False
+226.2137 	EXP 	box_left: autoDraw = False
+226.2137 	EXP 	box_right: autoDraw = False
+226.2137 	EXP 	pract_hljt_image: ori = 180.0
+226.2137 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+226.2137 	EXP 	pract_square: autoDraw = True
+226.2137 	EXP 	pract_hljt_image: autoDraw = True
+226.2137 	EXP 	square_left: autoDraw = True
+226.2137 	EXP 	square_right: autoDraw = True
+226.6028 	DATA 	Keypress: h
+226.6068 	EXP 	pract_square: autoDraw = False
+226.6068 	EXP 	pract_hljt_image: autoDraw = False
+226.6068 	EXP 	square_left: autoDraw = False
+226.6068 	EXP 	square_right: autoDraw = False
+226.6068 	EXP 	pract_hljt_image_2: ori = 180.0
+226.6068 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+226.6068 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+226.6068 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+226.6068 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+226.6068 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+226.6068 	EXP 	pract_square_2: autoDraw = True
+226.6068 	EXP 	pract_hljt_image_2: autoDraw = True
+226.6068 	EXP 	square_left_2: autoDraw = True
+226.6068 	EXP 	square_right_2: autoDraw = True
+226.8443 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+226.8568 	EXP 	pract_square_2: autoDraw = False
+226.8568 	EXP 	pract_hljt_image_2: autoDraw = False
+226.8568 	EXP 	square_left_2: autoDraw = False
+226.8568 	EXP 	square_right_2: autoDraw = False
+226.8568 	EXP 	pract_fix_cross_2: autoDraw = True
+226.8568 	EXP 	box_left: autoDraw = True
+226.8568 	EXP 	box_right: autoDraw = True
+227.7120 	EXP 	pract_fix_cross_2: autoDraw = False
+227.7120 	EXP 	box_left: autoDraw = False
+227.7120 	EXP 	box_right: autoDraw = False
+227.7120 	EXP 	pract_hljt_image: ori = 0.0
+227.7120 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+227.7120 	EXP 	pract_square: autoDraw = True
+227.7120 	EXP 	pract_hljt_image: autoDraw = True
+227.7120 	EXP 	square_left: autoDraw = True
+227.7120 	EXP 	square_right: autoDraw = True
+228.0378 	DATA 	Keypress: g
+228.0419 	EXP 	pract_square: autoDraw = False
+228.0419 	EXP 	pract_hljt_image: autoDraw = False
+228.0419 	EXP 	square_left: autoDraw = False
+228.0419 	EXP 	square_right: autoDraw = False
+228.0419 	EXP 	pract_hljt_image_2: ori = 0.0
+228.0419 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+228.0419 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+228.0419 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+228.0419 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+228.0419 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+228.0419 	EXP 	pract_square_2: autoDraw = True
+228.0419 	EXP 	pract_hljt_image_2: autoDraw = True
+228.0419 	EXP 	square_left_2: autoDraw = True
+228.0419 	EXP 	square_right_2: autoDraw = True
+228.2999 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 315, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+228.3098 	EXP 	pract_square_2: autoDraw = False
+228.3098 	EXP 	pract_hljt_image_2: autoDraw = False
+228.3098 	EXP 	square_left_2: autoDraw = False
+228.3098 	EXP 	square_right_2: autoDraw = False
+228.3098 	EXP 	pract_fix_cross_2: autoDraw = True
+228.3098 	EXP 	box_left: autoDraw = True
+228.3098 	EXP 	box_right: autoDraw = True
+229.1482 	EXP 	pract_fix_cross_2: autoDraw = False
+229.1482 	EXP 	box_left: autoDraw = False
+229.1482 	EXP 	box_right: autoDraw = False
+229.1482 	EXP 	pract_hljt_image: ori = 315.0
+229.1482 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+229.1482 	EXP 	pract_square: autoDraw = True
+229.1482 	EXP 	pract_hljt_image: autoDraw = True
+229.1482 	EXP 	square_left: autoDraw = True
+229.1482 	EXP 	square_right: autoDraw = True
+229.4171 	DATA 	Keypress: g
+229.4212 	EXP 	pract_square: autoDraw = False
+229.4212 	EXP 	pract_hljt_image: autoDraw = False
+229.4212 	EXP 	square_left: autoDraw = False
+229.4212 	EXP 	square_right: autoDraw = False
+229.4212 	EXP 	pract_hljt_image_2: ori = 315.0
+229.4212 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+229.4212 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+229.4212 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+229.4212 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+229.4212 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+229.4212 	EXP 	pract_square_2: autoDraw = True
+229.4212 	EXP 	pract_hljt_image_2: autoDraw = True
+229.4212 	EXP 	square_left_2: autoDraw = True
+229.4212 	EXP 	square_right_2: autoDraw = True
+229.6806 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 45, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+229.6909 	EXP 	pract_square_2: autoDraw = False
+229.6909 	EXP 	pract_hljt_image_2: autoDraw = False
+229.6909 	EXP 	square_left_2: autoDraw = False
+229.6909 	EXP 	square_right_2: autoDraw = False
+229.6909 	EXP 	pract_fix_cross_2: autoDraw = True
+229.6909 	EXP 	box_left: autoDraw = True
+229.6909 	EXP 	box_right: autoDraw = True
+230.4895 	DATA 	Keypress: g
+230.4932 	EXP 	pract_fix_cross_2: autoDraw = False
+230.4932 	EXP 	box_left: autoDraw = False
+230.4932 	EXP 	box_right: autoDraw = False
+230.4932 	EXP 	pract_hljt_image: ori = 45.0
+230.4932 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+230.4932 	EXP 	pract_square: autoDraw = True
+230.4932 	EXP 	pract_hljt_image: autoDraw = True
+230.4932 	EXP 	square_left: autoDraw = True
+230.4932 	EXP 	square_right: autoDraw = True
+230.6517 	EXP 	pract_square: autoDraw = False
+230.6517 	EXP 	pract_hljt_image: autoDraw = False
+230.6517 	EXP 	square_left: autoDraw = False
+230.6517 	EXP 	square_right: autoDraw = False
+230.6517 	EXP 	pract_hljt_image_2: ori = 45.0
+230.6517 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+230.6517 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+230.6517 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+230.6517 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+230.6517 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+230.6517 	EXP 	pract_square_2: autoDraw = True
+230.6517 	EXP 	pract_hljt_image_2: autoDraw = True
+230.6517 	EXP 	square_left_2: autoDraw = True
+230.6517 	EXP 	square_right_2: autoDraw = True
+230.9234 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+230.9402 	EXP 	pract_square_2: autoDraw = False
+230.9402 	EXP 	pract_hljt_image_2: autoDraw = False
+230.9402 	EXP 	square_left_2: autoDraw = False
+230.9402 	EXP 	square_right_2: autoDraw = False
+230.9402 	EXP 	pract_fix_cross_2: autoDraw = True
+230.9402 	EXP 	box_left: autoDraw = True
+230.9402 	EXP 	box_right: autoDraw = True
+231.8620 	EXP 	pract_fix_cross_2: autoDraw = False
+231.8620 	EXP 	box_left: autoDraw = False
+231.8620 	EXP 	box_right: autoDraw = False
+231.8620 	EXP 	pract_hljt_image: ori = 180.0
+231.8620 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+231.8620 	EXP 	pract_square: autoDraw = True
+231.8620 	EXP 	pract_hljt_image: autoDraw = True
+231.8620 	EXP 	square_left: autoDraw = True
+231.8620 	EXP 	square_right: autoDraw = True
+232.2088 	DATA 	Keypress: g
+232.2118 	EXP 	pract_square: autoDraw = False
+232.2118 	EXP 	pract_hljt_image: autoDraw = False
+232.2118 	EXP 	square_left: autoDraw = False
+232.2118 	EXP 	square_right: autoDraw = False
+232.2118 	EXP 	pract_hljt_image_2: ori = 180.0
+232.2118 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+232.2118 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+232.2118 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+232.2118 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+232.2118 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+232.2118 	EXP 	pract_square_2: autoDraw = True
+232.2118 	EXP 	pract_hljt_image_2: autoDraw = True
+232.2118 	EXP 	square_left_2: autoDraw = True
+232.2118 	EXP 	square_right_2: autoDraw = True
+232.4935 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+232.5074 	EXP 	pract_square_2: autoDraw = False
+232.5074 	EXP 	pract_hljt_image_2: autoDraw = False
+232.5074 	EXP 	square_left_2: autoDraw = False
+232.5074 	EXP 	square_right_2: autoDraw = False
+232.5074 	EXP 	pract_fix_cross_2: autoDraw = True
+232.5074 	EXP 	box_left: autoDraw = True
+232.5074 	EXP 	box_right: autoDraw = True
+233.3700 	EXP 	pract_fix_cross_2: autoDraw = False
+233.3700 	EXP 	box_left: autoDraw = False
+233.3700 	EXP 	box_right: autoDraw = False
+233.3700 	EXP 	pract_hljt_image: ori = 0.0
+233.3700 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+233.3700 	EXP 	pract_square: autoDraw = True
+233.3700 	EXP 	pract_hljt_image: autoDraw = True
+233.3700 	EXP 	square_left: autoDraw = True
+233.3700 	EXP 	square_right: autoDraw = True
+233.9506 	DATA 	Keypress: g
+233.9543 	EXP 	pract_square: autoDraw = False
+233.9543 	EXP 	pract_hljt_image: autoDraw = False
+233.9543 	EXP 	square_left: autoDraw = False
+233.9543 	EXP 	square_right: autoDraw = False
+233.9543 	EXP 	pract_hljt_image_2: ori = 0.0
+233.9543 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+233.9543 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+233.9543 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+233.9543 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+233.9543 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+233.9543 	EXP 	pract_square_2: autoDraw = True
+233.9543 	EXP 	pract_hljt_image_2: autoDraw = True
+233.9543 	EXP 	square_left_2: autoDraw = True
+233.9543 	EXP 	square_right_2: autoDraw = True
+234.2136 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 135, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+234.2267 	EXP 	pract_square_2: autoDraw = False
+234.2267 	EXP 	pract_hljt_image_2: autoDraw = False
+234.2267 	EXP 	square_left_2: autoDraw = False
+234.2267 	EXP 	square_right_2: autoDraw = False
+234.2267 	EXP 	pract_fix_cross_2: autoDraw = True
+234.2267 	EXP 	box_left: autoDraw = True
+234.2267 	EXP 	box_right: autoDraw = True
+234.9072 	EXP 	pract_fix_cross_2: autoDraw = False
+234.9072 	EXP 	box_left: autoDraw = False
+234.9072 	EXP 	box_right: autoDraw = False
+234.9072 	EXP 	pract_hljt_image: ori = 135.0
+234.9072 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+234.9072 	EXP 	pract_square: autoDraw = True
+234.9072 	EXP 	pract_hljt_image: autoDraw = True
+234.9072 	EXP 	square_left: autoDraw = True
+234.9072 	EXP 	square_right: autoDraw = True
+235.1804 	DATA 	Keypress: g
+235.1827 	EXP 	pract_square: autoDraw = False
+235.1827 	EXP 	pract_hljt_image: autoDraw = False
+235.1827 	EXP 	square_left: autoDraw = False
+235.1827 	EXP 	square_right: autoDraw = False
+235.1827 	EXP 	pract_hljt_image_2: ori = 135.0
+235.1827 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+235.1827 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+235.1827 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+235.1827 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+235.1827 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+235.1827 	EXP 	pract_square_2: autoDraw = True
+235.1827 	EXP 	pract_hljt_image_2: autoDraw = True
+235.1827 	EXP 	square_left_2: autoDraw = True
+235.1827 	EXP 	square_right_2: autoDraw = True
+235.4424 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 225, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+235.4577 	EXP 	pract_square_2: autoDraw = False
+235.4577 	EXP 	pract_hljt_image_2: autoDraw = False
+235.4577 	EXP 	square_left_2: autoDraw = False
+235.4577 	EXP 	square_right_2: autoDraw = False
+235.4577 	EXP 	pract_fix_cross_2: autoDraw = True
+235.4577 	EXP 	box_left: autoDraw = True
+235.4577 	EXP 	box_right: autoDraw = True
+236.2402 	EXP 	pract_fix_cross_2: autoDraw = False
+236.2402 	EXP 	box_left: autoDraw = False
+236.2402 	EXP 	box_right: autoDraw = False
+236.2402 	EXP 	pract_hljt_image: ori = 225.0
+236.2402 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+236.2402 	EXP 	pract_square: autoDraw = True
+236.2402 	EXP 	pract_hljt_image: autoDraw = True
+236.2402 	EXP 	square_left: autoDraw = True
+236.2402 	EXP 	square_right: autoDraw = True
+236.5646 	DATA 	Keypress: g
+236.5686 	EXP 	pract_square: autoDraw = False
+236.5686 	EXP 	pract_hljt_image: autoDraw = False
+236.5686 	EXP 	square_left: autoDraw = False
+236.5686 	EXP 	square_right: autoDraw = False
+236.5686 	EXP 	pract_hljt_image_2: ori = 225.0
+236.5686 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+236.5686 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+236.5686 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+236.5686 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+236.5686 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+236.5686 	EXP 	pract_square_2: autoDraw = True
+236.5686 	EXP 	pract_hljt_image_2: autoDraw = True
+236.5686 	EXP 	square_left_2: autoDraw = True
+236.5686 	EXP 	square_right_2: autoDraw = True
+236.8125 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 45, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+236.8250 	EXP 	pract_square_2: autoDraw = False
+236.8250 	EXP 	pract_hljt_image_2: autoDraw = False
+236.8250 	EXP 	square_left_2: autoDraw = False
+236.8250 	EXP 	square_right_2: autoDraw = False
+236.8250 	EXP 	pract_fix_cross_2: autoDraw = True
+236.8250 	EXP 	box_left: autoDraw = True
+236.8250 	EXP 	box_right: autoDraw = True
+237.7356 	EXP 	pract_fix_cross_2: autoDraw = False
+237.7356 	EXP 	box_left: autoDraw = False
+237.7356 	EXP 	box_right: autoDraw = False
+237.7356 	EXP 	pract_hljt_image: ori = 45.0
+237.7356 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+237.7356 	EXP 	pract_square: autoDraw = True
+237.7356 	EXP 	pract_hljt_image: autoDraw = True
+237.7356 	EXP 	square_left: autoDraw = True
+237.7356 	EXP 	square_right: autoDraw = True
+237.9046 	DATA 	Keypress: g
+237.9092 	EXP 	pract_square: autoDraw = False
+237.9092 	EXP 	pract_hljt_image: autoDraw = False
+237.9092 	EXP 	square_left: autoDraw = False
+237.9092 	EXP 	square_right: autoDraw = False
+237.9092 	EXP 	pract_hljt_image_2: ori = 45.0
+237.9092 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+237.9092 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+237.9092 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+237.9092 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+237.9092 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+237.9092 	EXP 	pract_square_2: autoDraw = True
+237.9092 	EXP 	pract_hljt_image_2: autoDraw = True
+237.9092 	EXP 	square_left_2: autoDraw = True
+237.9092 	EXP 	square_right_2: autoDraw = True
+238.1621 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 270, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+238.1760 	EXP 	pract_square_2: autoDraw = False
+238.1760 	EXP 	pract_hljt_image_2: autoDraw = False
+238.1760 	EXP 	square_left_2: autoDraw = False
+238.1760 	EXP 	square_right_2: autoDraw = False
+238.1760 	EXP 	pract_fix_cross_2: autoDraw = True
+238.1760 	EXP 	box_left: autoDraw = True
+238.1760 	EXP 	box_right: autoDraw = True
+239.0713 	EXP 	pract_fix_cross_2: autoDraw = False
+239.0713 	EXP 	box_left: autoDraw = False
+239.0713 	EXP 	box_right: autoDraw = False
+239.0713 	EXP 	pract_hljt_image: ori = 270.0
+239.0713 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+239.0713 	EXP 	pract_square: autoDraw = True
+239.0713 	EXP 	pract_hljt_image: autoDraw = True
+239.0713 	EXP 	square_left: autoDraw = True
+239.0713 	EXP 	square_right: autoDraw = True
+239.2910 	DATA 	Keypress: g
+239.2940 	EXP 	pract_square: autoDraw = False
+239.2940 	EXP 	pract_hljt_image: autoDraw = False
+239.2940 	EXP 	square_left: autoDraw = False
+239.2940 	EXP 	square_right: autoDraw = False
+239.2940 	EXP 	pract_hljt_image_2: ori = 270.0
+239.2940 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+239.2940 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+239.2940 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+239.2940 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+239.2940 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+239.2940 	EXP 	pract_square_2: autoDraw = True
+239.2940 	EXP 	pract_hljt_image_2: autoDraw = True
+239.2940 	EXP 	square_left_2: autoDraw = True
+239.2940 	EXP 	square_right_2: autoDraw = True
+239.5634 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 225, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+239.5765 	EXP 	pract_square_2: autoDraw = False
+239.5765 	EXP 	pract_hljt_image_2: autoDraw = False
+239.5765 	EXP 	square_left_2: autoDraw = False
+239.5765 	EXP 	square_right_2: autoDraw = False
+239.5765 	EXP 	pract_fix_cross_2: autoDraw = True
+239.5765 	EXP 	box_left: autoDraw = True
+239.5765 	EXP 	box_right: autoDraw = True
+240.4723 	EXP 	pract_fix_cross_2: autoDraw = False
+240.4723 	EXP 	box_left: autoDraw = False
+240.4723 	EXP 	box_right: autoDraw = False
+240.4723 	EXP 	pract_hljt_image: ori = 225.0
+240.4723 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+240.4723 	EXP 	pract_square: autoDraw = True
+240.4723 	EXP 	pract_hljt_image: autoDraw = True
+240.4723 	EXP 	square_left: autoDraw = True
+240.4723 	EXP 	square_right: autoDraw = True
+240.5462 	DATA 	Keypress: g
+240.5511 	EXP 	pract_square: autoDraw = False
+240.5511 	EXP 	pract_hljt_image: autoDraw = False
+240.5511 	EXP 	square_left: autoDraw = False
+240.5511 	EXP 	square_right: autoDraw = False
+240.5511 	EXP 	pract_hljt_image_2: ori = 225.0
+240.5511 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+240.5511 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+240.5511 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+240.5511 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+240.5511 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+240.5511 	EXP 	pract_square_2: autoDraw = True
+240.5511 	EXP 	pract_hljt_image_2: autoDraw = True
+240.5511 	EXP 	square_left_2: autoDraw = True
+240.5511 	EXP 	square_right_2: autoDraw = True
+240.7914 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+240.8038 	EXP 	pract_square_2: autoDraw = False
+240.8038 	EXP 	pract_hljt_image_2: autoDraw = False
+240.8038 	EXP 	square_left_2: autoDraw = False
+240.8038 	EXP 	square_right_2: autoDraw = False
+240.8038 	EXP 	pract_fix_cross_2: autoDraw = True
+240.8038 	EXP 	box_left: autoDraw = True
+240.8038 	EXP 	box_right: autoDraw = True
+241.6884 	EXP 	pract_fix_cross_2: autoDraw = False
+241.6884 	EXP 	box_left: autoDraw = False
+241.6884 	EXP 	box_right: autoDraw = False
+241.6884 	EXP 	pract_hljt_image: ori = 180.0
+241.6884 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+241.6884 	EXP 	pract_square: autoDraw = True
+241.6884 	EXP 	pract_hljt_image: autoDraw = True
+241.6884 	EXP 	square_left: autoDraw = True
+241.6884 	EXP 	square_right: autoDraw = True
+241.7131 	DATA 	Keypress: g
+241.7398 	EXP 	pract_square: autoDraw = False
+241.7398 	EXP 	pract_hljt_image: autoDraw = False
+241.7398 	EXP 	square_left: autoDraw = False
+241.7398 	EXP 	square_right: autoDraw = False
+241.7398 	EXP 	pract_hljt_image_2: ori = 180.0
+241.7398 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+241.7398 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+241.7398 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+241.7398 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+241.7398 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+241.7398 	EXP 	pract_square_2: autoDraw = True
+241.7398 	EXP 	pract_hljt_image_2: autoDraw = True
+241.7398 	EXP 	square_left_2: autoDraw = True
+241.7398 	EXP 	square_right_2: autoDraw = True
+242.0083 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 315, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+242.0225 	EXP 	pract_square_2: autoDraw = False
+242.0225 	EXP 	pract_hljt_image_2: autoDraw = False
+242.0225 	EXP 	square_left_2: autoDraw = False
+242.0225 	EXP 	square_right_2: autoDraw = False
+242.0225 	EXP 	pract_fix_cross_2: autoDraw = True
+242.0225 	EXP 	box_left: autoDraw = True
+242.0225 	EXP 	box_right: autoDraw = True
+243.0081 	EXP 	pract_fix_cross_2: autoDraw = False
+243.0081 	EXP 	box_left: autoDraw = False
+243.0081 	EXP 	box_right: autoDraw = False
+243.0081 	EXP 	pract_hljt_image: ori = 315.0
+243.0081 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+243.0081 	EXP 	pract_square: autoDraw = True
+243.0081 	EXP 	pract_hljt_image: autoDraw = True
+243.0081 	EXP 	square_left: autoDraw = True
+243.0081 	EXP 	square_right: autoDraw = True
+243.0643 	DATA 	Keypress: g
+243.0681 	EXP 	pract_square: autoDraw = False
+243.0681 	EXP 	pract_hljt_image: autoDraw = False
+243.0681 	EXP 	square_left: autoDraw = False
+243.0681 	EXP 	square_right: autoDraw = False
+243.0681 	EXP 	pract_hljt_image_2: ori = 315.0
+243.0681 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+243.0681 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+243.0681 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+243.0681 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+243.0681 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+243.0681 	EXP 	pract_square_2: autoDraw = True
+243.0681 	EXP 	pract_hljt_image_2: autoDraw = True
+243.0681 	EXP 	square_left_2: autoDraw = True
+243.0681 	EXP 	square_right_2: autoDraw = True
+243.3323 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 270, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+243.3416 	EXP 	pract_square_2: autoDraw = False
+243.3416 	EXP 	pract_hljt_image_2: autoDraw = False
+243.3416 	EXP 	square_left_2: autoDraw = False
+243.3416 	EXP 	square_right_2: autoDraw = False
+243.3416 	EXP 	pract_fix_cross_2: autoDraw = True
+243.3416 	EXP 	box_left: autoDraw = True
+243.3416 	EXP 	box_right: autoDraw = True
+244.0443 	EXP 	pract_fix_cross_2: autoDraw = False
+244.0443 	EXP 	box_left: autoDraw = False
+244.0443 	EXP 	box_right: autoDraw = False
+244.0443 	EXP 	pract_hljt_image: ori = 270.0
+244.0443 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+244.0443 	EXP 	pract_square: autoDraw = True
+244.0443 	EXP 	pract_hljt_image: autoDraw = True
+244.0443 	EXP 	square_left: autoDraw = True
+244.0443 	EXP 	square_right: autoDraw = True
+244.3110 	DATA 	Keypress: g
+244.3183 	EXP 	pract_square: autoDraw = False
+244.3183 	EXP 	pract_hljt_image: autoDraw = False
+244.3183 	EXP 	square_left: autoDraw = False
+244.3183 	EXP 	square_right: autoDraw = False
+244.3183 	EXP 	pract_hljt_image_2: ori = 270.0
+244.3183 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+244.3183 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+244.3183 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+244.3183 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+244.3183 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+244.3183 	EXP 	pract_square_2: autoDraw = True
+244.3183 	EXP 	pract_hljt_image_2: autoDraw = True
+244.3183 	EXP 	square_left_2: autoDraw = True
+244.3183 	EXP 	square_right_2: autoDraw = True
+244.5601 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 135, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+244.5727 	EXP 	pract_square_2: autoDraw = False
+244.5727 	EXP 	pract_hljt_image_2: autoDraw = False
+244.5727 	EXP 	square_left_2: autoDraw = False
+244.5727 	EXP 	square_right_2: autoDraw = False
+244.5727 	EXP 	pract_fix_cross_2: autoDraw = True
+244.5727 	EXP 	box_left: autoDraw = True
+244.5727 	EXP 	box_right: autoDraw = True
+245.3803 	DATA 	Keypress: g
+245.4141 	EXP 	pract_fix_cross_2: autoDraw = False
+245.4141 	EXP 	box_left: autoDraw = False
+245.4141 	EXP 	box_right: autoDraw = False
+245.4141 	EXP 	pract_hljt_image: ori = 135.0
+245.4141 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+245.4141 	EXP 	pract_square: autoDraw = True
+245.4141 	EXP 	pract_hljt_image: autoDraw = True
+245.4141 	EXP 	square_left: autoDraw = True
+245.4141 	EXP 	square_right: autoDraw = True
+245.8596 	DATA 	Keypress: g
+245.8624 	EXP 	pract_square: autoDraw = False
+245.8624 	EXP 	pract_hljt_image: autoDraw = False
+245.8624 	EXP 	square_left: autoDraw = False
+245.8624 	EXP 	square_right: autoDraw = False
+245.8624 	EXP 	pract_hljt_image_2: ori = 135.0
+245.8624 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+245.8624 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+245.8624 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+245.8624 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+245.8624 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+245.8624 	EXP 	pract_square_2: autoDraw = True
+245.8624 	EXP 	pract_hljt_image_2: autoDraw = True
+245.8624 	EXP 	square_left_2: autoDraw = True
+245.8624 	EXP 	square_right_2: autoDraw = True
+246.1271 	EXP 	New trial (rep=0, index=21): <Trial 21 (21 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 90, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 21, 'thisTrialN': 21, 'thisRepN': 0}>
+246.1407 	EXP 	pract_square_2: autoDraw = False
+246.1407 	EXP 	pract_hljt_image_2: autoDraw = False
+246.1407 	EXP 	square_left_2: autoDraw = False
+246.1407 	EXP 	square_right_2: autoDraw = False
+246.1407 	EXP 	pract_fix_cross_2: autoDraw = True
+246.1407 	EXP 	box_left: autoDraw = True
+246.1407 	EXP 	box_right: autoDraw = True
+246.9249 	EXP 	pract_fix_cross_2: autoDraw = False
+246.9249 	EXP 	box_left: autoDraw = False
+246.9249 	EXP 	box_right: autoDraw = False
+246.9249 	EXP 	pract_hljt_image: ori = 90.0
+246.9249 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+246.9249 	EXP 	pract_square: autoDraw = True
+246.9249 	EXP 	pract_hljt_image: autoDraw = True
+246.9249 	EXP 	square_left: autoDraw = True
+246.9249 	EXP 	square_right: autoDraw = True
+247.2155 	DATA 	Keypress: h
+247.2194 	EXP 	pract_square: autoDraw = False
+247.2194 	EXP 	pract_hljt_image: autoDraw = False
+247.2194 	EXP 	square_left: autoDraw = False
+247.2194 	EXP 	square_right: autoDraw = False
+247.2194 	EXP 	pract_hljt_image_2: ori = 90.0
+247.2194 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+247.2194 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+247.2194 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+247.2194 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+247.2194 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+247.2194 	EXP 	pract_square_2: autoDraw = True
+247.2194 	EXP 	pract_hljt_image_2: autoDraw = True
+247.2194 	EXP 	square_left_2: autoDraw = True
+247.2194 	EXP 	square_right_2: autoDraw = True
+247.4946 	EXP 	New trial (rep=0, index=22): <Trial 22 (22 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 270, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 22, 'thisTrialN': 22, 'thisRepN': 0}>
+247.5089 	EXP 	pract_square_2: autoDraw = False
+247.5089 	EXP 	pract_hljt_image_2: autoDraw = False
+247.5089 	EXP 	square_left_2: autoDraw = False
+247.5089 	EXP 	square_right_2: autoDraw = False
+247.5089 	EXP 	pract_fix_cross_2: autoDraw = True
+247.5089 	EXP 	box_left: autoDraw = True
+247.5089 	EXP 	box_right: autoDraw = True
+248.3186 	EXP 	pract_fix_cross_2: autoDraw = False
+248.3186 	EXP 	box_left: autoDraw = False
+248.3186 	EXP 	box_right: autoDraw = False
+248.3186 	EXP 	pract_hljt_image: ori = 270.0
+248.3186 	EXP 	pract_hljt_image: image = 'hljt_images/right_palmar.png'
+248.3186 	EXP 	pract_square: autoDraw = True
+248.3186 	EXP 	pract_hljt_image: autoDraw = True
+248.3186 	EXP 	square_left: autoDraw = True
+248.3186 	EXP 	square_right: autoDraw = True
+248.4216 	DATA 	Keypress: h
+248.4248 	EXP 	pract_square: autoDraw = False
+248.4248 	EXP 	pract_hljt_image: autoDraw = False
+248.4248 	EXP 	square_left: autoDraw = False
+248.4248 	EXP 	square_right: autoDraw = False
+248.4248 	EXP 	pract_hljt_image_2: ori = 270.0
+248.4248 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_palmar.png'
+248.4248 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+248.4248 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+248.4248 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+248.4248 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+248.4248 	EXP 	pract_square_2: autoDraw = True
+248.4248 	EXP 	pract_hljt_image_2: autoDraw = True
+248.4248 	EXP 	square_left_2: autoDraw = True
+248.4248 	EXP 	square_right_2: autoDraw = True
+248.6933 	EXP 	New trial (rep=0, index=23): <Trial 23 (23 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 270, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 23, 'thisTrialN': 23, 'thisRepN': 0}>
+248.7081 	EXP 	pract_square_2: autoDraw = False
+248.7081 	EXP 	pract_hljt_image_2: autoDraw = False
+248.7081 	EXP 	square_left_2: autoDraw = False
+248.7081 	EXP 	square_right_2: autoDraw = False
+248.7081 	EXP 	pract_fix_cross_2: autoDraw = True
+248.7081 	EXP 	box_left: autoDraw = True
+248.7081 	EXP 	box_right: autoDraw = True
+249.3409 	EXP 	pract_fix_cross_2: autoDraw = False
+249.3409 	EXP 	box_left: autoDraw = False
+249.3409 	EXP 	box_right: autoDraw = False
+249.3409 	EXP 	pract_hljt_image: ori = 270.0
+249.3409 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+249.3409 	EXP 	pract_square: autoDraw = True
+249.3409 	EXP 	pract_hljt_image: autoDraw = True
+249.3409 	EXP 	square_left: autoDraw = True
+249.3409 	EXP 	square_right: autoDraw = True
+249.6310 	DATA 	Keypress: h
+249.6351 	EXP 	pract_square: autoDraw = False
+249.6351 	EXP 	pract_hljt_image: autoDraw = False
+249.6351 	EXP 	square_left: autoDraw = False
+249.6351 	EXP 	square_right: autoDraw = False
+249.6351 	EXP 	pract_hljt_image_2: ori = 270.0
+249.6351 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+249.6351 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+249.6351 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+249.6351 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+249.6351 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+249.6351 	EXP 	pract_square_2: autoDraw = True
+249.6351 	EXP 	pract_hljt_image_2: autoDraw = True
+249.6351 	EXP 	square_left_2: autoDraw = True
+249.6351 	EXP 	square_right_2: autoDraw = True
+249.9143 	EXP 	New trial (rep=0, index=24): <Trial 24 (24 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 315, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 24, 'thisTrialN': 24, 'thisRepN': 0}>
+249.9239 	EXP 	pract_square_2: autoDraw = False
+249.9239 	EXP 	pract_hljt_image_2: autoDraw = False
+249.9239 	EXP 	square_left_2: autoDraw = False
+249.9239 	EXP 	square_right_2: autoDraw = False
+249.9239 	EXP 	pract_fix_cross_2: autoDraw = True
+249.9239 	EXP 	box_left: autoDraw = True
+249.9239 	EXP 	box_right: autoDraw = True
+250.5392 	EXP 	pract_fix_cross_2: autoDraw = False
+250.5392 	EXP 	box_left: autoDraw = False
+250.5392 	EXP 	box_right: autoDraw = False
+250.5392 	EXP 	pract_hljt_image: ori = 315.0
+250.5392 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+250.5392 	EXP 	pract_square: autoDraw = True
+250.5392 	EXP 	pract_hljt_image: autoDraw = True
+250.5392 	EXP 	square_left: autoDraw = True
+250.5392 	EXP 	square_right: autoDraw = True
+250.8323 	DATA 	Keypress: g
+250.8356 	EXP 	pract_square: autoDraw = False
+250.8356 	EXP 	pract_hljt_image: autoDraw = False
+250.8356 	EXP 	square_left: autoDraw = False
+250.8356 	EXP 	square_right: autoDraw = False
+250.8356 	EXP 	pract_hljt_image_2: ori = 315.0
+250.8356 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+250.8356 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+250.8356 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+250.8356 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+250.8356 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+250.8356 	EXP 	pract_square_2: autoDraw = True
+250.8356 	EXP 	pract_hljt_image_2: autoDraw = True
+250.8356 	EXP 	square_left_2: autoDraw = True
+250.8356 	EXP 	square_right_2: autoDraw = True
+251.0922 	EXP 	New trial (rep=0, index=25): <Trial 25 (25 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 90, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 25, 'thisTrialN': 25, 'thisRepN': 0}>
+251.1044 	EXP 	pract_square_2: autoDraw = False
+251.1044 	EXP 	pract_hljt_image_2: autoDraw = False
+251.1044 	EXP 	square_left_2: autoDraw = False
+251.1044 	EXP 	square_right_2: autoDraw = False
+251.1044 	EXP 	pract_fix_cross_2: autoDraw = True
+251.1044 	EXP 	box_left: autoDraw = True
+251.1044 	EXP 	box_right: autoDraw = True
+251.8476 	DATA 	Keypress: h
+252.0058 	EXP 	pract_fix_cross_2: autoDraw = False
+252.0058 	EXP 	box_left: autoDraw = False
+252.0058 	EXP 	box_right: autoDraw = False
+252.0058 	EXP 	pract_hljt_image: ori = 90.0
+252.0058 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+252.0058 	EXP 	pract_square: autoDraw = True
+252.0058 	EXP 	pract_hljt_image: autoDraw = True
+252.0058 	EXP 	square_left: autoDraw = True
+252.0058 	EXP 	square_right: autoDraw = True
+252.5951 	DATA 	Keypress: h
+252.5993 	EXP 	pract_square: autoDraw = False
+252.5993 	EXP 	pract_hljt_image: autoDraw = False
+252.5993 	EXP 	square_left: autoDraw = False
+252.5993 	EXP 	square_right: autoDraw = False
+252.5993 	EXP 	pract_hljt_image_2: ori = 90.0
+252.5993 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+252.5993 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+252.5993 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+252.5993 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+252.5993 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+252.5993 	EXP 	pract_square_2: autoDraw = True
+252.5993 	EXP 	pract_hljt_image_2: autoDraw = True
+252.5993 	EXP 	square_left_2: autoDraw = True
+252.5993 	EXP 	square_right_2: autoDraw = True
+252.8228 	EXP 	New trial (rep=0, index=26): <Trial 26 (26 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 135, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 26, 'thisTrialN': 26, 'thisRepN': 0}>
+252.8396 	EXP 	pract_square_2: autoDraw = False
+252.8396 	EXP 	pract_hljt_image_2: autoDraw = False
+252.8396 	EXP 	square_left_2: autoDraw = False
+252.8396 	EXP 	square_right_2: autoDraw = False
+252.8396 	EXP 	pract_fix_cross_2: autoDraw = True
+252.8396 	EXP 	box_left: autoDraw = True
+252.8396 	EXP 	box_right: autoDraw = True
+253.5056 	DATA 	Keypress: g
+253.8668 	EXP 	pract_fix_cross_2: autoDraw = False
+253.8668 	EXP 	box_left: autoDraw = False
+253.8668 	EXP 	box_right: autoDraw = False
+253.8668 	EXP 	pract_hljt_image: ori = 135.0
+253.8668 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+253.8668 	EXP 	pract_square: autoDraw = True
+253.8668 	EXP 	pract_hljt_image: autoDraw = True
+253.8668 	EXP 	square_left: autoDraw = True
+253.8668 	EXP 	square_right: autoDraw = True
+254.4381 	DATA 	Keypress: h
+254.4418 	EXP 	pract_square: autoDraw = False
+254.4418 	EXP 	pract_hljt_image: autoDraw = False
+254.4418 	EXP 	square_left: autoDraw = False
+254.4418 	EXP 	square_right: autoDraw = False
+254.4418 	EXP 	pract_hljt_image_2: ori = 135.0
+254.4418 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+254.4418 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+254.4418 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+254.4418 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+254.4418 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+254.4418 	EXP 	pract_square_2: autoDraw = True
+254.4418 	EXP 	pract_hljt_image_2: autoDraw = True
+254.4418 	EXP 	square_left_2: autoDraw = True
+254.4418 	EXP 	square_right_2: autoDraw = True
+254.6927 	EXP 	New trial (rep=0, index=27): <Trial 27 (27 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 27, 'thisTrialN': 27, 'thisRepN': 0}>
+254.7104 	EXP 	pract_square_2: autoDraw = False
+254.7104 	EXP 	pract_hljt_image_2: autoDraw = False
+254.7104 	EXP 	square_left_2: autoDraw = False
+254.7104 	EXP 	square_right_2: autoDraw = False
+254.7104 	EXP 	pract_fix_cross_2: autoDraw = True
+254.7104 	EXP 	box_left: autoDraw = True
+254.7104 	EXP 	box_right: autoDraw = True
+255.3917 	DATA 	Keypress: g
+255.7193 	EXP 	pract_fix_cross_2: autoDraw = False
+255.7193 	EXP 	box_left: autoDraw = False
+255.7193 	EXP 	box_right: autoDraw = False
+255.7193 	EXP 	pract_hljt_image: ori = 180.0
+255.7193 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+255.7193 	EXP 	pract_square: autoDraw = True
+255.7193 	EXP 	pract_hljt_image: autoDraw = True
+255.7193 	EXP 	square_left: autoDraw = True
+255.7193 	EXP 	square_right: autoDraw = True
+256.1234 	DATA 	Keypress: g
+256.1267 	EXP 	pract_square: autoDraw = False
+256.1267 	EXP 	pract_hljt_image: autoDraw = False
+256.1267 	EXP 	square_left: autoDraw = False
+256.1267 	EXP 	square_right: autoDraw = False
+256.1267 	EXP 	pract_hljt_image_2: ori = 180.0
+256.1267 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+256.1267 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+256.1267 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+256.1267 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+256.1267 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+256.1267 	EXP 	pract_square_2: autoDraw = True
+256.1267 	EXP 	pract_hljt_image_2: autoDraw = True
+256.1267 	EXP 	square_left_2: autoDraw = True
+256.1267 	EXP 	square_right_2: autoDraw = True
+256.3547 	EXP 	New trial (rep=0, index=28): <Trial 28 (28 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 28, 'thisTrialN': 28, 'thisRepN': 0}>
+256.3704 	EXP 	pract_square_2: autoDraw = False
+256.3704 	EXP 	pract_hljt_image_2: autoDraw = False
+256.3704 	EXP 	square_left_2: autoDraw = False
+256.3704 	EXP 	square_right_2: autoDraw = False
+256.3704 	EXP 	pract_fix_cross_2: autoDraw = True
+256.3704 	EXP 	box_left: autoDraw = True
+256.3704 	EXP 	box_right: autoDraw = True
+257.0870 	EXP 	pract_fix_cross_2: autoDraw = False
+257.0870 	EXP 	box_left: autoDraw = False
+257.0870 	EXP 	box_right: autoDraw = False
+257.0870 	EXP 	pract_hljt_image: ori = 0.0
+257.0870 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+257.0870 	EXP 	pract_square: autoDraw = True
+257.0870 	EXP 	pract_hljt_image: autoDraw = True
+257.0870 	EXP 	square_left: autoDraw = True
+257.0870 	EXP 	square_right: autoDraw = True
+257.4230 	DATA 	Keypress: h
+257.4260 	EXP 	pract_square: autoDraw = False
+257.4260 	EXP 	pract_hljt_image: autoDraw = False
+257.4260 	EXP 	square_left: autoDraw = False
+257.4260 	EXP 	square_right: autoDraw = False
+257.4260 	EXP 	pract_hljt_image_2: ori = 0.0
+257.4260 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+257.4260 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+257.4260 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+257.4260 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+257.4260 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+257.4260 	EXP 	pract_square_2: autoDraw = True
+257.4260 	EXP 	pract_hljt_image_2: autoDraw = True
+257.4260 	EXP 	square_left_2: autoDraw = True
+257.4260 	EXP 	square_right_2: autoDraw = True
+257.6943 	EXP 	New trial (rep=0, index=29): <Trial 29 (29 in rep 0) data={'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 225, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 29, 'thisTrialN': 29, 'thisRepN': 0}>
+257.7079 	EXP 	pract_square_2: autoDraw = False
+257.7079 	EXP 	pract_hljt_image_2: autoDraw = False
+257.7079 	EXP 	square_left_2: autoDraw = False
+257.7079 	EXP 	square_right_2: autoDraw = False
+257.7079 	EXP 	pract_fix_cross_2: autoDraw = True
+257.7079 	EXP 	box_left: autoDraw = True
+257.7079 	EXP 	box_right: autoDraw = True
+258.5339 	EXP 	pract_fix_cross_2: autoDraw = False
+258.5339 	EXP 	box_left: autoDraw = False
+258.5339 	EXP 	box_right: autoDraw = False
+258.5339 	EXP 	pract_hljt_image: ori = 225.0
+258.5339 	EXP 	pract_hljt_image: image = 'hljt_images/left_dorsal.png'
+258.5339 	EXP 	pract_square: autoDraw = True
+258.5339 	EXP 	pract_hljt_image: autoDraw = True
+258.5339 	EXP 	square_left: autoDraw = True
+258.5339 	EXP 	square_right: autoDraw = True
+259.2432 	DATA 	Keypress: g
+259.2466 	EXP 	pract_square: autoDraw = False
+259.2466 	EXP 	pract_hljt_image: autoDraw = False
+259.2466 	EXP 	square_left: autoDraw = False
+259.2466 	EXP 	square_right: autoDraw = False
+259.2466 	EXP 	pract_hljt_image_2: ori = 225.0
+259.2466 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_dorsal.png'
+259.2466 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+259.2466 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: (-1.0, 0.0, -1.0, 1.0)>
+259.2466 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+259.2466 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+259.2466 	EXP 	pract_square_2: autoDraw = True
+259.2466 	EXP 	pract_hljt_image_2: autoDraw = True
+259.2466 	EXP 	square_left_2: autoDraw = True
+259.2466 	EXP 	square_right_2: autoDraw = True
+259.4951 	EXP 	New trial (rep=0, index=30): <Trial 30 (30 in rep 0) data={'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 45, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g', 'thisN': 30, 'thisTrialN': 30, 'thisRepN': 0}>
+259.5091 	EXP 	pract_square_2: autoDraw = False
+259.5091 	EXP 	pract_hljt_image_2: autoDraw = False
+259.5091 	EXP 	square_left_2: autoDraw = False
+259.5091 	EXP 	square_right_2: autoDraw = False
+259.5091 	EXP 	pract_fix_cross_2: autoDraw = True
+259.5091 	EXP 	box_left: autoDraw = True
+259.5091 	EXP 	box_right: autoDraw = True
+260.3488 	EXP 	pract_fix_cross_2: autoDraw = False
+260.3488 	EXP 	box_left: autoDraw = False
+260.3488 	EXP 	box_right: autoDraw = False
+260.3488 	EXP 	pract_hljt_image: ori = 45.0
+260.3488 	EXP 	pract_hljt_image: image = 'hljt_images/left_palmar.png'
+260.3488 	EXP 	pract_square: autoDraw = True
+260.3488 	EXP 	pract_hljt_image: autoDraw = True
+260.3488 	EXP 	square_left: autoDraw = True
+260.3488 	EXP 	square_right: autoDraw = True
+260.6921 	DATA 	Keypress: h
+260.6954 	EXP 	pract_square: autoDraw = False
+260.6954 	EXP 	pract_hljt_image: autoDraw = False
+260.6954 	EXP 	square_left: autoDraw = False
+260.6954 	EXP 	square_right: autoDraw = False
+260.6954 	EXP 	pract_hljt_image_2: ori = 45.0
+260.6954 	EXP 	pract_hljt_image_2: image = 'hljt_images/left_palmar.png'
+260.6954 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+260.6954 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+260.6954 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+260.6954 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+260.6954 	EXP 	pract_square_2: autoDraw = True
+260.6954 	EXP 	pract_hljt_image_2: autoDraw = True
+260.6954 	EXP 	square_left_2: autoDraw = True
+260.6954 	EXP 	square_right_2: autoDraw = True
+260.9212 	EXP 	New trial (rep=0, index=31): <Trial 31 (31 in rep 0) data={'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 225, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 31, 'thisTrialN': 31, 'thisRepN': 0}>
+260.9387 	EXP 	pract_square_2: autoDraw = False
+260.9387 	EXP 	pract_hljt_image_2: autoDraw = False
+260.9387 	EXP 	square_left_2: autoDraw = False
+260.9387 	EXP 	square_right_2: autoDraw = False
+260.9387 	EXP 	pract_fix_cross_2: autoDraw = True
+260.9387 	EXP 	box_left: autoDraw = True
+260.9387 	EXP 	box_right: autoDraw = True
+261.7146 	EXP 	pract_fix_cross_2: autoDraw = False
+261.7146 	EXP 	box_left: autoDraw = False
+261.7146 	EXP 	box_right: autoDraw = False
+261.7146 	EXP 	pract_hljt_image: ori = 225.0
+261.7146 	EXP 	pract_hljt_image: image = 'hljt_images/right_dorsal.png'
+261.7146 	EXP 	pract_square: autoDraw = True
+261.7146 	EXP 	pract_hljt_image: autoDraw = True
+261.7146 	EXP 	square_left: autoDraw = True
+261.7146 	EXP 	square_right: autoDraw = True
+262.0201 	DATA 	Keypress: g
+262.0231 	EXP 	pract_square: autoDraw = False
+262.0231 	EXP 	pract_hljt_image: autoDraw = False
+262.0231 	EXP 	square_left: autoDraw = False
+262.0231 	EXP 	square_right: autoDraw = False
+262.0231 	EXP 	pract_hljt_image_2: ori = 225.0
+262.0231 	EXP 	pract_hljt_image_2: image = 'hljt_images/right_dorsal.png'
+262.0231 	EXP 	square_left_2: fillColor = <psychopy.colors.Color: red, alpha=1.0>
+262.0231 	EXP 	square_left_2: borderColor = <psychopy.colors.Color: red, alpha=1.0>
+262.0231 	EXP 	square_right_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+262.0231 	EXP 	square_right_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+262.0231 	EXP 	pract_square_2: autoDraw = True
+262.0231 	EXP 	pract_hljt_image_2: autoDraw = True
+262.0231 	EXP 	square_left_2: autoDraw = True
+262.0231 	EXP 	square_right_2: autoDraw = True
+262.3358 	EXP 	Imported hljt_files/Block_messages.xlsx as conditions, 4 conditions, 6 params
+262.3360 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'block_msg_EN': 'Now you are going to do the test blocks\n\nThere are 4 blocks, with a break between them', 'block_pause_msg_EN': 'You have finished the first block', 'block_msg_ES': 'Ahora vas a realizar los bloques de prueba\n\nHay 4 bloques, con un descanso entre ellos', 'block_pause_msg_ES': 'Has finalizado el primer bloque', 'block_msg_FR': 'Vous allez maintenant faire les blocs de test\n\nIl y a 4 blocs, avec une pause entre les deux', 'block_pause_msg_FR': 'Vous avez terminé le premier bloc', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+262.3506 	EXP 	pract_square_2: autoDraw = False
+262.3506 	EXP 	pract_hljt_image_2: autoDraw = False
+262.3506 	EXP 	square_left_2: autoDraw = False
+262.3506 	EXP 	square_right_2: autoDraw = False
+262.3506 	EXP 	hljt_block_text: height = 0.05
+262.3506 	EXP 	hljt_block_text: height = 0.05
+262.3506 	EXP 	hljt_block_text: height = 0.05
+262.3506 	EXP 	hljt_block_text: text = 'Ahora vas a realizar los bloques de prueba\n\nHay 4 bloques, con un descanso entre ellos'
+262.3506 	EXP 	hljt_block_adv: height = 0.045
+262.3506 	EXP 	hljt_block_adv: height = 0.045
+262.3506 	EXP 	hljt_block_adv: height = 0.045
+262.3506 	EXP 	hljt_block_adv: text = 'Presiona ESPACIO para continuar'
+262.3506 	EXP 	hljt_block_text: autoDraw = True
+267.3121 	EXP 	hljt_block_adv: autoDraw = True
+311.2803 	DATA 	Keypress: space
+311.2884 	EXP 	hljt_block_text: autoDraw = False
+311.2884 	EXP 	hljt_block_adv: autoDraw = False
+311.2884 	EXP 	countdown_3: autoDraw = True
+312.2023 	EXP 	countdown_3: autoDraw = False
+312.2863 	EXP 	countdown_2: autoDraw = True
+313.1904 	EXP 	countdown_2: autoDraw = False
+313.2879 	EXP 	countdown_1: autoDraw = True
+313.8063 	DATA 	Keypress: escape
+314.0699 	EXP 	HLJT_local: status = STOPPED
+314.0869 	EXP 	countdown_1: autoDraw = False
+314.0870 	EXP 	HLJT_local: status = STOPPED
+314.1550 	EXP 	window1: mouseVisible = True
