@@ -1,9 +1,15 @@
 # HAND LATERALITY JUDGEMENT TASK (HLJT)
 
-Marcos Moreno Verdu, 01/07/2025
-PsychoPy version 2024.2.1
+Marcos Moreno Verdu, 13/01/2026
+
+
+PsychoPy version 2025.1.1
+
+
 Local experiment
-Languages supported: English, Spanish, French. Further languages can be added with no code (see Language Localisation below)
+
+
+Languages supported: English, Spanish, French & German. Further languages can be added with no code (see Language Localisation below)
 
 ---------------------------------------
 ## GENERAL INSTRUCTIONS: ##
@@ -17,7 +23,7 @@ If you have never used PsychoPy, you should know that once you have decompressed
 ---------------------------------------
 ## SETUP INSTRUCTIONS ##
 
-To run this task you need to have installed PsychoPy version 2024.2.1 or superior.
+To run this task you need to have installed PsychoPy version 2025.1.1 or superior.
 
 There are no dependencies for this task.
 
@@ -62,8 +68,6 @@ The experiment has the following subfolders:
 
 -hljt_files: It contains KEY files that are used to run the experiment.
 		
-		-Block_messages.xlsx: Encodes the messages to show before/after each test block. The number of rows will determine the number of test blocks.
-		
 		-Instructions files (.xlsx): Each file encodes the instructions and images for each response mode available (see below).
 		
 		-Stimuli_*angles.xlsx: The main conditions file. Must not be modified unless strictly necessary. There are 4 files with sets of stimuli depending on the increments at which the rotation must be applied (90 degrees = 4 angles; 60 = 6 angles; 45 = 8 angles; 30 = 12 angles).
@@ -86,7 +90,7 @@ The experiment has the following subfolders:
 			-hljt_correct_one: the corresponding correct key to press if response mode is set to Right or Left hand (G for left hands, H for right hands).
 			
 ---------------------------------------
-EXPERIMENT SETTINGS (parameters to choose):
+## EXPERIMENT SETTINGS (parameters to choose): ##
 
 The experiment is set so that before going into the task itself, the user will be able to choose some options. Default options can be easily modified by going to Experiment settings and changing the order of each corresponding field.
 
@@ -137,7 +141,7 @@ The experiment is set so that before going into the task itself, the user will b
 	
 	
 ---------------------------------------
-PARTICIPANT WORKFLOW:
+## PARTICIPANT WORKFLOW: ##
 
 Once the experiment starts, it will guide the participant through it without the need for any other explicit supervision. There will be:
 -A welcome screen with a brief description of the goal of the task.
@@ -165,21 +169,46 @@ Once the experiment starts, it will guide the participant through it without the
 -A goodbye screen.
 
 ---------------------------------------
-OUTPUT:
+## OUTPUT: ##
 
 The output file that PsychoPy will generate will be a .csv file in a subfolder "data". This .csv will contain all the variables encoded in the experiment. It will always be named with the participant field and the date.
 
 The output variables we will be interested in, specifically for the HLJT, are:
 	
--test_hljt_response.rt: Encodes the response time for each trial of the test blocks. It does it in SECONDS.
+-key_resp.rt: Encodes the response time for each trial of the test blocks. It does it in SECONDS.
 
--test_hljt_response.corr: Encodes the accuracy for each trial of the test blocks. Correct (=1) or incorrect (=0).
+-key_resp.corr: Encodes the accuracy for each trial of the test blocks. Correct (=1) or incorrect (=0).
 
 Aside from those, we will need to retain the variables from our conditions file for analysis:
 	-hljt_side
 	-hljt_view
 	-hljt_angle
--hljt_direction
+	-hljt_direction
 
 All the variables shown in the dialog box will be saved.
 
+---------------------------------------
+
+
+
+## BASIC DEMOGRAPHIC INFORMATION: ##
+
+
+
+After the welcome screen there is a demographics routine in which participants will be able to indicate their:
+
+
+
+- Age.
+
+
+
+- Gender. With options: Female, Male, Non-binary, Trans-gender, Other, Prefer not to say.
+
+
+
+- Hand dominance. With options: Left, Ambidextrous, Right.
+
+
+
+If you don't want participants to fill out this information, you can easily disable the routine or remove it from the experiment flow.
