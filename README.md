@@ -1,5 +1,5 @@
 # Hand Laterality Judgement Task (HLJT)
-**Available in English, Spanish, French** (see below to implement the task in other languages)
+**Available in English, Spanish, French & German** (see below to implement the task in other languages)
 
 The HLJT is a behavioural paradigm aiming to assess the ability to manipulate movement imagery. If you are interested in assessing Movement Imagery ability, visit this [Task Platform Project](https://movementimageryability.github.io/) for an overview of open-source behavioural tasks.
 
