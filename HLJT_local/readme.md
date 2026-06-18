@@ -143,7 +143,7 @@ The experimenter selects settings in the PsychoPy startup dialog **at the beggin
 | `n_angles` | • **8**, increments of 45° (Default)<br>• 4, increments of 90°<br>• 6, increments of 60°<br>• 12, increments of 30° | Selects the corresponding `Stimuli_*angles.xlsx` file. |
 | `hands_views` | • **Dorsal and Palmar** (Default)<br>• Palmar<br>• Dorsal | Which hand view(s) are shown; auto-generates `Stimuli_last_run.csv` (overwritten each run, contains no participant data). |
 | `n_reps` | • **12** (Default)<br>• 8<br>• 4 | Repetitions per unique stimulus across the 4 test blocks. Only these values are supported — changing this requires corresponding code adjustments, or the experiment will crash. |
-| `feedback` | • 0.3 (Default)<br>• 0.5<br>• 0.8<br>• 1<br>• **No feedback in testblock(s)** | Duration of feedback (in seconds) per trial in the test blocks. |
+| `feedback` | • **0.3** (Default)<br>• 0.5<br>• 0.8<br>• 1<br>• No feedback in testblock(s) | Duration of feedback (in seconds) per trial in the test blocks. |
 
 ### Disable demographic questions
 
