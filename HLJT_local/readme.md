@@ -1,6 +1,6 @@
 # HAND LATERALITY JUDGEMENT TASK (HLJT)
 
-**Author:** Marcos Moreno Verdu, 13/01/2026  
+**Author:** Marcos Moreno Verdu, 18/06/2026  
 **Software used:** PsychoPy 2025.1.1 (or superior)  
 **Experiment Type:** Local  
 **Languages supported:** English (EN) = default, Spanish (ES), French (FR) and German (DE). Further languages can be added with no code changes (see [Language Localisation](#language-localisation)).
@@ -85,14 +85,14 @@ Example:
 
 | message | EN | ES | 
 | :--- | :--- | :--- |
-| welcome_msg] | Welcome! | Bienvenido! | 
+| welcome_msg | Welcome! | Bienvenido! | 
 | adv_msg | Press SPACE to continue | Presiona ESPACIO para continuar | 
 
 Add a new column titled with your new code (e.g., `IT`) and provide a translation for every message key:
 
 | message | EN | ES | IT |
 | :--- | :--- | :--- | :--- |
-| welcome_msg] | Welcome! | Bienvenido! | Benvenuti al compito! |
+| welcome_msg | Welcome! | Bienvenido! | Benvenuti al compito! |
 | adv_msg | Press SPACE to continue | Presiona ESPACIO para continuar | Premi SPAZIO per continuare |
 
 ⚠️ Do this consistently for **all** message keys used by the experiment!
@@ -100,7 +100,7 @@ Add a new column titled with your new code (e.g., `IT`) and provide a translatio
 #### 4. Update the experiment
 1. Open `.psyexp` in PsychoPy.
 2. Go to **Experiment Settings** (cogwheel icon) → Basic → Experiment Info.
-3. Update the `languag` entry by adding your new language name (e.g., `Italian`). It must exactly match the entry in `language_localiser.xlsx`.
+3. Update the `language` entry by adding your new language name (e.g., `Italian`). It must exactly match the entry in `language_localiser.xlsx`.
 4. Save the experiment.
 
 > ⚠️ **Important:** Do not change folder or file names. Do not rename variables. Do not move files after decompressing the repository. The experiment depends on exact paths and identifiers. Moving or renaming files may cause crashes.
@@ -125,7 +125,7 @@ The decompressed repository includes:
 - Instructions files (`.xlsx`): one per available response mode, encoding the instructions and images for that mode.
 - `Stimuli_*angles.xlsx`: excel files including the trials of the practice and test block for different experiment settings
 
-**Folder `data`:
+**Folder `data`:**
 - Storage location for output data.
 
 ---------------------------------------
@@ -186,6 +186,7 @@ The sequence of a single trial is as follows:
 1. Fixation cross: Presented for 800ms.
 2. Stimulus presentation: Stays on screen until a keypress is recorded.
 3. Feedback (conditional): If enabled, feedback is shown for the selected duration.
+   
    → *Automatic advance to the next trial.*
 
 ---------------------------------------
@@ -200,9 +201,9 @@ Each run generates:
 - `.log`
 - `.psydat`
 
-The provided R script is designed to reall .csv files in the `data/`folder, extract relevant observations from the HLJT test blocks and save the processed data.
+The provided R script is designed to reall .csv files in the `data/` folder, extract relevant observations from the HLJT test blocks and save the processed data.
 
-To run the the script, open it and **source** it.
+To run the script, open it and **source** it.
 
 > **Note:** This script relies on the standard PsychoPy output structure. It expects a participant ID column (`participant` or `subject_nr`) and standard  response columns such as `response.keys`, `response.corr`, and `response.rt`. If modifications were made beyond the configurable experiment settings, the code may need adaptation. Raw data should always be inspected and cleaned of outliers or errors prior to statistical analysis.
 
