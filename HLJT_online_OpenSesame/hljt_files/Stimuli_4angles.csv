@@ -1,0 +1,17 @@
+hljt_images,hljt_side,hljt_view,hljt_angle,hljt_direction,hljt_correct_both,hljt_correct_one
+hljt_images/right_palmar.png,right,palmar,0,up,l,h
+hljt_images/right_palmar.png,right,palmar,90,lateral,l,h
+hljt_images/right_palmar.png,right,palmar,180,down,l,h
+hljt_images/right_palmar.png,right,palmar,270,medial,l,h
+hljt_images/right_dorsal.png,right,dorsal,0,up,l,h
+hljt_images/right_dorsal.png,right,dorsal,90,medial,l,h
+hljt_images/right_dorsal.png,right,dorsal,180,down,l,h
+hljt_images/right_dorsal.png,right,dorsal,270,lateral,l,h
+hljt_images/left_palmar.png,left,palmar,0,up,s,g
+hljt_images/left_palmar.png,left,palmar,90,medial,s,g
+hljt_images/left_palmar.png,left,palmar,180,down,s,g
+hljt_images/left_palmar.png,left,palmar,270,lateral,s,g
+hljt_images/left_dorsal.png,left,dorsal,0,up,s,g
+hljt_images/left_dorsal.png,left,dorsal,90,lateral,s,g
+hljt_images/left_dorsal.png,left,dorsal,180,down,s,g
+hljt_images/left_dorsal.png,left,dorsal,270,medial,s,g

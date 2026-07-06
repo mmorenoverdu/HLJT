@@ -1,0 +1,121 @@
+﻿message,EN,ES,FR,DE
+welcome_msg,"Welcome to the Hand Laterality Judgement Task!
+
+The purpose is to quantify your ability to make laterality judgements (right/left) on hand images.
+
+Press SPACE to start.","¡Bienvenid@ a la Tarea de Discriminación de Lateralidad!
+
+El objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de imágenes de manos.
+
+Presiona ESPACIO para empezar.","Bienvenue à la Tâche de Jugement de Latéralité de la Main !
+
+Le but est de quantifier votre capacité à décider de la latéralité (droite/gauche) d'images de mains.
+
+Appuyez sur SPACE pour commencer.","Willkommen zur Hand-Lateralitäts-Bewertungsaufgabe!
+
+Zweck der Aufgabe ist es, Ihre Fähigkeit zu messen, Lateralisierungen (rechts/links) von Handbildern zu beurteilen.
+
+Drücken Sie die LEERTASTE, um zu starten."
+adv_msg,Press SPACE to continue,Presiona ESPACIO para continuar,Appuyez sur ESPACE pour continuer,"Drücken Sie die LEERTASTE, um fortzufahren"
+bye_msg,"This is the end of the experiment
+
+Thanks for participating!
+
+Wait 3 seconds to exit","Este es el final del experimento
+
+¡Gracias por participar!
+
+Espera 3 segundos para salir","Ceci est la fin de l'expérience
+
+Merci d'avoir participé !
+
+Attendez 3 secondes pour quitter","Dies ist das Ende des Experiments.
+
+Vielen Dank für Ihre Teilnahme!
+
+Warten Sie 3 Sekunden, bevor Sie das Experiment beenden."
+out_of_msg,out of,de,sur,von
+blocks_msg,blocks,bloques,blocs,Blöcken
+practice_block_msg,"You are going to start the practice block.
+
+This block is just to get familiar with the task and your performance is not important.
+
+You will receive feedback in this block.","Vas a empezar el bloque de práctica.
+
+Este bloque es para que te familiarices con la tarea y cómo lo hagas no es importante.
+
+Receibirás feedback durante este bloque.","Vous allez commencer la phase d'entraînement.
+
+Cette phase sert uniquement à vous familiariser avec la tâche et votre performance n'a pas d'importance.
+
+Vous recevrez des commentaires à l'issue de cette phase. ","Sie werden nun mit dem Übungsblock beginnen.
+
+Dieser Block dient nur dazu, sich mit der Aufgabe vertraut zu machen, Ihre Leistung ist hier nicht entscheidend.
+
+In diesem Block erhalten Sie Feedback."
+practice_end_msg,"You have finished the practice block.
+
+Take a few seconds before proceeding to the next block.
+
+A message below will let you know when you can proceed.","Has terminado el bloque de práctica.
+
+Tómate unos pocos segundos antes de continuar al siguiente bloque.
+
+Verás un mensaje más abajo indicando que ya puedes seguir.","Vous avez terminé la phase d'entraînement.
+
+Prenez quelques secondes avant de passer au bloc suivant. 
+
+Un message ci-dessous vous indiquera quand vous pourrez continuer.","Sie haben den Übungsblock abgeschlossen.
+
+Nehmen Sie sich ein paar Sekunden Zeit, bevor Sie mit dem nächsten Block fortfahren.
+
+Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen können."
+task_block_msg,"You are going to start a main task block.
+
+Your performance is important in this block.
+
+You have to respond as QUICKLY AND ACCURATELY as you can.","Vas a empezar un bloque principal de la tarea.
+
+Cómo lo hagas sí es importante en este bloque.
+
+Tienes que responder lo más RÁPIDA y PRECISAMENTE que puedas.","Vous allez commencer un bloc de tâches principales.
+
+Vos performances sont importantes dans ce bloc.
+
+Vous devez répondre aussi RAPIDEMENT ET PRÉCISÉMENT que possible.","Sie werden nun mit einem Hauptaufgabenblock beginnen.
+
+Ihre Leistung ist in diesem Block wichtig.
+
+Sie müssen so SCHNELL UND GENAU wie möglich antworten."
+block_end_msg,"You have finished the block.
+
+Take a few seconds before proceeding.
+
+A message below will let you know when you can proceed.","Has terminado el bloque.
+
+Tómate unos pocos segundos antes de continuar.
+
+Verás un mensaje más abajo indicando que ya puedes seguir.","Vous avez terminé le bloc.
+
+Prenez quelques secondes avant de continuer. 
+
+Un message ci-dessous vous indiquera quand vous pourrez continuer.","Sie haben den Block abgeschlossen.
+
+Nehmen Sie sich ein paar Sekunden Zeit, bevor Sie fortfahren.
+
+Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen können."
+demographics_msg,Please fill out this information about yourself.,Por favor completa esta información sobre ti.,Veuillez remplir ces informations vous concernant.,Bitte füllen Sie diese Informationen über sich selbst aus.
+age_question_msg,Please type in your age and hit ENTER,Escribe tu edad y pressiona ENTER,Indique ton âge et appuyez sur ENTER,Gib dein Alter ein und drücke die ENTER-Taste
+age_msg,Age:,Edad:,Âge :,Alter:
+gender_msg,Gender:,Género,Genre :,Geschlecht:
+f_msg,Female,Mujer,Femme,Weiblich
+m_msg,Male,Hombre,Homme,Männlich
+tg_msg,Trans-gender,Transgénero,Transgenre,Transgender
+nb_msg,Non-binary,No binario,Non binaire,Nicht-binär
+o_msg,Other,Otro,Autre,Sonstiges
+pns_msg,Prefer not saying,Prefiero no decirlo,Préfère ne pas le dire,Möchte ich nicht sagen
+laterality_msg,Hand dominance:,Mano dominante:,Dominance manuelle :,Handdominanz:
+left_msg,Left,Izquierda,Gauche,Links
+ambi_msg,Ambidextrous,Ambidiestro/a,Ambidextre,Beidhändig
+right_msg,Right,Derecha,Droite,Rechte
+next_msg,Next,Siguiente,Suivant,Weiter

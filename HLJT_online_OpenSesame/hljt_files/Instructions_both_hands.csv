@@ -1,0 +1,85 @@
+inst_pics,inst_msg_EN,inst_msg_ES,inst_msg_FR,inst_msg_DE,image_w,image_h
+hljt_instr_images/instr_pic1.jpg,"Instructions:
+
+In this task, you will see images of left or right hands, their palms facing up or down. The images will be rotated at different angles.
+
+Your task is to determine if the image corresponds to a left or right hand.
+
+Your goal is to respond as quickly AND accurately as possible.
+
+Each image will appear until you have responded. The next image will appear automatically.","Instrucciones:
+
+En esta tarea, verás imágenes del dorso o la palma de manos izquierdas o derechas. Las imágenes estarán rotadas con diferentes ángulos.
+
+Tu tarea es determinar si la imagen corresponde a una mano izquierda o derecha.
+
+Tu objetivo es responder lo más precisa y rápidamente posible.
+
+Cada imagen aparecerá hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerá automáticamente.","Instructions :
+
+Dans cette tâche, vous verrez des images de mains gauches ou droites, les paumes tournées vers le haut ou vers le bas. Les images seront tournées sous différents angles.
+
+Votre tâche consiste à déterminer si l'image correspond à une main gauche ou droite.
+
+Votre objectif est de répondre le plus rapidement ET le plus précisément possible.
+
+Chaque image apparaîtra jusqu'à ce que vous ayez répondu. L'image suivante apparaîtra automatiquement.","Anweisungen:
+
+In dieser Aufgabe sehen Sie Bilder von linken oder rechten Händen, deren Handflächen nach oben oder unten zeigen. Die Bilder werden in verschiedenen Winkeln gedreht.
+
+Ihre Aufgabe ist es zu bestimmen, ob das Bild einer linken oder rechten Hand entspricht.
+
+Ihr Ziel ist es, sowohl SCHNELL als auch GENAU zu antworten.
+
+Jedes Bild wird angezeigt, bis Sie geantwortet haben. Das nächste Bild erscheint automatisch.",0.6,0.5
+hljt_instr_images/instr_pic2_both.jpg,"Please use only your index fingers to respond, using the ""S"" key and the ""L"" key of your keyboard:
+
+Left Hand = S | L = Right Hand
+
+You must maintain your hands on the keyboard throughout the task.
+
+Keep your hands in the same position and as motionless as possible.","Por favor, usa solo tus dedos índices para responder, usando las teclas ""S"" y ""L"" de tu teclado.
+
+Mano Izquierda = S | L = Mano derecha
+
+Tienes que mantener tus manos sobre el teclado durante la tarea.
+
+Mantén tus manos en la misma posición y tan quietas como puedas.","Veuillez utiliser uniquement vos index pour répondre, en utilisant la touche « S » et la touche « L » de votre clavier :
+
+Main gauche = S | L = Main droite
+
+Vous devez maintenir vos mains sur le clavier pendant toute la durée de la tâche.
+
+Gardez vos mains dans la même position et aussi immobiles que possible.","Bitte verwenden Sie nur Ihre Zeigefinger, um zu antworten, und benutzen Sie die Tasten „S“ und „L“ auf Ihrer Tastatur:
+
+Linke Hand = S | Rechte Hand = L
+
+Sie müssen Ihre Hände während der gesamten Aufgabe auf der Tastatur halten.
+
+Halten Sie Ihre Hände in derselben Position und so ruhig wie möglich.",0.6,0.5
+hljt_instr_images/instr_pic3.jpg,"After each image, you will receive a short feedback on your response:
+
+If you respond correctly, the corresponding box will turn green
+
+If you respond incorrectly, the corresponding box will turn red
+
+Remember that your goal is to respond as accurately and fast as possible","Tras cada imagen, recibirás un feedback corto sobre tu respuesta:
+
+Si respondes correctamente, la caja correspondiente se volverá verde
+
+Si respondes incorrectamente, la caja correspondiente se volverá roja
+
+Recuerda que tu objetivo es responder tan precisa y rápidamente como puedas","Après chaque image, vous recevrez un bref commentaire sur votre réponse :
+
+Si vous répondez correctement, la case correspondante devient verte.
+
+Si votre réponse est incorrecte, la case correspondante devient rouge.
+
+N'oubliez pas que votre objectif est de répondre le plus précisément et le plus rapidement possible.
+","Nach jedem Bild erhalten Sie ein kurzes Feedback zu Ihrer Antwort:
+
+Wenn Sie korrekt antworten, wird das entsprechende Feld grün.
+
+Wenn Sie falsch antworten, wird das entsprechende Feld rot.
+
+Denken Sie daran, dass Ihr Ziel darin besteht, so genau und schnell wie möglich zu antworten.",0.6,0.5

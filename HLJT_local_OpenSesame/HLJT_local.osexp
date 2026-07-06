@@ -1,0 +1,813 @@
+---
+API: 3
+OpenSesame: 4.1.9
+Platform: nt
+---
+set width 1024
+set title "HLJT_local (OpenSesame version)"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend psycho
+set round_decimals 2
+set mouse_backend psycho
+set keyboard_backend psycho
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground black
+set font_underline no
+set font_size 18
+set font_italic False
+set font_family mono
+set font_bold False
+set experiment_path "C:\\Users\\morenoverdu\\OneDrive - UCL\\BAS-Lab\\Github repositories\\HLJT\\HLJT_local_OpenSesame"
+set disable_garbage_collection True
+set description "The main experiment item"
+set color_backend psycho
+set clock_backend psycho
+set canvas_backend psycho
+set background white
+
+define inline_script ITI
+	set description "Inter-trial interval (fixation + response boxes)"
+	___run__
+	# ITEM: "ITI" - fixation cross + response boxes for the inter-trial
+	# interval (durations drawn from the same distribution as lastrun.py)
+	current_iti = next_iti()
+	c = Canvas(background_color=white)
+	c.fixdot(color=black, style="large-cross")
+	draw_boxes(c, black, black)
+	c.show()
+	clock.sleep(int(round(current_iti * 1000)))
+	__end__
+	set _prepare ""
+
+define inline_script block_end
+	set description "End-of-block message with a live mm:ss timer"
+	___run__
+	# ITEM: "block_end" - end-of-block message with a live mm:ss timer,
+	# matching lastrun.py's timer_code
+	is_practice = bool(var.is_practice)
+	end_message = msg["practice_end_msg"] if is_practice else msg["block_end_msg"]
+	kb = Keyboard(keylist=["space", "escape"], timeout=10)
+	t0 = clock.time()
+	while True:
+	    elapsed_ms = clock.time() - t0
+	    minutes = int(elapsed_ms // 60000)
+	    seconds = int((elapsed_ms // 1000) % 60)
+	    c = Canvas(background_color=white)
+	    c.text(end_message, x=0, y=0, color=black, font_size=24, max_width=700)
+	    c.text("%02d:%02d" % (minutes, seconds), x=-400, y=330, color=black,
+	           font_size=32)
+	    if elapsed_ms >= 1000:
+	        c.text(msg["adv_msg"], x=0, y=330, color=black, font_size=20)
+	    c.show()
+	    if elapsed_ms >= 1000:
+	        key, _t = kb.get_key(timeout=30)
+	        if key is not None:
+	            check_escape(key)
+	            if key == "space":
+	                break
+	    else:
+	        clock.sleep(30)
+	__end__
+	set _prepare ""
+
+define sequence block_sequence
+	set flush_keyboard yes
+	set description "One block: intro, countdown, trials, block end"
+	run block_start always
+	run countdown always
+	run trials_loop always
+	run block_end always
+
+define inline_script block_start
+	set description "Block intro message + builds this block's trial list"
+	___run__
+	# ITEM: "block_start" (Run phase)
+	# Shows "block N out of TOTAL blocks" plus the practice/task intro
+	# message, and waits for space (advance hint appears after 500 ms).
+	is_practice = bool(var.is_practice)
+	block_number = var.block_number
+	block_message = msg["practice_block_msg"] if is_practice else msg["task_block_msg"]
+	header = "%d %s %d %s" % (block_number, msg["out_of_msg"], total_blocks, msg["blocks_msg"])
+	ms.show_cursor(show=False)
+	kb = Keyboard(keylist=["space", "escape"], timeout=10)
+	t0 = clock.time()
+	while True:
+	    elapsed = clock.time() - t0
+	    c = Canvas(background_color=white)
+	    c.text(header + "\n\n" + block_message, x=0, y=-40, color=black,
+	           font_size=26, max_width=SCREEN_W - 160)
+	    if elapsed >= 500:
+	        c.text(msg["adv_msg"], x=0, y=330, color=black, font_size=20)
+	    c.show()
+	    if elapsed >= 500:
+	        key, _t = kb.get_key(timeout=20)
+	        check_escape(key)
+	        if key == "space":
+	            break
+	    else:
+	        clock.sleep(20)
+	__end__
+	___prepare__
+	# ITEM: "block_start" (Prepare phase)
+	# Builds this block's trial list (respecting practice_n_trials /
+	# test_n_trials) and wires it into trials_loop's table, and updates
+	# the 'fb' flag exactly like lastrun.py's block_settings_code.
+	from datamatrix import DataMatrix
+	
+	is_practice = bool(var.is_practice)
+	
+	if not is_practice and not task_fb:
+	    fb = False
+	
+	trial_list = build_block_trial_list(is_practice=is_practice)
+	items["trials_loop"].dm = DataMatrix(length=len(trial_list))
+	for _col in ("hljt_images", "hljt_side", "hljt_view", "hljt_angle",
+	             "hljt_direction", "hljt_correct_both", "hljt_correct_one"):
+	    items["trials_loop"].dm[_col] = [t[_col] for t in trial_list]
+	items["trials_loop"].dm.trial_number = list(range(1, len(trial_list) + 1))
+	__end__
+
+define loop blocks_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order sequential
+	set offset no
+	set item block_sequence
+	set description "Loop over practice + test blocks (table built by setup)"
+	set cycles 1
+	set continuous no
+	set column_order ""
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run block_sequence
+
+define inline_script bye
+	set description "Goodbye screen"
+	___run__
+	# ITEM: "bye" - goodbye screen, shown for 3 seconds, then closes the
+	# data file (mirrors lastrun.py's fixed-duration 'bye' routine)
+	c = Canvas(background_color=white)
+	c.text(msg["bye_msg"], x=0, y=0, color=black, font_size=26,
+	       max_width=SCREEN_W - 160)
+	c.show()
+	clock.sleep(3000)
+	__end__
+	set _prepare ""
+
+define inline_script countdown
+	set description "3-2-1 countdown before a block's trials"
+	___run__
+	# ITEM: "countdown" - shows 3, 2, 1 (1 s each); space/return skips
+	# early, matching hljt_go_to_experiment_key in lastrun.py
+	kb = Keyboard(keylist=["space", "return", "escape"], timeout=10)
+	t0 = clock.time()
+	while True:
+	    elapsed = clock.time() - t0
+	    if elapsed >= 3000:
+	        break
+	    show_num = "3"
+	    if elapsed >= 2000:
+	        show_num = "1"
+	    elif elapsed >= 1000:
+	        show_num = "2"
+	    c = Canvas(background_color=white)
+	    c.text(show_num, color=black, font_size=72)
+	    c.show()
+	    key, _t = kb.get_key(timeout=30)
+	    if key is not None:
+	        check_escape(key)
+	        break
+	__end__
+	set _prepare ""
+
+define inline_script demographics
+	set description "Age / gender / handedness form"
+	___run__
+	# ITEM: "demographics" - custom canvas + mouse clicks + keyboard text
+	# entry for age / gender / hand dominance (no native OpenSesame form
+	# widgets are used, per your preference for a fully custom screen)
+	age_str = ""
+	gender_sel = None
+	hand_sel = None
+	kb = Keyboard(keylist=None)
+	ms = Mouse(visible=True)
+	ms.show_cursor(show=True)
+	c = Canvas(background_color=white)  # one persistent Canvas, reused below
+	
+	gender_options = [
+	    ("Female", msg["f_msg"]), ("Male", msg["m_msg"]),
+	    ("Trans-gender", msg["tg_msg"]), ("Non-binary", msg["nb_msg"]),
+	    ("Other", msg["o_msg"]), ("Prefer not saying", msg["pns_msg"]),
+	]
+	hand_options = [
+	    ("Left", msg["left_msg"]), ("Ambidextrous", msg["ambi_msg"]),
+	    ("Right", msg["right_msg"]),
+	]
+	
+	gender_boxes = hand_boxes = next_box = None
+	last_state = None
+	prev_pressed = False  # NEW: tracks button state, to detect the click "edge"
+	
+	while True:
+	    can_continue = age_str != "" and gender_sel is not None and hand_sel is not None
+	    state = (age_str, gender_sel, hand_sel)
+	
+	    if state != last_state:
+	        c.clear()
+	        c.text(msg["demographics_msg"], x=0, y=-260, color=black, font_size=24)
+	        c.text(msg["age_msg"] + " " + (age_str if age_str else "_"),
+	               x=0, y=-190, color=black, font_size=22)
+	        c.text(msg["gender_msg"], x=0, y=-120, color=black, font_size=22)
+	        gender_boxes = draw_option_row(c, gender_options, y=-80, selected=gender_sel)
+	        c.text(msg["laterality_msg"], x=0, y=40, color=black, font_size=22)
+	        hand_boxes = draw_option_row(c, hand_options, y=80, selected=hand_sel)
+	        next_box = (-80, 200, 160, 55)
+	        c.rect(*next_box, fill=True, color=(green if can_continue else "#AAAAAA"))
+	        c.text(msg["next_msg"], x=next_box[0] + next_box[2] // 2,
+	               y=next_box[1] + next_box[3] // 2, color=white, font_size=20)
+	        c.show()
+	        last_state = state
+	
+	    key, _t = kb.get_key(timeout=15)
+	    if key is not None:
+	        check_escape(key)
+	        if key in [str(d) for d in range(10)] and len(age_str) < 3:
+	            age_str += key
+	        elif key in ("backspace", "delete"):
+	            age_str = age_str[:-1]
+	
+	    # NEW: click detection via get_pos()/get_pressed() instead of get_click().
+	    # Only get_click() toggles cursor visibility on each call -- that's what
+	    # caused the flicker before. get_pos()/get_pressed() are just instant
+	    # reads and don't touch it, so this stays non-blocking AND flicker-free.
+	    (mx, my), _pt = ms.get_pos()
+	    b1, _b2, _b3 = ms.get_pressed()
+	    pos = (mx, my) if (b1 and not prev_pressed) else None
+	    prev_pressed = b1
+	
+	    if pos is not None:
+	        for b in gender_boxes:
+	            if hit(pos, b):
+	                gender_sel = b[4]
+	        for b in hand_boxes:
+	            if hit(pos, b):
+	                hand_sel = b[4]
+	        if can_continue and next_box[0] <= pos[0] <= next_box[0] + next_box[2] \
+	                and next_box[1] <= pos[1] <= next_box[1] + next_box[3]:
+	            break
+	__end__
+	set _prepare ""
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run settings always
+	run language_select always
+	run setup always
+	run welcome always
+	run demographics always
+	run instructions_loop always
+	run blocks_loop always
+	run bye always
+
+define inline_script feedback
+	set description "Colored feedback boxes + logs the trial's data row"
+	___run__
+	# ITEM: "feedback" - colored response boxes (green/red when feedback is
+	# on, neutral white/black otherwise), then logs the trial's data row.
+	# Reads last_key / last_correct / last_rt from "trial", and current_iti
+	# from "ITI" (same shared workspace).
+	stim_image = var.hljt_images
+	stim_angle = var.hljt_angle
+	sc = scale_for(stim_image, STIM_TARGET, STIM_TARGET)
+	
+	if fb:
+	    if last_correct == 1:
+	        left, right = (green, black) if last_key in ("s", "g") else (black, green)
+	    else:
+	        left, right = (red, black) if last_key in ("s", "g") else (black, red)
+	else:
+	    if last_key in ("s", "g"):
+	        left, right = white, black
+	    else:
+	        left, right = black, white
+	
+	c = Canvas(background_color=white)
+	c.image(img_path(stim_image), x=0, y=0, scale=sc, rotation=stim_angle)
+	draw_boxes(c, left, right)
+	c.show()
+	clock.sleep(int(round(feedback_time * 1000)))
+	__end__
+	set _prepare ""
+
+define inline_script instructions
+	set description "One instructions screen (run once per instructions_loop cycle)"
+	___run__
+	# ITEM: "instructions" - runs once per row of instructions_loop
+	# (reads var.inst_pics / var.inst_msg / var.image_w / var.image_h /
+	# var.skip_this, which "setup" wired from the response-mode-specific
+	# instructions xlsx). The feedback-explanation screen is skipped when
+	# feedback is disabled, exactly like lastrun.py.
+	if not var.skip_this:
+	    kb = Keyboard(keylist=["space", "escape"], timeout=20)
+	    t0 = clock.time()
+	    while True:
+	        elapsed = clock.time() - t0
+	        c = Canvas(background_color=white)
+	        c.text(var.inst_msg, x=-320, y=0, color=black, font_size=22,
+	               max_width=330)
+	        sc = scale_for(var.inst_pics, var.image_w * SCREEN_H, var.image_h * SCREEN_H)
+	        c.image(img_path(var.inst_pics), x=320, y=0, scale=sc)
+	        if elapsed >= 500:
+	            c.text(msg["adv_msg"], x=0, y=330, color=black, font_size=20)
+	        c.show()
+	        key, _t = kb.get_key(timeout=30)
+	        check_escape(key)
+	        if key == "space":
+	            break
+	__end__
+	set _prepare ""
+
+define loop instructions_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order sequential
+	set offset no
+	set item instructions
+	set description "Loop over the instructions screens"
+	set cycles 3
+	set continuous no
+	set column_order ""
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	setcycle 1 empty_column ""
+	setcycle 2 empty_column ""
+	run instructions
+
+define inline_script language_select
+	set description "On-screen language picker (EN / ES / FR / DE), sets `language`"
+	___run__
+	# ITEM: "language_select" (Run phase)
+	# Shows four language buttons and sets `language` -- the same variable
+	# "settings" used to hardcode -- which "setup" reads afterwards (in its
+	# own Run phase, which runs right after this item) to pick the matching
+	# column from Language_localiser.xlsx / Messages.xlsx. Values must
+	# exactly match the "language" column in Language_localiser.xlsx.
+	btn_w, btn_h = 200, 60
+	gap = 30
+	btn_defs = [
+	    ("English", "English"),
+	    ("Spanish", "Español"),
+	    ("French", "Français"),
+	    ("German", "Deutsch")
+	]
+	n = len(btn_defs)
+	total_w = n * btn_w + (n - 1) * gap
+	start_x = -total_w // 2
+	btn_y = -btn_h // 2
+	c = Canvas(background_color=white)
+	c.text("Select language",
+	       x=0, y=-140, color=black, font_size=22, max_width=SCREEN_W - 100)
+	boxes = []
+	for i, (value, label) in enumerate(btn_defs):
+	    bx = start_x + i * (btn_w + gap)
+	    c.rect(bx, btn_y, btn_w, btn_h, fill=True, color="#5588cc")
+	    c.text(label, x=bx + btn_w // 2, y=btn_y + btn_h // 2, color=white, font_size=22)
+	    boxes.append((bx, btn_y, btn_w, btn_h, value))
+	c.show()
+	kb = Keyboard(keylist=["escape"], timeout=10)
+	ms = Mouse(visible=True)
+	language = None
+	while language is None:
+	    key, _t = kb.get_key()
+	    if key is not None:
+	        check_escape(key)
+	    _button, pos, _t2 = ms.get_click()
+	    if pos is not None:
+	        for b in boxes:
+	            if hit(pos, b):
+	                language = b[4]
+	                break
+	var.set("language", language)
+	__end__
+	set _prepare ""
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define inline_script settings
+	set description "Experimenter-editable settings"
+	set _run ""
+	___prepare__
+	# =====================================================================
+	# HLJT (Hand Laterality Judgement Task) - OpenSesame version
+	# ITEM: "settings"
+	# Edit the values below directly to configure this run of the
+	# experiment. This replaces PsychoPy's startup dialog box: OpenSesame
+	# has no equivalent multi-field dialog, so settings are simply Python
+	# variables that you change here before pressing Run.
+	# =====================================================================
+	participant = "001"        # participant / subject ID
+	session = "001"             # session ID
+	# Language is no longer set here: it is now chosen on-screen by the
+	# "language_select" item (a button screen), which runs right after
+	# this item and sets the `language` variable itself.
+	response_mode = "Both hands"
+	practice_block = "Yes"
+	n_angles = "8 (increments of 45º)"
+	hand_views = "Palmar and Dorsal"
+	n_reps = "8"
+	feedback = "No feedback"
+	practice_n_trials = "5"   # e.g. "all" for all of them
+	test_n_trials = "2"     # same as above
+	var.set("participant", participant)
+	var.set("session", session)
+	# # --- participant / session identifiers ---
+	# --- response mode ---
+	# Options: "Both hands", "Right hand", "Left hand"
+	# --- practice block ---
+	# Options: "Yes", "No"
+	# --- number of stimulus angles ---
+	# Options: "4 (increments of 90º)", "6 (increments of 60º)",
+	#          "8 (increments of 45º)", "12 (increments of 30º)"
+	# --- hand views to include ---
+	# Options: "Palmar and Dorsal", "Palmar", "Dorsal"
+	# --- number of repetitions per unique stimulus across the test blocks ---
+	# Only "4", "8", "12" are supported (as in the PsychoPy version)
+	# --- feedback duration (seconds) in the test block(s) ---
+	# Options: "0.3", "0.5", "0.8", "1", "No feedback"
+	# --- how many stimuli to show per block -------------------------------
+	#
+	#   "all"    -> use every (filtered) unique stimulus. Practice blocks
+	#               show each stimulus once; test blocks show each
+	#               stimulus "reps_per_block" (2) times, exactly as
+	#               described in the README.
+	#   <number> -> instead randomly draw that many stimuli for the block
+	#               (useful for a short practice, or to quickly test the
+	#               whole pipeline without running the full task).
+	__end__
+
+define inline_script setup
+	set description "Derives variables, loads xlsx files, opens data file, defines helpers"
+	___run__
+	# ITEM: "setup" (Run phase)
+	# Loads the language-dependent message/instructions text. This has to
+	# live in Run, not Prepare: OpenSesame runs the Prepare phase of every
+	# item in the "experiment" sequence, in order, before running the Run
+	# phase of any of them -- so at Prepare time, "language_select" (which
+	# runs before "setup") has not shown its buttons or received a click
+	# yet, and `language` would not exist. See readme.md for details.
+	lang_loc_rows = read_xlsx_as_dicts(os.path.join(exp_dir, "Language_localiser.xlsx"))
+	lang_code = "EN"
+	for _row in lang_loc_rows:
+	    if _row["language"] == language:
+	        lang_code = _row["ISO_code"]
+	        break
+	var.set("language_code", lang_code)
+	messages_rows = read_xlsx_as_dicts(os.path.join(exp_dir, "Messages.xlsx"))
+	msg = {}
+	for _row in messages_rows:
+	    msg[_row["message"]] = _row[lang_code]
+	# --- instructions rows (from the response-mode-specific xlsx), wired
+	#     into instructions_loop's table so the "instructions" item can
+	#     just read var.inst_msg / var.inst_pics / var.skip_this ---
+	instructions_rows = read_xlsx_as_dicts(os.path.join(exp_dir, use_i))
+	for _idx, _row in enumerate(instructions_rows):
+	    _row["inst_msg"] = _row.get("inst_msg_" + lang_code, _row["inst_msg_EN"])
+	    _row["skip_this"] = 1 if (_idx == 2 and not task_fb) else 0
+	items["instructions_loop"].dm = DataMatrix(length=len(instructions_rows))
+	for _col in ("inst_pics", "inst_msg", "image_w", "image_h", "skip_this"):
+	    items["instructions_loop"].dm[_col] = [r[_col] for r in instructions_rows]
+	__end__
+	___prepare__
+	# =====================================================================
+	# HLJT - OpenSesame version
+	# ITEM: "setup" (Prepare phase)
+	# Derives everything from "settings": which files to load, how many
+	# blocks/trials, colors, language localisation; opens the data file;
+	# defines shared helper functions used by later items; and wires the
+	# dynamic loop tables for "instructions_loop" and "blocks_loop".
+	# Mirrors HLJT_local_lastrun.py's "Begin Experiment" code blocks.
+	# =====================================================================
+	import os
+	import random
+	import csv
+	import datetime
+	import openpyxl
+	from datamatrix import DataMatrix
+	
+	exp_dir = var.experiment_path
+	SCREEN_W = var.width
+	SCREEN_H = var.height
+	
+	
+	def read_xlsx_as_dicts(path):
+	    """Read an .xlsx conditions file into a list of dicts, one per row
+	    (mirrors psychopy.data.importConditions without needing pandas)."""
+	    wb = openpyxl.load_workbook(path, data_only=True)
+	    ws = wb.active
+	    rows = list(ws.iter_rows(values_only=True))
+	    header = [str(h).strip() for h in rows[0]]
+	    out = []
+	    for r in rows[1:]:
+	        if all(v is None for v in r):
+	            continue
+	        out.append(dict(zip(header, r)))
+	    return out
+	
+	
+	# --- response mode -> instructions file + response keys ---
+	if response_mode == "Both hands":
+	    use_i = "hljt_files/Instructions_both_hands.xlsx"
+	    resp_keys = ["s", "l"]
+	    correct_col = "hljt_correct_both"
+	elif response_mode == "Right hand":
+	    use_i = "hljt_files/Instructions_right_hand.xlsx"
+	    resp_keys = ["g", "h"]
+	    correct_col = "hljt_correct_one"
+	elif response_mode == "Left hand":
+	    use_i = "hljt_files/Instructions_left_hand.xlsx"
+	    resp_keys = ["g", "h"]
+	    correct_col = "hljt_correct_one"
+	else:
+	    raise ValueError("Unknown response_mode: %r" % response_mode)
+	
+	# --- practice block flag ---
+	pract_block = 1 if practice_block == "Yes" else 0
+	
+	# --- number of blocks / reps per block (mirrors lastrun.py exactly) ---
+	main_blocks = 0
+	reps_per_block = 2
+	if n_reps == "4":
+	    main_blocks = 2
+	elif n_reps == "8":
+	    main_blocks = 4
+	elif n_reps == "12":
+	    main_blocks = 6
+	else:
+	    raise ValueError("n_reps must be '4', '8' or '12', not %r" % n_reps)
+	total_blocks = main_blocks + pract_block
+	
+	# --- feedback duration ---
+	feedback_time = feedback
+	task_fb = True
+	if feedback_time == "No feedback":
+	    feedback_time = 0.3
+	    task_fb = False
+	else:
+	    feedback_time = float(feedback_time)
+	
+	# fb starts True; block_start turns it off for good once a non-practice
+	# block is reached while task_fb is False (mirrors lastrun.py's 'fb')
+	fb = True
+	
+	# --- colors (exact RGB equivalents of the PsychoPy [-1..1] color values) ---
+	black = "#000000"
+	green = "#008000"
+	red = "#FF0000"
+	white = "#FFFFFF"
+	
+	# --- conditions file (by number of angles) ---
+	if n_angles.startswith("4"):
+	    conditions_file = "hljt_files/Stimuli_4angles.xlsx"
+	elif n_angles.startswith("6"):
+	    conditions_file = "hljt_files/Stimuli_6angles.xlsx"
+	elif n_angles.startswith("8"):
+	    conditions_file = "hljt_files/Stimuli_8angles.xlsx"
+	elif n_angles.startswith("12"):
+	    conditions_file = "hljt_files/Stimuli_12angles.xlsx"
+	else:
+	    raise ValueError("Unknown n_angles: %r" % n_angles)
+	
+	all_stimuli = read_xlsx_as_dicts(os.path.join(exp_dir, conditions_file))
+	
+	# --- filter by hand view ---
+	if hand_views == "Palmar":
+	    filtered_stimuli = [s for s in all_stimuli if s["hljt_view"] == "palmar"]
+	elif hand_views == "Dorsal":
+	    filtered_stimuli = [s for s in all_stimuli if s["hljt_view"] == "dorsal"]
+	else:
+	    filtered_stimuli = list(all_stimuli)
+	
+	# write Stimuli_last_run.csv, kept for parity/debugging with the
+	# PsychoPy version (contains no participant data, overwritten every run)
+	with open(os.path.join(exp_dir, "Stimuli_last_run.csv"), "w", newline="",
+	          encoding="utf-8") as _f:
+	    _w = csv.DictWriter(_f, fieldnames=list(filtered_stimuli[0].keys()))
+	    _w.writeheader()
+	    _w.writerows(filtered_stimuli)
+	
+	# --- inter-trial-interval list (identical algorithm to lastrun.py) ---
+	n_trials_iti = 600
+	block_size = 64
+	low_iti_range = (0.6, 1)
+	high_prob_range = (0.75, 0.85)
+	high_prob_percentage = 0.5
+	iti_list = []
+	for _block in range(n_trials_iti // block_size):
+	    n_high_prob = int(block_size * high_prob_percentage)
+	    n_low_prob = block_size - n_high_prob
+	    high_prob_itis = [random.uniform(*high_prob_range) for _ in range(n_high_prob)]
+	    low_prob_itis = []
+	    while len(low_prob_itis) < n_low_prob:
+	        _iti = random.uniform(*low_iti_range)
+	        if not (high_prob_range[0] <= _iti <= high_prob_range[1]):
+	            low_prob_itis.append(_iti)
+	    block_itis = high_prob_itis + low_prob_itis
+	    random.shuffle(block_itis)
+	    iti_list.extend(block_itis)
+	iti_index = 0
+	
+	
+	def next_iti():
+	    global iti_index
+	    val = iti_list[iti_index]
+	    iti_index += 1
+	    if iti_index >= len(iti_list):
+	        iti_index = 0
+	    return val
+	
+	
+	# --- blocks_loop table: one row per block, with block_number and
+	#     is_practice so "block_start"/"countdown"/"block_end" can just
+	#     read var.block_number / var.is_practice ---
+	items["blocks_loop"].dm = DataMatrix(length=total_blocks)
+	items["blocks_loop"].dm.block_number = list(range(1, total_blocks + 1))
+	items["blocks_loop"].dm.is_practice = [
+	    1 if (i == 1 and pract_block == 1) else 0 for i in range(1, total_blocks + 1)
+	]
+	
+	
+	# --- per-block trial-list builder (fixes the PsychoPy "Selected rows"
+	#     bug, replacing it with explicit, documented control) ---
+	def build_block_trial_list(is_practice):
+	    n_override = practice_n_trials if is_practice else test_n_trials
+	    reps = 1 if is_practice else reps_per_block
+	    if isinstance(n_override, str) and n_override.strip().lower() == "all":
+	        trial_list = list(filtered_stimuli) * reps
+	        random.shuffle(trial_list)
+	        return trial_list
+	    n_draw = int(n_override)
+	    if n_draw <= len(filtered_stimuli):
+	        return random.sample(filtered_stimuli, n_draw)
+	    return [random.choice(filtered_stimuli) for _ in range(n_draw)]
+	
+	
+	# --- known pixel sizes of the bundled images, so images can be scaled
+	#     to a target on-screen size without needing Pillow at runtime ---
+	IMG_PX = {
+	    "hljt_images/left_dorsal.png": (634, 720),
+	    "hljt_images/left_palmar.png": (681, 746),
+	    "hljt_images/right_dorsal.png": (634, 720),
+	    "hljt_images/right_palmar.png": (681, 746),
+	    "HLJT_icon.jpg": (816, 808),
+	    "hljt_instr_images/instr_pic1.jpg": (680, 535),
+	    "hljt_instr_images/instr_pic2_both.jpg": (511, 440),
+	    "hljt_instr_images/instr_pic2_left.jpg": (510, 503),
+	    "hljt_instr_images/instr_pic2_right.jpg": (506, 503),
+	    "hljt_instr_images/instr_pic3.jpg": (680, 454),
+	}
+	
+	
+	def img_path(rel):
+	    return os.path.join(exp_dir, rel)
+	
+	
+	def scale_for(rel, target_w, target_h):
+	    w, h = IMG_PX.get(rel, (target_w, target_h))
+	    return min(target_w / w, target_h / h)
+	
+	
+	# --- response boxes shown during ITI / trial / feedback ---
+	BOX_SIZE = round(0.07 * SCREEN_H)
+	BOX_Y = round(0.6 * SCREEN_H)
+	BOX_LEFT_X = round(-0.1 * SCREEN_H) - BOX_SIZE // 2
+	BOX_RIGHT_X = round(0.1 * SCREEN_H) - BOX_SIZE // 2
+	STIM_TARGET = round(0.6 * SCREEN_H)
+	
+	
+	def draw_boxes(c, left_color, right_color):
+	    c.rect(BOX_LEFT_X, BOX_Y - BOX_SIZE // 2, BOX_SIZE, BOX_SIZE,
+	           fill=True, color=left_color)
+	    c.rect(BOX_RIGHT_X, BOX_Y - BOX_SIZE // 2, BOX_SIZE, BOX_SIZE,
+	           fill=True, color=right_color)
+	
+	
+	def draw_option_row(c, options, y, selected, box_w=170, box_h=55, gap=20):
+	    n = len(options)
+	    total_w = n * box_w + (n - 1) * gap
+	    start_x = -total_w // 2
+	    boxes = []
+	    for i, (key, label) in enumerate(options):
+	        bx = start_x + i * (box_w + gap)
+	        fill = (key == selected)
+	        c.rect(bx, y, box_w, box_h, fill=fill, color=black, penwidth=2)
+	        c.text(label, x=bx + box_w // 2, y=y + box_h // 2,
+	               color=(white if fill else black), font_size=18,
+	               max_width=box_w - 10)
+	        boxes.append((bx, y, box_w, box_h, key))
+	    return boxes
+	
+	
+	def hit(pos, box):
+	    if pos is None:
+	        return False
+	    x, y = pos
+	    bx, by, bw, bh, _k = box
+	    return bx <= x <= bx + bw and by <= y <= by + bh
+	
+	def quit_experiment():
+	    exp.end()
+	
+	def check_escape(key):
+	    if key == "escape":
+	        quit_experiment()
+	__end__
+
+define inline_script trial
+	set description "Shows the rotated hand stimulus and collects the response"
+	___run__
+	# ITEM: "trial" - shows the rotated hand stimulus and collects an
+	# untimed response (reads var.hljt_images / var.hljt_angle, which
+	# "block_start" wired into trials_loop for this cycle)
+	stim_image = var.hljt_images
+	stim_angle = var.hljt_angle
+	correct_key_value = var.get(correct_col)
+	
+	sc = scale_for(stim_image, STIM_TARGET, STIM_TARGET)
+	kb = Keyboard(keylist=resp_keys, timeout=None)
+	c = Canvas(background_color=white)
+	c.image(img_path(stim_image), x=0, y=0, scale=sc, rotation=stim_angle)
+	draw_boxes(c, black, black)
+	c.show()
+	
+	t0 = clock.time()
+	last_key, t1 = kb.get_key()
+	check_escape(last_key)
+	last_rt = (t1 - t0) / 1000.0
+	if last_key is None:
+	    last_correct = 1 if str(correct_key_value).lower() == "none" else 0
+	else:
+	    last_correct = 1 if last_key == str(correct_key_value) else 0
+	__end__
+	set _prepare ""
+
+define sequence trial_sequence
+	set flush_keyboard yes
+	set description "ITI, stimulus + response, feedback"
+	run ITI always
+	run trial always
+	run feedback always
+	run logger True
+
+define loop trials_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order sequential
+	set offset no
+	set item trial_sequence
+	set description "Loop over trials within a block (table rebuilt by block_start every cycle)"
+	set cycles 1
+	set continuous no
+	set column_order ""
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run trial_sequence
+
+define inline_script welcome
+	set description "Welcome screen"
+	___run__
+	# ITEM: "welcome" - shows the welcome message + task icon, waits for space
+	kb = Keyboard(keylist=["space", "escape"], timeout=10)
+	while True:
+	    c = Canvas(background_color=white)
+	    c.text(msg["welcome_msg"], x=0, y=-0.3, color=black, font_size=26,
+	           max_width=SCREEN_W - 160)
+	    sc = scale_for("HLJT_icon.jpg", 230, 230)
+	    c.image(img_path("HLJT_icon.jpg"), x=0, y=260, scale=sc)
+	    c.show()
+	    key, _t = kb.get_key(timeout=20)
+	    check_escape(key)
+	    if key == "space":
+	        break
+	__end__
+	set _prepare ""
+
