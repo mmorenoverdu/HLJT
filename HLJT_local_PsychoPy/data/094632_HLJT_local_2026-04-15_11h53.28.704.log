@@ -1,0 +1,349 @@
+2.2670 	ERROR 	Skipping entry point psychopy_legacy.visual.movie2:MovieStim2 (from psychopy-legacy) to psychopy.visual:MovieStim2, reason: Could not find module 'C:\Users\morenoverdu\OneDrive - UCL\BAS-Lab\Github repositories\HLJT\HLJT_local\libvlc.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+5.1612 	WARNING 	Requested audio device 'Haut-parleur (2- Realtek(R) Audio)' that is not available on this hardware. The 'audioDevice' preference should be one of ['Haut-parleur (Realtek(R) Audio)']
+8.1008 	INFO 	Loaded monitor calibration from ['2023_11_13 17:53']
+8.1577 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+9.4476 	INFO 	Using renderer 'Intel(R) UHD Graphics' for graphics
+9.4477 	INFO 	OpenGL version supported by driver is 4..
+9.5136 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023F6AEDCA00>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023F6AEDC9A0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000023F6DF5E7D0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1920, 1080]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.5137 	EXP 	window1: backgroundImage = ''
+9.5137 	EXP 	window1: backgroundFit = 'none'
+9.9287 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.9287 	EXP 	window1: recordFrameIntervals = False
+10.0771 	EXP 	window1: recordFrameIntervals = True
+10.2940 	EXP 	Screen (0) actual frame rate measured at 59.96Hz
+10.2940 	EXP 	window1: recordFrameIntervals = False
+10.7109 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7110 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7123 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7123 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7124 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7124 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7124 	INFO 	keyboard.Keyboard is using ptb backend.
+10.7124 	EXP 	HLJT_local: status = STARTED
+10.8184 	EXP 	Created welcome_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welcome_text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8934 	EXP 	Created hljt_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='HLJT_icon.jpg', interpolate=True, mask=None, maskParams=None, name='hljt_image', opacity=1, ori=0.0, pos=array([ 0. , -0.3]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+10.8940 	EXP 	Created demographics_title = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='demographics_title', opacity=1, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8947 	EXP 	Created age_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='age_text', opacity=1, ori=0.0, pos=array([0.  , 0.32]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9055 	EXP 	Created gender_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='gender_text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.1031 	EXP 	Created gender_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-5, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.025), labelWrapWidth=None, labels=('', '', '', '', '', ''), lineColor=None, markerColor=None, name='gender_slider', opacity=None, ori=0.0, pos=array([0., 0.]), readOnly=False, self=UNKNOWN, size=array([1.  , 0.05]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6]), units='height', win=Window(...))
+11.1747 	EXP 	Created laterality_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-12.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='laterality_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.27]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.2061 	EXP 	Created laterality_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-13, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.025), labelWrapWidth=None, labels=('', '', ''), lineColor=None, markerColor=None, name='laterality_slider', opacity=None, ori=0.0, pos=array([ 0.  , -0.35]), readOnly=False, self=UNKNOWN, size=array([0.5 , 0.05]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3]), units='height', win=Window(...))
+11.2839 	EXP 	Created inst_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='inst_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.2848 	EXP 	Created advance_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='advance_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.2921 	EXP 	Created inst_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='inst_image', opacity=1, ori=0.0, pos=array([0.5, 0. ]), size=array([1., 1.]), texRes=128.0, units='height', win=Window(...))
+11.2929 	EXP 	Created block_number_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1.   ,  0.498,  1.   ]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='block_number_text', opacity=1, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.2933 	EXP 	Created block_start_main_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='block_start_main_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.2937 	EXP 	Created block_start_adv_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='block_start_adv_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.4475 	EXP 	Created countdown_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='countdown_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='3', units='height', win=Window(...), wrapWidth=1)
+11.4504 	EXP 	Created countdown_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='countdown_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='2', units='height', win=Window(...), wrapWidth=1)
+11.4527 	EXP 	Created countdown_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='countdown_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='1', units='height', win=Window(...), wrapWidth=1)
+11.4538 	EXP 	Created ITI_fix_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ITI_fix_cross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.03, 0.03]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+11.4544 	EXP 	Created ITI_box_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ITI_box_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4549 	EXP 	Created ITI_box_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ITI_box_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4592 	EXP 	Created stimulus = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='stimulus', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+11.4600 	EXP 	Created box_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4609 	EXP 	Created box_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='box_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4643 	EXP 	Created feedback_stimulus = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='feedback_stimulus', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.45, 0.45]), texRes=128.0, units='height', win=Window(...))
+11.4651 	EXP 	Created feedback_box_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='feedback_box_left', opacity=1, ori=0.0, pos=array([-0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4657 	EXP 	Created feedback_box_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='feedback_box_right', opacity=1, ori=0.0, pos=array([ 0.1, -0.4]), size=array([0.07, 0.07]), units='height', vertices=ndarray(...), win=Window(...))
+11.4661 	EXP 	Created block_end_main_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='block_end_main_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.4664 	EXP 	Created timer = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='timer', opacity=1, ori=0.0, pos=array([-0.8 , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.4667 	EXP 	Created block_end_adv_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='block_end_adv_text', opacity=1, ori=0.0, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.4670 	EXP 	Created bye_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='bye_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0021 	EXP 	age_textbox: autoLog = True
+0.0021 	EXP 	gender_slider: autoLog = True
+0.0021 	EXP 	gender_slider: styleTweaks = []
+0.0021 	EXP 	gender_slider: styleTweaks = []
+0.0021 	EXP 	gender_slider: styleTweaks = []
+0.0021 	EXP 	gender_slider: styleTweaks = []
+0.0021 	EXP 	gender_slider: contrast = 1.0
+0.0021 	EXP 	gender_slider: markerPos = None
+0.0021 	EXP 	gender_slider: autoLog = True
+0.0021 	EXP 	label_female: autoLog = True
+0.0021 	EXP 	label_male: autoLog = True
+0.0021 	EXP 	label_transgender: autoLog = True
+0.0021 	EXP 	label_nonbinary: autoLog = True
+0.0021 	EXP 	label_other: autoLog = True
+0.0021 	EXP 	label_prefer_not_say: autoLog = True
+0.0021 	EXP 	laterality_slider: autoLog = True
+0.0021 	EXP 	laterality_slider: styleTweaks = []
+0.0021 	EXP 	laterality_slider: styleTweaks = []
+0.0021 	EXP 	laterality_slider: styleTweaks = []
+0.0021 	EXP 	laterality_slider: styleTweaks = []
+0.0021 	EXP 	laterality_slider: contrast = 1.0
+0.0021 	EXP 	laterality_slider: markerPos = None
+0.0021 	EXP 	laterality_slider: autoLog = True
+0.0021 	EXP 	label_left: autoLog = True
+0.0021 	EXP 	label_ambi: autoLog = True
+0.0021 	EXP 	label_right: autoLog = True
+0.0190 	EXP 	Imported Language_localiser.xlsx as conditions, 4 conditions, 2 params
+0.0193 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'language': 'English', 'ISO_code': 'EN', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0194 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'language': 'Spanish', 'ISO_code': 'ES', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+0.0195 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'language': 'French', 'ISO_code': 'FR', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+0.0195 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'language': 'German', 'ISO_code': 'DE', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+0.0385 	EXP 	Imported Messages.xlsx as conditions, 23 conditions, 5 params
+0.0388 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'message': 'welcome_msg', 'EN': 'Welcome to the Hand Laterality Judgement Task!\n\nThe purpose is to quantify your ability to make laterality judgements (right/left) on hand images.\n\nPress SPACE to start.', 'ES': '¡Bienvenid@ a la Tarea de Discriminación de Lateralidad!\n\nEl objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de imágenes de manos.\n\nPresiona ESPACIO para empezar.', 'FR': "Bienvenue à la Tâche de Jugement de Latéralité de la Main !\n\nLe but est de quantifier votre capacité à décider de la latéralité (droite/gauche) d'images de mains.\n\nAppuyez sur SPACE pour commencer.", 'DE': 'Willkommen zur Hand-Lateralitäts-Bewertungsaufgabe!\n\nZweck der Aufgabe ist es, Ihre Fähigkeit zu messen, Lateralisierungen (rechts/links) von Handbildern zu beurteilen.\n\nDrücken Sie die LEERTASTE, um zu starten.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0389 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'message': 'adv_msg', 'EN': 'Press SPACE to continue', 'ES': 'Presiona ESPACIO para continuar', 'FR': 'Appuyez sur ESPACE pour continuer', 'DE': 'Drücken Sie die LEERTASTE, um fortzufahren', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+0.0390 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'message': 'bye_msg', 'EN': 'This is the end of the experiment\n\nThanks for participating!\n\nWait 3 seconds to exit', 'ES': 'Este es el final del experimento\n\n¡Gracias por participar!\n\nEspera 3 segundos para salir', 'FR': "Ceci est la fin de l'expérience\n\nMerci d'avoir participé !\n\nAttendez 3 secondes pour quitter", 'DE': 'Dies ist das Ende des Experiments.\n\nVielen Dank für Ihre Teilnahme!\n\nWarten Sie 3 Sekunden, bevor Sie das Experiment beenden.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+0.0391 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'message': 'out_of_msg', 'EN': 'out of', 'ES': 'de', 'FR': 'sur', 'DE': 'von', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+0.0392 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'message': 'blocks_msg', 'EN': 'blocks', 'ES': 'bloques', 'FR': 'blocs', 'DE': 'Blöcken', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+0.0392 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'message': 'practice_block_msg', 'EN': 'You are going to start the practice block.\n\nThis block is just to get familiar with the task and your performance is not important.\n\nYou will receive feedback in this block.', 'ES': 'Vas a empezar el bloque de práctica.\n\nEste bloque es para que te familiarices con la tarea y cómo lo hagas no es importante.\n\nReceibirás feedback durante este bloque.', 'FR': "Vous allez commencer la phase d'entraînement.\n\nCette phase sert uniquement à vous familiariser avec la tâche et votre performance n'a pas d'importance.\n\nVous recevrez des commentaires à l'issue de cette phase. ", 'DE': 'Sie werden nun mit dem Übungsblock beginnen.\n\nDieser Block dient nur dazu, sich mit der Aufgabe vertraut zu machen, Ihre Leistung ist hier nicht entscheidend.\n\nIn diesem Block erhalten Sie Feedback.', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+0.0393 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'message': 'practice_end_msg', 'EN': 'You have finished the practice block.\n\nTake a few seconds before proceeding to the next block.\n\nA message below will let you know when you can proceed.', 'ES': 'Has terminado el bloque de práctica.\n\nTómate unos pocos segundos antes de continuir al siguiente bloque.\n\nVerás un mensaje más abajo indicando que ya puedes seguir.', 'FR': "Vous avez terminé la phase d'entraînement.\n\nPrenez quelques secondes avant de passer au bloc suivant. \n\nUn message ci-dessous vous indiquera quand vous pourrez continuer.", 'DE': 'Sie haben den Übungsblock abgeschlossen.\n\nNehmen Sie sich ein paar Sekunden Zeit, bevor Sie mit dem nächsten Block fortfahren.\n\nEine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen können.', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+0.0394 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'message': 'task_block_msg', 'EN': 'You are going to start a main task block.\n\nYour performance is important in this block.\n\nYou have to respond as QUICKLY AND ACCURATELY as you can.', 'ES': 'Vas a empezar un bloque principal de la tarea.\n\nCómo lo hagas sí es importante en este bloque.\n\nTienes que responder lo más RÁPIDA y PRECISAMENTE que puedas.', 'FR': 'Vous allez commencer un bloc de tâches principales.\n\nVos performances sont importantes dans ce bloc.\n\nVous devez répondre aussi RAPIDEMENT ET PRÉCISÉMENT que possible.', 'DE': 'Sie werden nun mit einem Hauptaufgabenblock beginnen.\n\nIhre Leistung ist in diesem Block wichtig.\n\nSie müssen so SCHNELL UND GENAU wie möglich antworten.', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+0.0394 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'message': 'block_end_msg', 'EN': 'You have finished the block.\n\nTake a few seconds before proceeding.\n\nA message below will let you know when you can proceed.', 'ES': 'Has terminado el bloque.\n\nTómate unos pocos segundos antes de continuar.\n\nVerás un mensaje más abajo indicando que ya puedes seguir.', 'FR': 'Vous avez terminé le bloc.\n\nPrenez quelques secondes avant de continuer. \n\nUn message ci-dessous vous indiquera quand vous pourrez continuer.', 'DE': 'Sie haben den Block abgeschlossen.\n\nNehmen Sie sich ein paar Sekunden Zeit, bevor Sie fortfahren.\n\nEine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen können.', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+0.0395 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'message': 'demographics_msg', 'EN': 'Please fill out this information about yourself.', 'ES': 'Por favor completa esta información sobre ti.', 'FR': 'Veuillez remplir ces informations vous concernant.', 'DE': 'Bitte füllen Sie diese Informationen über sich selbst aus.', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+0.0396 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'message': 'age_msg', 'EN': 'Age:', 'ES': 'Edad:', 'FR': 'Âge :', 'DE': 'Alter:', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+0.0396 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'message': 'gender_msg', 'EN': 'Gender:', 'ES': 'Género', 'FR': 'Genre :', 'DE': 'Geschlecht:', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+0.0397 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'message': 'f_msg', 'EN': 'Female', 'ES': 'Mujer', 'FR': 'Femme', 'DE': 'Weiblich', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+0.0397 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'message': 'm_msg', 'EN': 'Male', 'ES': 'Hombre', 'FR': 'Homme', 'DE': 'Männlich', 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+0.0398 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'message': 'tg_msg', 'EN': 'Trans-gender', 'ES': 'Transgénero', 'FR': 'Transgenre', 'DE': 'Transgender', 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+0.0399 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'message': 'nb_msg', 'EN': 'Non-binary', 'ES': 'No binario', 'FR': 'Non binaire', 'DE': 'Nicht-binär', 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+0.0399 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'message': 'o_msg', 'EN': 'Other', 'ES': 'Otro', 'FR': 'Autre', 'DE': 'Sonstiges', 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+0.0400 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'message': 'pns_msg', 'EN': 'Prefer not saying', 'ES': 'Prefiero no decirlo', 'FR': 'Préfère ne pas le dire', 'DE': 'Möchte ich nicht sagen', 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+0.0401 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'message': 'laterality_msg', 'EN': 'Hand dominance:', 'ES': 'Mano dominante:', 'FR': 'Dominance manuelle :', 'DE': 'Handdominanz:', 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+0.0401 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'message': 'left_msg', 'EN': 'Left', 'ES': 'Izquierda', 'FR': 'Gauche', 'DE': 'Links', 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+0.0402 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'message': 'ambi_msg', 'EN': 'Ambidextrous', 'ES': 'Ambidiestro/a', 'FR': 'Ambidextre', 'DE': 'Beidhändig', 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+0.0403 	EXP 	New trial (rep=0, index=21): <Trial 21 (21 in rep 0) data={'message': 'right_msg', 'EN': 'Right', 'ES': 'Derecha', 'FR': 'Droite', 'DE': 'Rechte', 'thisN': 21, 'thisTrialN': 21, 'thisRepN': 0}>
+0.0403 	EXP 	New trial (rep=0, index=22): <Trial 22 (22 in rep 0) data={'message': 'next_msg', 'EN': 'Next', 'ES': 'Siguiente', 'FR': 'Suivant', 'DE': 'Weiter', 'thisN': 22, 'thisTrialN': 22, 'thisRepN': 0}>
+0.0928 	INFO 	Keyboard events cleared
+0.0927 	EXP 	welcome_text: height = np.float64(0.035)
+0.0927 	EXP 	welcome_text: height = np.float64(0.035)
+0.0927 	EXP 	welcome_text: height = np.float64(0.035)
+0.0927 	EXP 	welcome_text: text = 'Welcome to the Hand Laterality Judgement Task!\n\nThe purpose is to quantify your ability to make laterality judgements (right/left) on hand images.\n\nPress SPACE to start.'
+0.0927 	EXP 	welcome_text: autoDraw = True
+0.0927 	EXP 	hljt_image: autoDraw = True
+0.9104 	EXP 	Device response: <KeyPress from None: t=0.8910352000002604, value=space, duration=None>
+1.0021 	DATA 	Keypress: space
+1.0442 	EXP 	welcome_text: autoDraw = False
+1.0442 	EXP 	hljt_image: autoDraw = False
+1.0442 	EXP 	demographics_title: height = np.float64(0.035)
+1.0442 	EXP 	demographics_title: height = np.float64(0.035)
+1.0442 	EXP 	demographics_title: height = np.float64(0.035)
+1.0442 	EXP 	demographics_title: text = 'Please fill out this information about yourself.'
+1.0442 	EXP 	age_text: height = np.float64(0.04)
+1.0442 	EXP 	age_text: height = np.float64(0.04)
+1.0442 	EXP 	age_text: height = np.float64(0.04)
+1.0442 	EXP 	age_text: text = 'Age:'
+1.0442 	EXP 	gender_text: height = np.float64(0.04)
+1.0442 	EXP 	gender_text: height = np.float64(0.04)
+1.0442 	EXP 	gender_text: height = np.float64(0.04)
+1.0442 	EXP 	gender_text: text = 'Gender:'
+1.0442 	EXP 	gender_slider: markerPos = None
+1.0442 	EXP 	gender_slider: markerPos = None
+1.0442 	EXP 	laterality_text: height = np.float64(0.04)
+1.0442 	EXP 	laterality_text: height = np.float64(0.04)
+1.0442 	EXP 	laterality_text: height = np.float64(0.04)
+1.0442 	EXP 	laterality_text: text = 'Hand dominance:'
+1.0442 	EXP 	laterality_slider: markerPos = None
+1.0442 	EXP 	laterality_slider: markerPos = None
+1.0442 	EXP 	demographics_title: autoDraw = True
+1.0442 	EXP 	age_text: autoDraw = True
+1.0442 	EXP 	age_textbox: autoDraw = True
+1.0442 	EXP 	gender_text: autoDraw = True
+1.0442 	EXP 	gender_slider: autoDraw = True
+1.0442 	EXP 	label_female: autoDraw = True
+1.0442 	EXP 	label_male: autoDraw = True
+1.0442 	EXP 	label_transgender: autoDraw = True
+1.0442 	EXP 	label_nonbinary: autoDraw = True
+1.0442 	EXP 	label_other: autoDraw = True
+1.0442 	EXP 	label_prefer_not_say: autoDraw = True
+1.0442 	EXP 	laterality_text: autoDraw = True
+1.0442 	EXP 	laterality_slider: autoDraw = True
+1.0442 	EXP 	label_left: autoDraw = True
+1.0442 	EXP 	label_ambi: autoDraw = True
+1.0442 	EXP 	label_right: autoDraw = True
+1.0445 	EXP 	Device response: <KeyPress from None: t=0.8910352000002604, value=space, duration=0.12856430000010732>
+7.8866 	DATA 	Mouse: Left button down, pos=(1670,175)
+7.9551 	EXP 	Imported hljt_files/Instructions_both_hands.xlsx as conditions, 3 conditions, 7 params
+7.9553 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'inst_pics': 'hljt_instr_images/instr_pic1.jpg', 'inst_msg_EN': 'Instructions:\n\nIn this task, you will see images of left or right hands, their palms facing up or down. The images will be rotated at different angles.\n\nYour task is to determine if the image corresponds to a left or right hand.\n\nYour goal is to respond as quickly AND accurately as possible.\n\nEach image will appear until you have responded. The next image will appear automatically.', 'inst_msg_ES': 'Instrucciones:\n\nEn esta tarea, verás imágenes del dorso o la palma de manos izquierdas o derechas. Las imágenes estarán rotadas con diferentes ángulos.\n\nTu tarea es determinar si la imagen corresponde a una mano izquierda o derecha.\n\nTu objetivo es responder lo más precisa y rápidamente posible.\n\nCada imagen aparecerá hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerá automáticamente.', 'inst_msg_FR': "Instructions :\n\nDans cette tâche, vous verrez des images de mains gauches ou droites, les paumes tournées vers le haut ou vers le bas. Les images seront tournées sous différents angles.\n\nVotre tâche consiste à déterminer si l'image correspond à une main gauche ou droite.\n\nVotre objectif est de répondre le plus rapidement ET le plus précisément possible.\n\nChaque image apparaîtra jusqu'à ce que vous ayez répondu. L'image suivante apparaîtra automatiquement.", 'inst_msg_DE': 'Anweisungen:\n\nIn dieser Aufgabe sehen Sie Bilder von linken oder rechten Händen, deren Handflächen nach oben oder unten zeigen. Die Bilder werden in verschiedenen Winkeln gedreht.\n\nIhre Aufgabe ist es zu bestimmen, ob das Bild einer linken oder rechten Hand entspricht.\n\nIhr Ziel ist es, sowohl SCHNELL als auch GENAU zu antworten.\n\nJedes Bild wird angezeigt, bis Sie geantwortet haben. Das nächste Bild erscheint automatisch.', 'image_w': 0.6, 'image_h': 0.5, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+8.0270 	INFO 	Keyboard events cleared
+8.0270 	EXP 	demographics_title: autoDraw = False
+8.0270 	EXP 	age_text: autoDraw = False
+8.0270 	EXP 	age_textbox: autoDraw = False
+8.0270 	EXP 	gender_text: autoDraw = False
+8.0270 	EXP 	gender_slider: autoDraw = False
+8.0270 	EXP 	label_female: autoDraw = False
+8.0270 	EXP 	label_male: autoDraw = False
+8.0270 	EXP 	label_transgender: autoDraw = False
+8.0270 	EXP 	label_nonbinary: autoDraw = False
+8.0270 	EXP 	label_other: autoDraw = False
+8.0270 	EXP 	label_prefer_not_say: autoDraw = False
+8.0270 	EXP 	laterality_text: autoDraw = False
+8.0270 	EXP 	laterality_slider: autoDraw = False
+8.0270 	EXP 	label_left: autoDraw = False
+8.0270 	EXP 	label_ambi: autoDraw = False
+8.0270 	EXP 	label_right: autoDraw = False
+8.0270 	EXP 	inst_text: height = np.float64(0.025)
+8.0270 	EXP 	inst_text: height = np.float64(0.025)
+8.0270 	EXP 	inst_text: height = np.float64(0.025)
+8.0270 	EXP 	inst_text: text = 'Instructions:\n\nIn this task, you will see images of left or right hands, their palms facing up or down. The images will be rotated at different angles.\n\nYour task is to determine if the image corresponds to a left or right hand.\n\nYour goal is to respond as quickly AND accurately as possible.\n\nEach image will appear until you have responded. The next image will appear automatically.'
+8.0270 	EXP 	advance_text: height = np.float64(0.03)
+8.0270 	EXP 	advance_text: height = np.float64(0.03)
+8.0270 	EXP 	advance_text: height = np.float64(0.03)
+8.0270 	EXP 	advance_text: text = 'Press SPACE to continue'
+8.0270 	EXP 	inst_image: image = 'hljt_instr_images/instr_pic1.jpg'
+8.0270 	EXP 	inst_text: autoDraw = True
+8.0270 	EXP 	inst_image: autoDraw = True
+8.0478 	DATA 	Mouse:  Left button up, pos=(1670,175)
+8.4100 	EXP 	advance_text: autoDraw = True
+9.0935 	EXP 	Device response: <KeyPress from None: t=9.08194690000073, value=space, duration=None>
+9.0937 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'inst_pics': 'hljt_instr_images/instr_pic2_both.jpg', 'inst_msg_EN': 'Please use only your index fingers to respond, using the "S" key and the "L" key of your keyboard:\n\nLeft Hand = S | L = Right Hand\n\nYou must maintain your hands on the keyboard throughout the task.\n\nKeep your hands in the same position and as motionless as possible.', 'inst_msg_ES': 'Por favor, usa solo tus dedos índices para responder, usando las teclas "S" y "L" de tu teclado.\n\nMano Izquierda = S | L = Mano derecha\n\nTienes que mantener tus manos sobre el teclado durante la tarea.\n\nMantén tus manos en la misma posición y tan quietas como puedas.', 'inst_msg_FR': 'Veuillez utiliser uniquement vos index pour répondre, en utilisant la touche « S » et la touche « L » de votre clavier :\n\nMain gauche = S | L = Main droite\n\nVous devez maintenir vos mains sur le clavier pendant toute la durée de la tâche.\n\nGardez vos mains dans la même position et aussi immobiles que possible.', 'inst_msg_DE': 'Bitte verwenden Sie nur Ihre Zeigefinger, um zu antworten, und benutzen Sie die Tasten „S“ und „L“ auf Ihrer Tastatur:\n\nLinke Hand = S | Rechte Hand = L\n\nSie müssen Ihre Hände während der gesamten Aufgabe auf der Tastatur halten.\n\nHalten Sie Ihre Hände in derselben Position und so ruhig wie möglich.', 'image_w': 0.6, 'image_h': 0.5, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+9.1598 	DATA 	Keypress: space
+9.1631 	INFO 	Keyboard events cleared
+9.1631 	EXP 	inst_text: autoDraw = False
+9.1631 	EXP 	advance_text: autoDraw = False
+9.1631 	EXP 	inst_image: autoDraw = False
+9.1631 	EXP 	inst_text: height = np.float64(0.025)
+9.1631 	EXP 	inst_text: height = np.float64(0.025)
+9.1631 	EXP 	inst_text: height = np.float64(0.025)
+9.1631 	EXP 	inst_text: text = 'Please use only your index fingers to respond, using the "S" key and the "L" key of your keyboard:\n\nLeft Hand = S | L = Right Hand\n\nYou must maintain your hands on the keyboard throughout the task.\n\nKeep your hands in the same position and as motionless as possible.'
+9.1631 	EXP 	advance_text: text = 'Press SPACE to continue'
+9.1631 	EXP 	inst_image: image = 'hljt_instr_images/instr_pic2_both.jpg'
+9.1631 	EXP 	inst_text: autoDraw = True
+9.1631 	EXP 	inst_image: autoDraw = True
+9.1936 	EXP 	Device response: <KeyPress from None: t=9.08194690000073, value=space, duration=0.10553199999958451>
+9.5931 	EXP 	advance_text: autoDraw = True
+10.0104 	EXP 	Device response: <KeyPress from None: t=10.000087400000666, value=space, duration=None>
+10.0106 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'inst_pics': 'hljt_instr_images/instr_pic3.jpg', 'inst_msg_EN': 'After each image, you will receive a short feedback on your response:\n\nIf you respond correctly, the corresponding box will turn green\n\nIf you respond incorrectly, the corresponding box will turn red\n\nRemember that your goal is to respond as accurately and fast as possible', 'inst_msg_ES': 'Tras cada imagen, recibirás un feedback corto sobre tu respuesta:\n\nSi respondes correctamente, la caja correspondiente se volverá verde\n\nSi respondes incorrectamente, la caja correspondiente se volverá roja\n\nRecuerda que tu objetivo es responder tan precisa y rápidamente como puedas', 'inst_msg_FR': "Après chaque image, vous recevrez un bref commentaire sur votre réponse :\n\nSi vous répondez correctement, la case correspondante devient verte.\n\nSi votre réponse est incorrecte, la case correspondante devient rouge.\n\nN'oubliez pas que votre objectif est de répondre le plus précisément et le plus rapidement possible.\n", 'inst_msg_DE': 'Nach jedem Bild erhalten Sie ein kurzes Feedback zu Ihrer Antwort:\n\nWenn Sie korrekt antworten, wird das entsprechende Feld grün.\n\nWenn Sie falsch antworten, wird das entsprechende Feld rot.\n\nDenken Sie daran, dass Ihr Ziel darin besteht, so genau und schnell wie möglich zu antworten.', 'image_w': 0.6, 'image_h': 0.5, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+10.0470 	DATA 	Keypress: space
+10.0515 	INFO 	Keyboard events cleared
+10.0514 	EXP 	inst_text: autoDraw = False
+10.0514 	EXP 	advance_text: autoDraw = False
+10.0514 	EXP 	inst_image: autoDraw = False
+10.0514 	EXP 	inst_text: height = np.float64(0.025)
+10.0514 	EXP 	inst_text: height = np.float64(0.025)
+10.0514 	EXP 	inst_text: height = np.float64(0.025)
+10.0514 	EXP 	inst_text: text = 'After each image, you will receive a short feedback on your response:\n\nIf you respond correctly, the corresponding box will turn green\n\nIf you respond incorrectly, the corresponding box will turn red\n\nRemember that your goal is to respond as accurately and fast as possible'
+10.0514 	EXP 	advance_text: text = 'Press SPACE to continue'
+10.0514 	EXP 	inst_image: image = 'hljt_instr_images/instr_pic3.jpg'
+10.0514 	EXP 	inst_text: autoDraw = True
+10.0514 	EXP 	inst_image: autoDraw = True
+10.1270 	EXP 	Device response: <KeyPress from None: t=10.000087400000666, value=space, duration=0.11921549999988201>
+10.5099 	EXP 	advance_text: autoDraw = True
+10.8605 	EXP 	Device response: <KeyPress from None: t=10.851315900000372, value=space, duration=None>
+10.8608 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+10.9056 	DATA 	Keypress: space
+10.9077 	EXP 	inst_text: autoDraw = False
+10.9077 	EXP 	advance_text: autoDraw = False
+10.9077 	EXP 	inst_image: autoDraw = False
+10.9077 	EXP 	block_number_text: height = np.float64(0.05)
+10.9077 	EXP 	block_number_text: height = np.float64(0.05)
+10.9077 	EXP 	block_number_text: height = np.float64(0.05)
+10.9077 	EXP 	block_number_text: text = '1 out of 5 blocks'
+10.9077 	EXP 	block_start_main_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_main_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_main_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_main_text: text = 'You are going to start the practice block.\n\nThis block is just to get familiar with the task and your performance is not important.\n\nYou will receive feedback in this block.'
+10.9077 	EXP 	block_start_adv_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_adv_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_adv_text: height = np.float64(0.03)
+10.9077 	EXP 	block_start_adv_text: text = 'Press SPACE to continue'
+10.9077 	EXP 	block_number_text: autoDraw = True
+10.9077 	EXP 	block_start_main_text: autoDraw = True
+10.9599 	EXP 	Device response: <KeyPress from None: t=10.851315900000372, value=space, duration=0.09565159999965545>
+11.3598 	INFO 	Keyboard events cleared
+11.3596 	EXP 	block_start_adv_text: autoDraw = True
+12.5103 	EXP 	Device response: <KeyPress from None: t=12.501085100000637, value=space, duration=None>
+12.5128 	DATA 	Keypress: space
+12.5264 	INFO 	Keyboard events cleared
+12.5262 	EXP 	block_number_text: autoDraw = False
+12.5262 	EXP 	block_start_main_text: autoDraw = False
+12.5262 	EXP 	block_start_adv_text: autoDraw = False
+12.5262 	EXP 	countdown_3: autoDraw = True
+12.6267 	EXP 	Device response: <KeyPress from None: t=12.501085100000637, value=space, duration=0.12508079999952315>
+13.4259 	EXP 	countdown_3: autoDraw = False
+13.5261 	EXP 	countdown_4: autoDraw = True
+14.4261 	EXP 	countdown_4: autoDraw = False
+14.5258 	EXP 	countdown_1: autoDraw = True
+15.4256 	EXP 	countdown_1: autoDraw = False
+15.5611 	EXP 	Imported Stimuli_last_run.csv as conditions, 2 conditions, 7 params
+15.5617 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': np.int64(45), 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+15.5651 	EXP 	countdown_3: autoDraw = False
+15.5651 	EXP 	countdown_4: autoDraw = False
+15.5651 	EXP 	countdown_1: autoDraw = False
+15.5651 	EXP 	ITI_fix_cross: autoDraw = True
+15.5651 	EXP 	ITI_box_left: autoDraw = True
+15.5651 	EXP 	ITI_box_right: autoDraw = True
+16.5040 	INFO 	Keyboard events cleared
+16.5039 	EXP 	ITI_fix_cross: autoDraw = False
+16.5039 	EXP 	ITI_box_left: autoDraw = False
+16.5039 	EXP 	ITI_box_right: autoDraw = False
+16.5039 	EXP 	stimulus: ori = np.float64(45.0)
+16.5039 	EXP 	stimulus: image = 'hljt_images/right_palmar.png'
+16.5039 	EXP 	stimulus: autoDraw = True
+16.5039 	EXP 	box_left: autoDraw = True
+16.5039 	EXP 	box_right: autoDraw = True
+17.2933 	EXP 	Device response: <KeyPress from None: t=17.282234100000096, value=l, duration=None>
+17.3159 	DATA 	Keypress: l
+17.3217 	EXP 	stimulus: autoDraw = False
+17.3217 	EXP 	box_left: autoDraw = False
+17.3217 	EXP 	box_right: autoDraw = False
+17.3217 	EXP 	feedback_stimulus: ori = np.float64(45.0)
+17.3217 	EXP 	feedback_stimulus: image = 'hljt_images/right_palmar.png'
+17.3217 	EXP 	feedback_box_left: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+17.3217 	EXP 	feedback_box_right: fillColor = <psychopy.colors.Color: (np.float64(-1.0), np.float64(0.0), np.float64(-1.0), np.float64(1.0))>
+17.3217 	EXP 	feedback_stimulus: autoDraw = True
+17.3217 	EXP 	feedback_box_left: autoDraw = True
+17.3217 	EXP 	feedback_box_right: autoDraw = True
+17.4265 	EXP 	Device response: <KeyPress from None: t=17.282234100000096, value=l, duration=0.13374449999992066>
+17.5768 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': np.int64(0), 'hljt_direction': 'up', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+17.5927 	EXP 	feedback_stimulus: autoDraw = False
+17.5927 	EXP 	feedback_box_left: autoDraw = False
+17.5927 	EXP 	feedback_box_right: autoDraw = False
+17.5927 	EXP 	ITI_fix_cross: autoDraw = True
+17.5927 	EXP 	ITI_box_left: autoDraw = True
+17.5927 	EXP 	ITI_box_right: autoDraw = True
+18.3502 	INFO 	Keyboard events cleared
+18.3501 	EXP 	ITI_fix_cross: autoDraw = False
+18.3501 	EXP 	ITI_box_left: autoDraw = False
+18.3501 	EXP 	ITI_box_right: autoDraw = False
+18.3501 	EXP 	stimulus: ori = np.float64(0.0)
+18.3501 	EXP 	stimulus: image = 'hljt_images/right_palmar.png'
+18.3501 	EXP 	stimulus: autoDraw = True
+18.3501 	EXP 	box_left: autoDraw = True
+18.3501 	EXP 	box_right: autoDraw = True
+18.8443 	DATA 	Keypress: l
+18.8601 	EXP 	Device response: <KeyPress from None: t=18.844025500000498, value=l, duration=None>
+18.8838 	EXP 	stimulus: autoDraw = False
+18.8838 	EXP 	box_left: autoDraw = False
+18.8838 	EXP 	box_right: autoDraw = False
+18.8838 	EXP 	feedback_stimulus: ori = np.float64(0.0)
+18.8838 	EXP 	feedback_stimulus: image = 'hljt_images/right_palmar.png'
+18.8838 	EXP 	feedback_box_left: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+18.8838 	EXP 	feedback_box_right: fillColor = <psychopy.colors.Color: (np.float64(-1.0), np.float64(0.0), np.float64(-1.0), np.float64(1.0))>
+18.8838 	EXP 	feedback_stimulus: autoDraw = True
+18.8838 	EXP 	feedback_box_left: autoDraw = True
+18.8838 	EXP 	feedback_box_right: autoDraw = True
+18.9769 	EXP 	Device response: <KeyPress from None: t=18.844025500000498, value=l, duration=0.12412789999962115>
+19.1954 	EXP 	feedback_stimulus: autoDraw = False
+19.1954 	EXP 	feedback_box_left: autoDraw = False
+19.1954 	EXP 	feedback_box_right: autoDraw = False
+19.1954 	EXP 	block_end_main_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_main_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_main_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_main_text: text = 'You have finished the practice block.\n\nTake a few seconds before proceeding to the next block.\n\nA message below will let you know when you can proceed.'
+19.1954 	EXP 	block_end_adv_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_adv_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_adv_text: height = np.float64(0.03)
+19.1954 	EXP 	block_end_adv_text: text = 'Press SPACE to continue'
+19.1954 	EXP 	block_end_main_text: autoDraw = True
+19.1954 	EXP 	timer: autoDraw = True
+20.1764 	INFO 	Keyboard events cleared
+20.1762 	EXP 	block_end_adv_text: autoDraw = True
+20.8258 	EXP 	Device response: <KeyPress from None: t=20.818263400000433, value=escape, duration=None>
+20.8265 	DATA 	Keypress: escape
+21.0263 	EXP 	Device response: <KeyPress from None: t=20.818263400000433, value=escape, duration=0.20018059999983961>
+21.0263 	EXP 	HLJT_local: status = STOPPED
+21.0425 	EXP 	block_end_main_text: autoDraw = False
+21.0425 	EXP 	timer: autoDraw = False
+21.0425 	EXP 	block_end_adv_text: autoDraw = False
+21.0427 	EXP 	HLJT_local: status = STOPPED
+21.0823 	INFO 	saved data to 'C:\\Users\\morenoverdu\\OneDrive - UCL\\BAS-Lab\\Github repositories\\HLJT\\HLJT_local\\data\\094632_HLJT_local_2026-04-15_11h53.28.704.csv'
+21.0845 	INFO 	saved data to C:\Users\morenoverdu\OneDrive - UCL\BAS-Lab\Github repositories\HLJT\HLJT_local\data\094632_HLJT_local_2026-04-15_11h53.28.704.psydat
+21.4221 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5213 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5214 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5214 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5214 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5215 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+21.5215 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

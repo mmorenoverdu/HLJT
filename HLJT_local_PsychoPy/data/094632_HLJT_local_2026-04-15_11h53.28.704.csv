@@ -1,0 +1,32 @@
+﻿language,ISO_code,thisN,thisTrialN,thisRepN,message,EN,ES,FR,DE,inst_pics,inst_msg_EN,inst_msg_ES,inst_msg_FR,inst_msg_DE,image_w,image_h,hljt_images,hljt_side,hljt_view,hljt_angle,hljt_direction,hljt_correct_both,hljt_correct_one,block_adv_resp.keys,block_adv_resp.rt,block_adv_resp.duration,key_resp.keys,key_resp.corr,key_resp.rt,key_resp.duration,load_lg_loop.thisRepN,load_lg_loop.thisTrialN,load_lg_loop.thisN,load_lg_loop.thisIndex,update_msg_loop.thisRepN,update_msg_loop.thisTrialN,update_msg_loop.thisN,update_msg_loop.thisIndex,instructions_loop.thisRepN,instructions_loop.thisTrialN,instructions_loop.thisN,instructions_loop.thisIndex,blocks_loop.thisRepN,blocks_loop.thisTrialN,blocks_loop.thisN,blocks_loop.thisIndex,trials_loop.thisRepN,trials_loop.thisTrialN,trials_loop.thisN,trials_loop.thisIndex,thisRow.t,notes,language_code,load_lg.started,load_lg.stopped,msg_name,msg_value,adv_resp.started,hljt_image.started,adv_resp.keys,adv_resp.rt,adv_resp.duration,demographics.started,label_female.started,label_male.started,label_transgender.started,label_nonbinary.started,label_other.started,label_prefer_not_say.started,label_left.started,label_ambi.started,label_right.started,next_button.started,demographics.stopped,age_textbox.text,gender_slider.response,gender_slider.rt,laterality_slider.response,laterality_slider.rt,next_button.numClicks,next_button.timesOn,next_button.timesOff,block_number,block_start.started,block_number_text.started,block_start_main_text.started,block_adv_resp.started,block_start.stopped,blocks_loop.block_adv_resp.keys,blocks_loop.block_adv_resp.rt,blocks_loop.block_adv_resp.duration,reps_per_block,ITI,ITI.started,ITI.stopped,trial.started,stimulus.started,key_resp.started,trial.stopped,trials_loop.key_resp.keys,trials_loop.key_resp.corr,trials_loop.key_resp.rt,trials_loop.key_resp.duration,feedback.started,feedback_stimulus.started,feedback.stopped,block_end.started,block_end_main_text.started,timer.started,block_end_adv_resp.started,participant,session,language,response_mode,practice_block,n_angles,hand_views,n_reps,feedback,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+English,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,094632,001,English,Both hands,Yes,8 (increments of 45º),Palmar and Dorsal,8,0.3,2026-04-15_11h53.28.704,HLJT_local,,2025.1.1,59.955524991642136,2026-04-15 11h53.34.624605 +0200,
+English,DE,22,22,0,next_msg,Next,Siguiente,Suivant,Weiter,,,,,,,,,,,,,,,,,,,,,,0,3,3,3,0,22,22,22,,,,,,,,,,,,,0.09266380000008212,,EN,0.019567100000131177,0.019591100000070583,next_msg,Next,0.09266380000008212,0.09266380000008212,space,0.7983211999999185,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,094632,001,English,Both hands,Yes,8 (increments of 45º),Palmar and Dorsal,8,0.3,2026-04-15_11h53.28.704,HLJT_local,,2025.1.1,59.955524991642136,2026-04-15 11h53.34.624605 +0200,
+English,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0087227000003622,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,1.0442204000000856,7.903689500000837, ,None,None,None,None,1,6.858384599999226,6.858390199999121,,,,,,,,,,,,,,,,,,,,,,,,,,,,,094632,001,English,Both hands,Yes,8 (increments of 45º),Palmar and Dorsal,8,0.3,2026-04-15_11h53.28.704,HLJT_local,,2025.1.1,59.955524991642136,2026-04-15 11h53.34.624605 +0200,
+English,,0,0,0,,,,,,hljt_instr_images/instr_pic3.jpg,"After each image, you will receive a short feedback on your response:
+
+If you respond correctly, the corresponding box will turn green
+
+If you respond incorrectly, the corresponding box will turn red
+
+Remember that your goal is to respond as accurately and fast as possible","Tras cada imagen, recibirás un feedback corto sobre tu respuesta:
+
+Si respondes correctamente, la caja correspondiente se volverá verde
+
+Si respondes incorrectamente, la caja correspondiente se volverá roja
+
+Recuerda que tu objetivo es responder tan precisa y rápidamente como puedas","Après chaque image, vous recevrez un bref commentaire sur votre réponse :
+
+Si vous répondez correctement, la case correspondante devient verte.
+
+Si votre réponse est incorrecte, la case correspondante devient rouge.
+
+N'oubliez pas que votre objectif est de répondre le plus précisément et le plus rapidement possible.
+","Nach jedem Bild erhalten Sie ein kurzes Feedback zu Ihrer Antwort:
+
+Wenn Sie korrekt antworten, wird das entsprechende Feld grün.
+
+Wenn Sie falsch antworten, wird das entsprechende Feld rot.
+
+Denken Sie daran, dass Ihr Ziel darin besteht, so genau und schnell wie möglich zu antworten.",0.6,0.5,hljt_images/right_palmar.png,right,palmar,45,lateral,l,h,space,1.1414198000002216,None,l,1,0.7782800999993924,None,,,,,,,,,0,2,2,2,0,0,0,0,0,0,0,1,15.565135100000589,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,10.904444000000694,10.907717300000513,10.907717300000513,11.359601600000133,12.51044820000061,space,1.1414198000002216,None,1,0.9490951828488876,15.561776700000337,16.442659900000763,16.50061750000077,16.50392870000087,16.50392870000087,17.29356750000079,l,1,0.7782800999993924,None,17.31440140000086,17.321672400000352,17.57659320000039,,,,,094632,001,English,Both hands,Yes,8 (increments of 45º),Palmar and Dorsal,8,0.3,2026-04-15_11h53.28.704,HLJT_local,,2025.1.1,59.955524991642136,2026-04-15 11h53.34.624605 +0200,
+English,,1,1,0,,,,,,,,,,,,,hljt_images/right_palmar.png,right,palmar,0,up,l,h,space,1.1414198000002216,None,l,1,0.4938835000002655,None,,,,,,,,,,,,,0,0,0,0,0,1,1,0,17.59268390000034,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.7607830012950059,17.576927900000555,18.326587100000324,18.346727300000566,18.350104900000588,18.350104900000588,18.86035770000035,l,1,0.4938835000002655,None,18.880434100000457,18.883836000000883,19.160575300000346,,,,,094632,001,English,Both hands,Yes,8 (increments of 45º),Palmar and Dorsal,8,0.3,2026-04-15_11h53.28.704,HLJT_local,,2025.1.1,59.955524991642136,2026-04-15 11h53.34.624605 +0200,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,19.18169670000043,19.19538080000075,19.19538080000075,20.176183700000365,,,,,,,,,,,,,,,,
