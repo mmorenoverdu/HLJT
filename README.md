@@ -13,8 +13,10 @@ An example of the setup is shown below.
 ## Repository information
 This repository has two main folders, which contain **PsychoPy** experiments (`.psyexp`), together with associated files to run them **locally** (lab/desktop experiments) or **online** (in a browser). 
 Please consult the accompanying manuscript [Moreno-Verdú et al., 2025](https://www.ibroneuroscience.org/article/S0306-4522(25)00180-0/fulltext) on the [Movement Imagery Ability Task Platform](https://movementimageryability.github.io/) for a guide on necessary steps to run a task in each of the deployment modes, which can help with the decision.
-- [HLJT PsychoPy local](/HLJT_local)
-- [HLJT PsychoPy online](/HLJT_online)
+- [HLJT PsychoPy local](/HLJT_local_PsychoPy)
+- [HLJT PsychoPy online](/HLJT_online_PsychoPy)
+- [HLJT OpenSesame local](/HLJT_local_OpenSesame)
+- [HLJT OpenSesame online](/HLJT_online_Opensesame)
 
 The versions provided in this repository allow flexibility in terms of key experiment parameters of the HLJT:
 - angles of rotation
