@@ -1,8 +1,11 @@
 # HAND LATERALITY JUDGEMENT TASK (HLJT) — Online version
 
 **Author:** Marcos Moreno Verdu, 06/07/2026
+
 **Software used:** OpenSesame 4.1.9 (or later)
+
 **Experiment Type:** Online
+
 **Languages supported:** English (EN) = default, Spanish (ES), French (FR), German (DE). Further languages can be added, which requires simple changes to the `.csv` files (see [Language Localization](#language-localization)).
 
 ---------------------------------------
