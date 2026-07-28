@@ -9,29 +9,29 @@ Your goal is to respond as quickly AND accurately as possible.
 
 Each image will appear until you have responded. The next image will appear automatically.","Instrucciones:
 
-En esta tarea, verÃ¡s imÃ¡genes del dorso o la palma de manos izquierdas o derechas. Las imÃ¡genes estarÃ¡n rotadas con diferentes Ã¡ngulos.
+En esta tarea, verás imágenes del dorso o la palma de manos izquierdas o derechas. Las imágenes estarán rotadas con diferentes ángulos.
 
 Tu tarea es determinar si la imagen corresponde a una mano izquierda o derecha.
 
-Tu objetivo es responder lo mÃ¡s precisa y rÃ¡pidamente posible.
+Tu objetivo es responder lo más precisa y rápidamente posible.
 
-Cada imagen aparecerÃ¡ hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerÃ¡ automÃ¡ticamente.","Instructions :
+Cada imagen aparecerá hasta que hayas respondido. Una vez hayas respondido, la siguiente imagen aparecerá automáticamente.","Instructions :
 
-Dans cette tÃ¢che, vous verrez des images de mains gauches ou droites, les paumes tournÃ©es vers le haut ou vers le bas. Les images seront tournÃ©es sous diffÃ©rents angles.
+Dans cette tâche, vous verrez des images de mains gauches ou droites, les paumes tournées vers le haut ou vers le bas. Les images seront tournées sous différents angles.
 
-Votre tÃ¢che consiste Ã  dÃ©terminer si l'image correspond Ã  une main gauche ou droite.
+Votre tâche consiste à déterminer si l'image correspond à une main gauche ou droite.
 
-Votre objectif est de rÃ©pondre le plus rapidement ET le plus prÃ©cisÃ©ment possible.
+Votre objectif est de répondre le plus rapidement ET le plus précisément possible.
 
-Chaque image apparaÃ®tra jusqu'Ã  ce que vous ayez rÃ©pondu. L'image suivante apparaÃ®tra automatiquement.","Anweisungen:
+Chaque image apparaîtra jusqu'à ce que vous ayez répondu. L'image suivante apparaîtra automatiquement.","Instruktionen:
 
-In dieser Aufgabe sehen Sie Bilder von linken oder rechten HÃ¤nden, deren HandflÃ¤chen nach oben oder unten zeigen. Die Bilder werden in verschiedenen Winkeln gedreht.
+In dieser Aufgabe sehen Sie Bilder von linken oder rechten Händen, deren Handfläche nach oben oder unten zeigt. Die Bilder werden in verschiedenen Winkeln gedreht.
 
 Ihre Aufgabe ist es zu bestimmen, ob das Bild einer linken oder rechten Hand entspricht.
 
-Ihr Ziel ist es, sowohl SCHNELL als auch GENAU zu antworten.
+Ihr Ziel ist es, so schnell UND korrekt wie möglich zu antworten.
 
-Jedes Bild wird angezeigt, bis Sie geantwortet haben. Das nÃ¤chste Bild erscheint automatisch.",0.6,0.5
+Jedes Bild wird angezeigt, bis Sie geantwortet haben. Das nächste Bild erscheint automatisch.",0.6,0.5
 hljt_instr_images/instr_pic2_right.jpg,"Please use only your INDEX and MIDDLE FINGERS of the RIGHT HAND to respond.
 
 Place your index finger on the ""G"" key and the middle finger on the ""H"" key of your keyboard.
@@ -41,56 +41,56 @@ Left Hand = G | H = Right Hand
 
 You must maintain your hand on the keyboard throughout the task.
 
-Keep your other hand on the desk, in the same position and as motionless as possible.","Por favor, usa solo los DEDOS ÃNDICE y CORAZÃ“N de tu MANO DERECHA para responder.
+Keep your other hand on the desk, in the same position and as motionless as possible.","Por favor, usa solo los DEDOS ÍNDICE y CORAZÓN de tu MANO DERECHA para responder.
 
-Coloca tu dedo Ã­ndice sobre la ""G"" y el corazÃ³n sobre la ""H"" de tu teclado.
+Coloca tu dedo índice sobre la ""G"" y el corazón sobre la ""H"" de tu teclado.
 
 Para responder:
 Mano izquierda = G | H = Mano derecha
 
 Tienes que mantener tu otra mano sobre la mesa durante la tarea.
 
-MantÃ©n tus manos en la misma posiciÃ³n y tan quietas como puedas.","Veuillez utiliser uniquement L'INDEX et LE MAJEUR de votre MAIN DROITE pour rÃ©pondre.
+Mantén tus manos en la misma posición y tan quietas como puedas.","Veuillez utiliser uniquement L'INDEX et LE MAJEUR de votre MAIN DROITE pour répondre.
 
 Placez votre index sur le ""G"" et votre majeur sur le ""H"" de votre clavier.
 
-Pour rÃ©pondre :
+Pour répondre :
 Main gauche = G | H = Main droite.
 
-Vous devez garder votre autre main sur la table pendant la tÃ¢che.
+Vous devez garder votre autre main sur la table pendant la tâche.
 
-Gardez vos mains dans la mÃªme position et aussi immobiles que possible.","Bitte verwenden Sie nur Ihren ZEIGEFINGER und MITTELFINGER der RECHTEN HAND, um zu antworten.
+Gardez vos mains dans la même position et aussi immobiles que possible.","Bitte verwenden Sie nur Ihren ZEIGEFINGER und MITTELFINGER der RECHTEN HAND, um zu antworten.
 
-Legen Sie Ihren Zeigefinger auf die Taste â€Gâ€œ und den Mittelfinger auf die Taste â€Hâ€œ Ihrer Tastatur.
+Legen Sie Ihren Zeigefinger auf die Taste „G“ und den Mittelfinger auf die Taste „H“ Ihrer Tastatur.
 
 Zum Antworten:
 Linke Hand = G | H = Rechte Hand
 
-Sie mÃ¼ssen Ihre Hand wÃ¤hrend der gesamten Aufgabe auf der Tastatur halten.
+Sie müssen Ihre Hand während der gesamten Aufgabe auf der Tastatur halten.
 
-Halten Sie Ihre andere Hand auf dem Tisch, in derselben Position und so ruhig wie mÃ¶glich.",0.6,0.5
+Halten Sie Ihre andere Hand auf dem Tisch, in derselben Position und so ruhig wie möglich.",0.6,0.5
 hljt_instr_images/instr_pic3.jpg,"After each image, you will receive a short feedback on your response:
 
 If you respond correctly, the corresponding box will turn green
 
 If you respond incorrectly, the corresponding box will turn red
 
-Remember that your goal is to respond as accurately and fast as possible","Tras cada imagen, recibirÃ¡s un feedback corto sobre tu respuesta:
+Remember that your goal is to respond as accurately and fast as possible","Tras cada imagen, recibirás un feedback corto sobre tu respuesta:
 
-Si respondes correctamente, la caja correspondiente se volverÃ¡ verde
+Si respondes correctamente, la caja correspondiente se volverá verde
 
-Si respondes incorrectamente, la caja correspondiente se volverÃ¡ roja
+Si respondes incorrectamente, la caja correspondiente se volverá roja
 
-Recuerda que tu objetivo es responder tan precisa y rÃ¡pidamente como puedas","AprÃ¨s chaque image, vous recevrez un bref commentaire sur votre rÃ©ponse :
+Recuerda que tu objetivo es responder tan precisa y rápidamente como puedas","Après chaque image, vous recevrez un bref commentaire sur votre réponse :
 
-Si vous rÃ©pondez correctement, la case correspondante devient verte.
+Si vous répondez correctement, la case correspondante devient verte.
 
-Si votre rÃ©ponse est incorrecte, la case correspondante devient rouge.
+Si votre réponse est incorrecte, la case correspondante devient rouge.
 
-N'oubliez pas que votre objectif est de rÃ©pondre le plus prÃ©cisÃ©ment et le plus rapidement possible.","Nach jedem Bild erhalten Sie ein kurzes Feedback zu Ihrer Antwort:
+N'oubliez pas que votre objectif est de répondre le plus précisément et le plus rapidement possible.","Nach jedem Bild erhalten Sie ein kurzes Feedback zu Ihrer Antwort:
 
-Wenn Sie korrekt antworten, wird das entsprechende Feld grÃ¼n.
+Wenn Sie korrekt antworten, wird das entsprechende Feld grün.
 
 Wenn Sie falsch antworten, wird das entsprechende Feld rot.
 
-Denken Sie daran, dass Ihr Ziel darin besteht, so genau und schnell wie mÃ¶glich zu antworten.",0.6,0.5
+Erinnern Sie sich an Ihr Ziel so schnell und korrekt wie möglich zu antworten.",0.6,0.5
