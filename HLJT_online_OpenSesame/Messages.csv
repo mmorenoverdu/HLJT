@@ -1,54 +1,54 @@
-Ôªømessage,EN,ES,FR,DE
+message,EN,ES,FR,DE
 welcome_msg,"Welcome to the Hand Laterality Judgement Task!
 
 The purpose is to quantify your ability to make laterality judgements (right/left) on hand images.
 
-Press SPACE to start.","¬°Bienvenid@ a la Tarea de Discriminaci√≥n de Lateralidad!
+Press SPACE to start.","°Bienvenid@ a la Tarea de DiscriminaciÛn de Lateralidad!
 
-El objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de im√°genes de manos.
+El objetivo es cuantificar tu capacidad para decidir la lateralidad (derecha/izquierda) de im·genes de manos.
 
-Presiona ESPACIO para empezar.","Bienvenue √† la T√¢che de Jugement de Lat√©ralit√© de la Main !
+Presiona ESPACIO para empezar.","Bienvenue ‡ la T‚che de Jugement de LatÈralitÈ de la Main !
 
-Le but est de quantifier votre capacit√© √† d√©cider de la lat√©ralit√© (droite/gauche) d'images de mains.
+Le but est de quantifier votre capacitÈ ‡ dÈcider de la latÈralitÈ (droite/gauche) d'images de mains.
 
-Appuyez sur SPACE pour commencer.","Willkommen zur Hand-Lateralit√§ts-Bewertungsaufgabe!
+Appuyez sur SPACE pour commencer.","Willkommen zur Hand-Lateralit‰ts-Bewertungsaufgabe!
 
-Zweck der Aufgabe ist es, Ihre F√§higkeit zu messen, Lateralisierungen (rechts/links) von Handbildern zu beurteilen.
+Zweck der Aufgabe ist es, Ihre F‰higkeit zu messen, die Lateralit‰t (rechts/links) von Handbildern zu beurteilen.
 
-Dr√ºcken Sie die LEERTASTE, um zu starten."
-adv_msg,Press SPACE to continue,Presiona ESPACIO para continuar,Appuyez sur ESPACE pour continuer,"Dr√ºcken Sie die LEERTASTE, um fortzufahren"
+Dr¸cken Sie die LEERTASTE, um zu starten."
+adv_msg,Press SPACE to continue,Presiona ESPACIO para continuar,Appuyez sur ESPACE pour continuer,"Dr¸cken Sie die LEERTASTE, um fortzufahren"
 bye_msg,"This is the end of the experiment
 
 Thanks for participating!
 
 Wait 3 seconds to exit","Este es el final del experimento
 
-¬°Gracias por participar!
+°Gracias por participar!
 
-Espera 3 segundos para salir","Ceci est la fin de l'exp√©rience
+Espera 3 segundos para salir","Ceci est la fin de l'expÈrience
 
-Merci d'avoir particip√© !
+Merci d'avoir participÈ !
 
 Attendez 3 secondes pour quitter","Dies ist das Ende des Experiments.
 
-Vielen Dank f√ºr Ihre Teilnahme!
+Vielen Dank f¸r Ihre Teilnahme!
 
-Warten Sie 3 Sekunden, bevor Sie das Experiment beenden."
+Das Experiment endet in 3 Sekunden"
 out_of_msg,out of,de,sur,von
-blocks_msg,blocks,bloques,blocs,Bl√∂cken
+blocks_msg,blocks,bloques,blocs,Blˆcken
 practice_block_msg,"You are going to start the practice block.
 
 This block is just to get familiar with the task and your performance is not important.
 
-You will receive feedback in this block.","Vas a empezar el bloque de pr√°ctica.
+You will receive feedback in this block.","Vas a empezar el bloque de pr·ctica.
 
-Este bloque es para que te familiarices con la tarea y c√≥mo lo hagas no es importante.
+Este bloque es para que te familiarices con la tarea y cÛmo lo hagas no es importante.
 
-Receibir√°s feedback durante este bloque.","Vous allez commencer la phase d'entra√Ænement.
+Receibir·s feedback durante este bloque.","Vous allez commencer la phase d'entraÓnement.
 
-Cette phase sert uniquement √† vous familiariser avec la t√¢che et votre performance n'a pas d'importance.
+Cette phase sert uniquement ‡ vous familiariser avec la t‚che et votre performance n'a pas d'importance.
 
-Vous recevrez des commentaires √† l'issue de cette phase. ","Sie werden nun mit dem √úbungsblock beginnen.
+Vous recevrez des commentaires ‡ l'issue de cette phase. ","Sie werden nun mit dem ‹bungsblock beginnen.
 
 Dieser Block dient nur dazu, sich mit der Aufgabe vertraut zu machen, Ihre Leistung ist hier nicht entscheidend.
 
@@ -57,45 +57,45 @@ practice_end_msg,"You have finished the practice block.
 
 Take a few seconds before proceeding to the next block.
 
-A message below will let you know when you can proceed.","Has terminado el bloque de pr√°ctica.
+A message below will let you know when you can proceed.","Has terminado el bloque de pr·ctica.
 
-T√≥mate unos pocos segundos antes de continuar al siguiente bloque.
+TÛmate unos pocos segundos antes de continuar al siguiente bloque.
 
-Ver√°s un mensaje m√°s abajo indicando que ya puedes seguir.","Vous avez termin√© la phase d'entra√Ænement.
+Ver·s un mensaje m·s abajo indicando que ya puedes seguir.","Vous avez terminÈ la phase d'entraÓnement.
 
 Prenez quelques secondes avant de passer au bloc suivant. 
 
-Un message ci-dessous vous indiquera quand vous pourrez continuer.","Sie haben den √úbungsblock abgeschlossen.
+Un message ci-dessous vous indiquera quand vous pourrez continuer.","Sie haben den ‹bungsblock abgeschlossen.
 
-Nehmen Sie sich ein paar Sekunden Zeit, bevor Sie mit dem n√§chsten Block fortfahren.
+Nehmen Sie sich ein paar Sekunden Zeit, bevor Sie mit dem n‰chsten Block fortfahren.
 
-Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen k√∂nnen."
+Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen kˆnnen."
 task_block_msg,"You are going to start a main task block.
 
 Your performance is important in this block.
 
 You have to respond as QUICKLY AND ACCURATELY as you can.","Vas a empezar un bloque principal de la tarea.
 
-C√≥mo lo hagas s√≠ es importante en este bloque.
+CÛmo lo hagas sÌ es importante en este bloque.
 
-Tienes que responder lo m√°s R√ÅPIDA y PRECISAMENTE que puedas.","Vous allez commencer un bloc de t√¢ches principales.
+Tienes que responder lo m·s R¡PIDA y PRECISAMENTE que puedas.","Vous allez commencer un bloc de t‚ches principales.
 
 Vos performances sont importantes dans ce bloc.
 
-Vous devez r√©pondre aussi RAPIDEMENT ET PR√âCIS√âMENT que possible.","Sie werden nun mit einem Hauptaufgabenblock beginnen.
+Vous devez rÈpondre aussi RAPIDEMENT ET PR…CIS…MENT que possible.","Sie werden nun mit einem Hauptaufgabenblock beginnen.
 
 Ihre Leistung ist in diesem Block wichtig.
 
-Sie m√ºssen so SCHNELL UND GENAU wie m√∂glich antworten."
+Sie m¸ssen so SCHNELL UND KORREKT wie mˆglich antworten."
 block_end_msg,"You have finished the block.
 
 Take a few seconds before proceeding.
 
 A message below will let you know when you can proceed.","Has terminado el bloque.
 
-T√≥mate unos pocos segundos antes de continuar.
+TÛmate unos pocos segundos antes de continuar.
 
-Ver√°s un mensaje m√°s abajo indicando que ya puedes seguir.","Vous avez termin√© le bloc.
+Ver·s un mensaje m·s abajo indicando que ya puedes seguir.","Vous avez terminÈ le bloc.
 
 Prenez quelques secondes avant de continuer. 
 
@@ -103,19 +103,18 @@ Un message ci-dessous vous indiquera quand vous pourrez continuer.","Sie haben d
 
 Nehmen Sie sich ein paar Sekunden Zeit, bevor Sie fortfahren.
 
-Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen k√∂nnen."
-demographics_msg,Please fill out this information about yourself.,Por favor completa esta informaci√≥n sobre ti.,Veuillez remplir ces informations vous concernant.,Bitte f√ºllen Sie diese Informationen √ºber sich selbst aus.
-age_question_msg,Please type in your age and hit ENTER,Escribe tu edad y pressiona ENTER,Indique ton √¢ge et appuyez sur ENTER,Gib dein Alter ein und dr√ºcke die ENTER-Taste
-age_msg,Age:,Edad:,√Çge :,Alter:
-gender_msg,Gender:,G√©nero,Genre :,Geschlecht:
+Eine Meldung unten wird Ihnen anzeigen, wann Sie weitermachen kˆnnen."
+demographics_msg,Please fill out this information about yourself.,Por favor completa esta informaciÛn sobre ti.,Veuillez remplir ces informations vous concernant.,Bitte f¸llen Sie diese Informationen ¸ber sich selbst aus.
+age_msg,Age:,Edad:,¬ge :,Alter:
+gender_msg,Gender:,GÈnero,Genre :,Geschlecht:
 f_msg,Female,Mujer,Femme,Weiblich
-m_msg,Male,Hombre,Homme,M√§nnlich
-tg_msg,Trans-gender,Transg√©nero,Transgenre,Transgender
-nb_msg,Non-binary,No binario,Non binaire,Nicht-bin√§r
+m_msg,Male,Hombre,Homme,M‰nnlich
+tg_msg,Trans-gender,TransgÈnero,Transgenre,Transgender
+nb_msg,Non-binary,No binario,Non binaire,Nicht-bin‰r
 o_msg,Other,Otro,Autre,Sonstiges
-pns_msg,Prefer not saying,Prefiero no decirlo,Pr√©f√®re ne pas le dire,M√∂chte ich nicht sagen
+pns_msg,Prefer not saying,Prefiero no decirlo,PrÈfËre ne pas le dire,Mˆchte ich nicht sagen
 laterality_msg,Hand dominance:,Mano dominante:,Dominance manuelle :,Handdominanz:
 left_msg,Left,Izquierda,Gauche,Links
-ambi_msg,Ambidextrous,Ambidiestro/a,Ambidextre,Beidh√§ndig
-right_msg,Right,Derecha,Droite,Rechte
+ambi_msg,Ambidextrous,Ambidiestro/a,Ambidextre,Beidh‰ndig
+right_msg,Right,Derecha,Droite,Rechts
 next_msg,Next,Siguiente,Suivant,Weiter
