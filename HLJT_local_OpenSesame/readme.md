@@ -1,11 +1,8 @@
 # HAND LATERALITY JUDGEMENT TASK (HLJT) — OpenSesame version
 
-**Author:** Marcos Moreno Verdu, 06/07/2026
-
+**Author:** Marcos Moreno Verdu, 06/07/2026 
 **Software used:** OpenSesame 4.1.9 (or superior)
-
 **Experiment Type:** Local
-
 **Languages supported:** English (EN) = default, Spanish (ES), French (FR) and German (DE). Further languages can be added with almost no code changes (see [Language Localisation](#language-localisation)).
 
 ---------------------------------------
@@ -30,7 +27,7 @@ OpenSesame exports results as a single `.csv` file per participant (see [Output]
 
 **Step-by-step instructions:**
 1. **Download** all files from the repository.
-2. **Unzip** the files into a **new** folder, making sure it contains no other OpenSesame experiments. Do not rename or move any file or folder — see the warning at the end of [Language Localisation](#language-localisation).
+2. **Unzip** the files into a **new** folder, making sure it contains no other OpenSesame experiments. `HLJT_local.osexp` bundles every image and spreadsheet it needs inside its own file pool, so you can rename this folder or move it anywhere on your computer without breaking anything.
 3. **Open** the file `HLJT_local.osexp` in OpenSesame.
 4. Open the **`settings`** item and edit the experimenter-facing options directly in the Python code (see [Experiment Settings](#experiment-settings-parameters-to-choose)).
 5. Click the **Run** button to start the experiment.
@@ -49,6 +46,8 @@ Unlike the PsychoPy version (which selects the language from the startup dialog)
 - `Messages.xlsx` contains one column per ISO_code (e.g., `EN`, `DE`) and is read once, in the `setup` item's Run phase (right after `language_select`), to build the `msg` dictionary used by every other item (e.g. `msg['welcome_msg']`).
 
 Because every screen is an `inline_script` item that reads `msg[...]` directly when it runs, text always reflects the chosen language automatically — there is no PsychoPy-style "Set to every repeat" setting to configure.
+
+Both files (like every image and spreadsheet the experiment uses) are read via OpenSesame's **file pool** (`pool["Messages.xlsx"]`, etc.), not from a path on disk. This is what makes the experiment portable — it doesn't matter where you unzip or move the folder, or what computer you run it on.
 
 ### Adding a new language
 
@@ -91,41 +90,42 @@ Add a new column titled with your new code (e.g., `NL`) and provide a translatio
 
 ⚠️ Do this consistently for **all** message keys used by the experiment!
 
-#### 4. Add a button to `language_select`
+#### 4. Re-import the edited xlsx files into the file pool
+
+Because this `.osexp` bundles its own copies of `Language_localiser.xlsx` and `Messages.xlsx` inside its file pool (rather than reading them from disk), editing the files where you unzipped them does **not** update the copy OpenSesame actually uses. You must:
+- In OpenSesame's File Pool panel (bottom-right by default), right-click `Language_localiser.xlsx` / `Messages.xlsx` → remove, then drag-and-drop your edited files back in with the **exact same filename**.
+
+#### 5. Add a button to `language_select`
 
 1. Open the **`language_select`** item in OpenSesame.
 2. Add a new tuple to the `btn_defs` list, e.g. `("Dutch", "Nederlands")`. The first value must exactly match the entry you added to `Language_localiser.xlsx`; the second is just the button's on-screen label.
 3. Save the experiment.
 
-> ⚠️ **Important:** Do not change folder or file names. Do not rename variables. Do not move files after decompressing the repository. The experiment depends on exact paths and identifiers. Moving or renaming files may cause crashes.
+> ⚠️ **Important:** Do not rename items, variables, or pool files — the pool is a flat namespace (no subfolders), and every script reference in this experiment expects the exact filenames listed in [Technical Details](#technical-details). You can, however, freely rename or move the folder the `.osexp` itself lives in.
 
 ---------------------------------------
 
 ## TECHNICAL DETAILS
 
-The decompressed repository includes:
-- `HLJT_local.osexp` — main OpenSesame experiment file (built entirely from `inline_script`, `loop` and `sequence` items — no sketchpad/form/keyboard_response GUI items)
-- `Language_localiser.xlsx` — language configuration file
-- `Messages.xlsx` — messages used across items
+`HLJT_local.osexp` is a `.tar.gz` archive containing the script plus a **file pool** with every image and spreadsheet the experiment needs (19 files total) — the same mechanism used by `HLJT_online.osexp`. OpenSesame opens it exactly like any other `.osexp`; you don't need to do anything special.
+
+The bundled file pool includes:
+- `Language_localiser.xlsx`, `Messages.xlsx` — language configuration and message text
 - `HLJT_icon.jpg` — task icon shown on the welcome screen
+- `left_dorsal.png`, `left_palmar.png`, `right_dorsal.png`, `right_palmar.png` — the four hand stimuli (dorsal/palmar × left/right)
+- `instr_pic1.jpg`, `instr_pic2_both.jpg`, `instr_pic2_left.jpg`, `instr_pic2_right.jpg`, `instr_pic3.jpg` — instruction screen images
+- `Instructions_both_hands.xlsx`, `Instructions_left_hand.xlsx`, `Instructions_right_hand.xlsx` — one per response mode
+- `Stimuli_4angles.xlsx`, `Stimuli_6angles.xlsx`, `Stimuli_8angles.xlsx`, `Stimuli_12angles.xlsx` — trial tables for each angle-count setting
 
-**Folder `hljt_images`:**
-- The four stimuli used in the task — left/right hand images in `.png` format, divided into dorsal or palmar view. The experimenter can specify whether both or only one view is used.
-
-**Folder `hljt_instr_images`:**
-- Images displayed in the instructions: `pic1` (overall idea of the task), `pic2` (how to respond, depending on response mode), `pic3` (information about feedback, suppressed depending on user preference).
-
-**Folder `hljt_files`:** Contains key files used to run the experiment.
-- Instructions files (`.xlsx`): one per available response mode, encoding the instructions and images for that mode.
-- `Stimuli_*angles.xlsx`: excel files including the trials of the practice and test blocks for different experiment settings.
+The repository also keeps `hljt_images/`, `hljt_instr_images/`, and `hljt_files/` on disk as organized source copies of these same files (handy for browsing/editing), but **the experiment itself only ever reads from the pool** (`pool["filename.xlsx"]`, `pool["image.png"]`, etc.), never from a path on disk. This is what makes the experiment fully portable: it runs the same way regardless of where you downloaded or moved the folder, or what machine you're on. If you edit one of these files, remember to re-import it into the pool (see [Language Localisation](#language-localisation), step 4) — editing the copy in `hljt_images`/`hljt_files` on disk does not change what the experiment actually loads.
 
 **Folder `data`:**
 - Storage location for output data (one `.csv` per participant).
 
 **How the experiment is built (OpenSesame specifics):**
-- `settings` — experimenter-editable options (Python variables, edited directly in the item).
+- `settings` — experimenter-editable options (Python variables, edited directly in the item). Also forces the process to be DPI-aware on Windows (`ctypes`/`SetProcessDpiAwareness`) before any window is created, so that Windows display scaling doesn't cause fullscreen mode to open at the wrong resolution — a common source of "fullscreen doesn't work" reports that has nothing to do with the experiment's own `width`/`height`/`fullscreen` settings.
 - `language_select` — on-screen language picker (see [Language Localisation](#language-localisation)).
-- `setup` — loads the xlsx files, derives every setting, opens the data file, and defines helper functions shared by later items.
+- `setup` — loads the xlsx files from the pool, derives every setting, opens the data file, and defines helper functions shared by later items.
 - `welcome`, `demographics`, `instructions_loop`/`instructions`, `blocks_loop`/`block_sequence` (`block_start`, `countdown`, `trials_loop`/`trial_sequence` with `ITI`/`trial`/`feedback`, `block_end`), `bye` — one item per screen/step, wired together with native `loop`/`sequence` items so the flow is visible in OpenSesame's interface.
 
 One important rule if you edit or add items: OpenSesame runs the **Prepare** phase of every item inside a `sequence`, in order, before running the **Run** phase of any of them. So a later item's Prepare phase can only rely on values set in an *earlier* item's Prepare phase — never its Run phase (Run-to-Run dependencies between siblings, on the other hand, are always safe, since those execute strictly in order too). This is why, for example, `language` is only available from `setup`'s Run phase onward — it is set by `language_select`'s Run phase, which happens after every item's Prepare has already executed.
