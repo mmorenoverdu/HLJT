@@ -52,7 +52,11 @@
     <Param val="" valType="code" updates="None" name="frameRate"/>
     <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
     <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpNetIP4Address"/>
+    <Param val="4242" valType="str" updates="None" name="gpNetPort"/>
     <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="60" valType="str" updates="None" name="gpSamplingRate"/>
+    <Param val="BINOCULAR" valType="str" updates="None" name="gpTrackEyes"/>
     <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
     <Param val="info" valType="code" updates="None" name="logging level"/>
     <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
@@ -349,7 +353,7 @@
         <Param val="$inst_msg" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+        <Param val="0.8" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <TextComponent name="advance_text" plugin="None">
         <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
@@ -1137,8 +1141,8 @@
       <CodeComponent name="SET_DEFAULT_SETTINGS_FOR_LOCAL_AND_ONLINE_USE" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# response mode - options:&amp;#10;# [&quot;Both hands&quot;, &quot;Right hand&quot;, &quot;Left hand&quot;]&amp;#10;expInfo['response_mode'] = &quot;Both hands&quot;&amp;#10;# whether we want a short practice block&amp;#10;# [&quot;Yes&quot;, &quot;No&quot;]&amp;#10;expInfo['practice_block'] = &quot;Yes&quot;&amp;#10;# how many repetitions per unique stimulus&amp;#10;# [&quot;8&quot;, &quot;12&quot;, &quot;4&quot;]&amp;#10;expInfo['n_reps'] = &quot;8&quot;&amp;#10;# whether we want feedback in main task blocks&amp;#10;# [&quot;0.3&quot;, &quot;0.5&quot;, &quot;0.8&quot;, &quot;1&quot;, &quot;No feedback&quot;]&amp;#10;expInfo['feedback'] = &quot;0.3&quot;&amp;#10;# THE SETTINGS FOR THE STIMULI (ANGLES AND VIEWS)&amp;#10;# ARE SET UP VIA THE CONDITIONS FILE IN THE &amp;#10;# TRIALS_LOOP&amp;#10;# THE CODE BELOW IS JUST A PLACEHOLDER!!&amp;#10;# how many rotations (angles)&amp;#10;# [ &quot;8 (increments of 45º)&quot;,&amp;#10;#   &quot;4 (increments of 90º)&quot;,&amp;#10;#   &quot;6 (increments of 60º)&quot;,&amp;#10;#   &quot;12 (increments of 30º)&quot;]&amp;#10;expInfo['n_angles'] = &quot;8 (increments of 45º)&quot;&amp;#10;# whether we want palmar or dorsal stimuli, or both&amp;#10;# [&quot;Palmar and Dorsal&quot;, &quot;Palmar&quot;, &quot;Dorsal&quot;]&amp;#10;expInfo['hand_views'] = &quot;Palmar and Dorsal&quot;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="expInfo[&quot;response_mode&quot;] = &quot;Both hands&quot;;&amp;#10;expInfo[&quot;practice_block&quot;] = &quot;Yes&quot;;&amp;#10;expInfo[&quot;n_reps&quot;] = &quot;8&quot;;&amp;#10;expInfo[&quot;feedback&quot;] = &quot;0.3&quot;;&amp;#10;expInfo[&quot;n_angles&quot;] = &quot;8 (increments of 45\u00ba)&quot;;&amp;#10;expInfo[&quot;hand_views&quot;] = &quot;Palmar and Dorsal&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="# response mode - options:&amp;#10;# [&quot;Both hands&quot;, &quot;Right hand&quot;, &quot;Left hand&quot;]&amp;#10;expInfo['response_mode'] = &quot;Both hands&quot;&amp;#10;# whether we want a short practice block&amp;#10;# [&quot;Yes&quot;, &quot;No&quot;]&amp;#10;expInfo['practice_block'] = &quot;Yes&quot;&amp;#10;# how many repetitions per unique stimulus&amp;#10;# [&quot;8&quot;, &quot;12&quot;, &quot;4&quot;]&amp;#10;expInfo['n_reps'] = &quot;8&quot;&amp;#10;# whether we want feedback in main task blocks&amp;#10;# [&quot;0.3&quot;, &quot;0.5&quot;, &quot;0.8&quot;, &quot;1&quot;, &quot;No feedback&quot;]&amp;#10;expInfo['feedback'] = &quot;No feedback&quot;&amp;#10;# THE SETTINGS FOR THE STIMULI (ANGLES AND VIEWS)&amp;#10;# ARE SET UP VIA THE CONDITIONS FILE IN THE &amp;#10;# TRIALS_LOOP&amp;#10;# THE CODE BELOW IS JUST A PLACEHOLDER!!&amp;#10;# how many rotations (angles)&amp;#10;# [ &quot;8 (increments of 45º)&quot;,&amp;#10;#   &quot;4 (increments of 90º)&quot;,&amp;#10;#   &quot;6 (increments of 60º)&quot;,&amp;#10;#   &quot;12 (increments of 30º)&quot;]&amp;#10;expInfo['n_angles'] = &quot;8 (increments of 45º)&quot;&amp;#10;# whether we want palmar or dorsal stimuli, or both&amp;#10;# [&quot;Palmar and Dorsal&quot;, &quot;Palmar&quot;, &quot;Dorsal&quot;]&amp;#10;expInfo['hand_views'] = &quot;Palmar and Dorsal&quot;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="expInfo[&quot;response_mode&quot;] = &quot;Both hands&quot;;&amp;#10;expInfo[&quot;practice_block&quot;] = &quot;Yes&quot;;&amp;#10;expInfo[&quot;n_reps&quot;] = &quot;8&quot;;&amp;#10;expInfo[&quot;feedback&quot;] = &quot;No feedback&quot;;&amp;#10;expInfo[&quot;n_angles&quot;] = &quot;8 (increments of 45\u00ba)&quot;;&amp;#10;expInfo[&quot;hand_views&quot;] = &quot;Palmar and Dorsal&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
@@ -1386,26 +1390,6 @@
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <KeyboardComponent name="hljt_go_to_experiment_key" plugin="None">
-        <Param val="'space', 'return'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="" valType="str" updates="None" name="deviceLabel"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="hljt_go_to_experiment_key" valType="code" updates="None" name="name"/>
-        <Param val="press" valType="str" updates="constant" name="registerOn"/>
-        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="nothing" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
     </Routine>
     <Routine name="demographics">
       <RoutineSettingsComponent name="demographics" plugin="None">
@@ -1831,7 +1815,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.022" valType="num" updates="constant" name="letterHeight"/>
         <Param val="0.8" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="label_prefer_not_say" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -2043,42 +2027,82 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
-      <ButtonComponent name="next_button" plugin="None">
+      <PolygonComponent name="next_poly_2" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="0" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="" valType="extendedCode" updates="constant" name="callback"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="0.6078, -0.2784, -0.2784" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="0.6078, -0.2784, -0.2784" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="next_poly_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.7, -0.35)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.2, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <TextComponent name="next_text_2" plugin="None">
         <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="0.6078, -0.2784, -0.2784" valType="color" updates="constant" name="fillColor"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="next_button" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="oncePerClick"/>
+        <Param val="next_text_2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="" valType="num" updates="constant" name="padding"/>
         <Param val="(0.7, -0.35)" valType="list" updates="constant" name="pos"/>
-        <Param val="first click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.2, 0.1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$next_msg" valType="str" updates="set every repeat" name="text"/>
-        <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ButtonComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_demo" plugin="None">
+        <Param val="next_poly_2" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_demo" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
     </Routine>
   </Routines>
   <Flow>
@@ -2138,7 +2162,7 @@
     <Routine name="block_start"/>
     <Routine name="countdown"/>
     <LoopInitiator loopType="TrialHandler" name="trials_loop">
-      <Param name="Selected rows" updates="None" val="0:2" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 45, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 90, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 135, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 225, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 270, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_palmar.png', 'hljt_side': 'right', 'hljt_view': 'palmar', 'hljt_angle': 315, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 45, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 90, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 135, 'hljt_direction': 'medial', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 225, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 270, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/right_dorsal.png', 'hljt_side': 'right', 'hljt_view': 'dorsal', 'hljt_angle': 315, 'hljt_direction': 'lateral', 'hljt_correct_both': 'l', 'hljt_correct_one': 'h'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 45, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 90, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 135, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 225, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 270, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_palmar.png', 'hljt_side': 'left', 'hljt_view': 'palmar', 'hljt_angle': 315, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 0, 'hljt_direction': 'up', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 45, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 90, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 135, 'hljt_direction': 'lateral', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 180, 'hljt_direction': 'down', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 225, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 270, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}, {'hljt_images': 'hljt_images/left_dorsal.png', 'hljt_side': 'left', 'hljt_view': 'dorsal', 'hljt_angle': 315, 'hljt_direction': 'medial', 'hljt_correct_both': 's', 'hljt_correct_one': 'g'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="hljt_files/Stimuli_8angles_all.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
