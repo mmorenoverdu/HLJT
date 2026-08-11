@@ -187,7 +187,6 @@ define inline_script countdown
 	    key, _t = kb.get_key(timeout=30)
 	    if key is not None:
 	        check_escape(key)
-	        break
 	__end__
 	set _prepare ""
 
@@ -433,8 +432,8 @@ define inline_script settings
 	hand_views = "Palmar and Dorsal"
 	n_reps = "8"
 	feedback = "No feedback"
-	practice_n_trials = "5"   # e.g. "all" for all of them
-	test_n_trials = "2"     # same as above
+	practice_n_trials = "10"   # e.g. "all" for all of them
+	test_n_trials = "all"     # same as above
 	var.set("participant", participant)
 	var.set("session", session)
 	# # --- participant / session identifiers ---
