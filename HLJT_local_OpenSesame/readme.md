@@ -34,6 +34,8 @@ OpenSesame exports results as a single `.csv` file per participant (see [Output]
 6. The first screen lets the participant/experimenter **choose the language** by clicking a button; everything after that runs automatically without further supervision.
 7. Data is automatically **saved** into the `data/` folder.
 
+> **⚠️ Full-screen on a new computer:** Every click on **Run** (not Quick Run) opens an "Experiment Settings" dialog (subject number, logfile, **Fullscreen** checkbox) *before* the experiment starts. This checkbox — not the experiment's own `fullscreen` setting — is what actually decides whether the window is full-screen, and OpenSesame remembers its state **per computer**. On a computer where it has never been ticked (e.g. a colleague's fresh install), the experiment will run in a window even though it ran full-screen for you. **The fix:** tick **Fullscreen** in that dialog once on each new computer — OpenSesame will then default to full-screen automatically on every subsequent Run on that machine.
+
 ---------------------------------------
 
 ## LANGUAGE LOCALISATION
