@@ -145,6 +145,9 @@ The experimenter selects settings in the PsychoPy startup dialog **at the beggin
 | `n_reps` | • **12** (Default)<br>• 8<br>• 4 | Repetitions per unique stimulus across the 4 test blocks. Only these values are supported — changing this requires corresponding code adjustments, or the experiment will crash. |
 | `feedback` | • **No feedback in testblock(s)** (Default)<br>• 0.3<br>• 0.5<br>• 0.8<br>• 1<br>  | Duration of feedback (in seconds) per trial in the test blocks. |
 
+To use different visual stimuli (e.g., images depicting specific demographic characteristics), replace the image files in the relevant folder with your own, retaining the original file names.
+If you have used alternative stimuli in a published study, you are welcome to send them (together with the DOI of the manuscript) for possible inclusion in the task repositories.
+
 ### Disable demographic questions
 
 The experiment includes Age, Gender, and Hand dominance questions by default, collected via a `demographics` routine. These support normative data collection.
