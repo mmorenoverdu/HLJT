@@ -153,6 +153,9 @@ The experimenter edits settings directly in the **`settings`** item, before pres
 | `practice_n_trials` | • **"all"** (Default)<br>• any number | How many stimuli to show in the practice block; `"all"` shows every filtered stimulus once. |
 | `test_n_trials` | • **"all"** (Default)<br>• any number | How many stimuli to show per test block; `"all"` shows every filtered stimulus `reps_per_block` (2) times. A small number is handy for quickly testing the whole pipeline. |
 
+To use different visual stimuli (e.g., images depicting specific demographic characteristics), replace the image files in the relevant folder with your own, retaining the original file names.
+If you have used alternative stimuli in a published study, you are welcome to send them (together with the DOI of the manuscript) for possible inclusion in the task repositories.
+
 ### Disable demographic questions
 
 The experiment includes Age, Gender, and Hand dominance questions by default, collected via the `demographics` item. These support normative data collection.
