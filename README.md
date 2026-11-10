@@ -24,6 +24,7 @@ The versions provided in this repository allow flexibility in terms of key exper
 - types of response
 - trial-to-trial feedback
 - number of repetitions
+- if you want to use a different stimuli set, you can find neutral images in [Neutral stimuli](/neutral stimuli)
 
 The optimal protocol is at the user's discretion, but sensible defaults have been implemented.
 
