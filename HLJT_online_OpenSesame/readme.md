@@ -146,6 +146,9 @@ The experimenter edits settings directly in the **`settings`** item (JavaScript)
 2. Edit the values assigned to each variable directly in the JavaScript code.
 3. Save the experiment, test in the OSWeb preview, then re-export to JATOS.
 
+To use different visual stimuli (e.g., images depicting specific demographic characteristics), replace the image files in the relevant folder with your own, retaining the original file names.
+If you have used alternative stimuli in a published study, you are welcome to send them (together with the DOI of the manuscript) for possible inclusion in the task repositories.
+
 ### Letting Participants Select Settings
 
 In the current implementation, only the **language** is chosen by the participant (via `language_form`, always shown at the start). All other settings are fixed by the experimenter in the `settings` item before export. If you want participants to choose additional settings themselves (e.g. response mode), add a new `form_multiple_choice` item following the same pattern as `language_form`, and insert it into the `experiment` sequence before `setup` runs (since `setup` reads these variables to derive everything else).
